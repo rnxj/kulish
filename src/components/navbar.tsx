@@ -37,7 +37,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className='sticky top-0 z-50 border-b bg-sky-500'>
+    <header className='sticky top-0 z-50 bg-sky-500'>
       <div className='container mx-auto px-4'>
         <div className='flex h-20 items-center justify-between'>
           <div className='flex items-center'>
