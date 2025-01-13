@@ -39,7 +39,7 @@ export const Navbar = () => {
         { href: '/academics/enrichment-programmes', label: 'Enrichment Programmes' },
         { href: '/academics/campus-life', label: 'Campus Life' },
         {
-          href: '/academics/teacher-professional-life',
+          href: '/academics/teacher-life',
           label: 'Teacher Professional Life and Training Opportunities',
         },
       ],
@@ -73,12 +73,12 @@ export const Navbar = () => {
                   <DropdownMenuTrigger className='flex items-center gap-1 font-medium text-white transition-colors hover:text-gray-200'>
                     {item.label} <ChevronDown className='h-4 w-4' />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className='bg-sky-500 p-2 text-white'>
+                  <DropdownMenuContent className='bg-sky-500 p-2'>
                     {item.submenu.map((subItem) => (
                       <DropdownMenuItem
                         key={subItem.href}
                         asChild
-                        className='hover:bg-sky-600 focus:bg-sky-600'
+                        className='cursor-pointer text-white hover:bg-sky-600 hover:text-white focus:bg-sky-600 focus:text-white'
                       >
                         <Link href={subItem.href} className='py-2'>
                           {subItem.label}
