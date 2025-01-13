@@ -1,6 +1,6 @@
 'use client';
 
-import { Facebook, Linkedin, Menu, Twitter, Youtube } from 'lucide-react';
+import { ChevronDown, Facebook, Linkedin, Menu, Twitter, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -14,6 +14,12 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 import { Button } from './ui/button';
 
@@ -24,7 +30,20 @@ export const Navbar = () => {
     { href: '/about', label: 'About Us' },
     { href: '/key-information', label: 'Key Information' },
     { href: '/news-events', label: 'News & Events' },
-    { href: '/academics', label: 'Academics' },
+    {
+      href: '/academics',
+      label: 'Academics',
+      submenu: [
+        { href: '/academics', label: 'Curriculum Overview' },
+        { href: '/academics/leadership-team', label: 'Leadership Team' },
+        { href: '/academics/enrichment-programmes', label: 'Enrichment Programmes' },
+        { href: '/academics/campus-life', label: 'Campus Life' },
+        {
+          href: '/academics/teacher-professional-life',
+          label: 'Teacher Professional Life and Training Opportunities',
+        },
+      ],
+    },
     { href: '/admission', label: 'Admission' },
     { href: '/contact', label: 'Contact Us' },
   ];
@@ -48,15 +67,36 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className='hidden items-center space-x-4 lg:flex'>
-            {menuItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className='font-medium text-white transition-colors hover:text-gray-200'
-              >
-                {item.label}
-              </Link>
-            ))}
+            {menuItems.map((item) =>
+              item.submenu ? (
+                <DropdownMenu key={item.href}>
+                  <DropdownMenuTrigger className='flex items-center gap-1 font-medium text-white transition-colors hover:text-gray-200'>
+                    {item.label} <ChevronDown className='h-4 w-4' />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className='bg-sky-500 p-2 text-white'>
+                    {item.submenu.map((subItem) => (
+                      <DropdownMenuItem
+                        key={subItem.href}
+                        asChild
+                        className='hover:bg-sky-600 focus:bg-sky-600'
+                      >
+                        <Link href={subItem.href} className='py-2'>
+                          {subItem.label}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className='font-medium text-white transition-colors hover:text-gray-200'
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </nav>
 
           {/* Social Icons & CTA */}
@@ -96,16 +136,32 @@ export const Navbar = () => {
                 </DrawerTitle>
               </DrawerHeader>
               <div className='mt-8 flex flex-col gap-4 px-4 text-center'>
-                {menuItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className='text-foreground transition-all hover:text-sky-500'
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                {menuItems.map((item) =>
+                  item.submenu ? (
+                    <div key={item.href} className='flex flex-col gap-2'>
+                      <span className='font-medium text-foreground'>{item.label}</span>
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.href}
+                          href={subItem.href}
+                          onClick={() => setOpen(false)}
+                          className='text-sm text-muted-foreground transition-all hover:text-sky-500'
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className='text-foreground transition-all hover:text-sky-500'
+                    >
+                      {item.label}
+                    </Link>
+                  )
+                )}
                 <div className='flex justify-center space-x-4 pt-4'>
                   {socialLinks.map((social, index) => {
                     const Icon = social.icon;
