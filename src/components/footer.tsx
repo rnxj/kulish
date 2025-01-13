@@ -22,7 +22,7 @@ const SocialLink = ({
     target='_blank'
     className={`flex items-center justify-center gap-2 text-sm hover:text-sky-500 md:text-base ${className}`}
   >
-    <Icon className='text-white hover:text-sky-500' size={size} />
+    <Icon className='hover:text-sky-500' size={size} />
     {children}
   </a>
 );
