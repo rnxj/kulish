@@ -1,8 +1,10 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import { ChevronDown, Facebook, Linkedin, Menu, Twitter, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 import {
@@ -25,6 +27,8 @@ import { Button } from './ui/button';
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   const menuItems = [
     { href: '/about', label: 'About Us' },
@@ -56,10 +60,26 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className='sticky top-0 z-50 bg-sky-500'>
+    <header
+      className={cn(
+        'z-50 flex items-center',
+        isHome ? 'sticky top-0 lg:absolute lg:left-0 lg:right-0 lg:top-10' : 'sticky top-0',
+        isHome ? 'h-20 lg:h-14' : 'h-20',
+        isHome
+          ? 'bg-sky-500 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgb(14,165,233)_0%,rgb(14,165,233)_8%,transparent_8%,transparent_20%,rgb(14,165,233)_20%,rgb(14,165,233)_100%)]'
+          : 'bg-sky-500'
+      )}
+    >
+      {isHome && (
+        <div className='absolute left-[8%] hidden lg:block'>
+          <Link href='/'>
+            <Image src='/logo.png' alt='Logo' width={200} height={80} />
+          </Link>
+        </div>
+      )}
       <div className='container mx-auto px-4'>
-        <div className='flex h-20 items-center justify-between'>
-          <div className='flex items-center'>
+        <div className='flex items-center justify-between'>
+          <div className={cn('flex items-center', isHome ? 'visible lg:invisible' : '')}>
             <Link href='/'>
               <Image src='/logo.png' alt='Logo' width={100} height={40} />
             </Link>

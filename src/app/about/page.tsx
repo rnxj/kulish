@@ -227,6 +227,12 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className='flex items-center justify-center'
+            style={{
+              backgroundImage: 'url(/about/bg.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+            }}
           >
             <Image
               src='/about/patrika-group.png'
@@ -467,14 +473,14 @@ export default function AboutPage() {
       >
         <div className='relative min-h-[700px]'>
           {/* Top-right squares - centered at (94%, 3%) */}
-          <div className='absolute right-[calc(6%-12px)] top-[calc(3%-12px)] grid grid-cols-3 gap-1'>
+          <div className='absolute right-[calc(6%-12px)] top-[calc(3%-12px)] hidden grid-cols-3 gap-1 lg:grid'>
             {[...Array(9)].map((_, i) => (
               <div key={`tr-${i}`} className='h-2 w-2 bg-sky-500' />
             ))}
           </div>
 
           {/* Bottom-left squares - centered at (6%, 97%) */}
-          <div className='absolute bottom-[calc(3%-12px)] left-[calc(6%-12px)] grid grid-cols-3 gap-1'>
+          <div className='absolute bottom-[calc(3%-12px)] left-[calc(6%-12px)] hidden grid-cols-3 gap-1 lg:grid'>
             {[...Array(9)].map((_, i) => (
               <div key={`bl-${i}`} className='h-2 w-2 bg-sky-500' />
             ))}

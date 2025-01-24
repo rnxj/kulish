@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { ArrowLeft, ArrowRight, ChevronRight, SearchIcon } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { BgPattern } from '@/components/bg-pattern';
@@ -167,7 +168,7 @@ export default function HomePage() {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [currentIndex]);
@@ -197,23 +198,27 @@ export default function HomePage() {
     <main className='min-h-screen'>
       {/* Hero Image Section */}
       <div className='flex flex-col'>
-        <section className='relative h-full w-full flex-1'>
+        <section className='relative h-[50vh] w-full md:h-[70vh] lg:h-[80vh]'>
           <Image
             src={heroImages[currentIndex].src}
             alt='Curriculum Video Thumbnail'
             priority
-            height={500}
-            width={500}
-            className='max-h-[calc(100vh-80px)] w-full object-cover'
+            fill
+            className='object-cover'
           />
 
+          {/* Dark overlay for better text visibility on mobile */}
+          <div className='absolute inset-0 bg-black/40 md:bg-transparent'></div>
+
           {/* Overlay Text */}
-          <div className='absolute left-8 top-1/2 max-w-sm -translate-y-1/2 text-sm'>
-            <h3 className='mb-4 text-xl'>{heroImages[currentIndex].title}</h3>
-            <h1 className='mb-4 font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8 lg:text-6xl'>
+          <div className='absolute left-4 top-[60%] max-w-[90%] -translate-y-1/2 px-4 text-sm text-white md:left-8 md:max-w-[300px] md:px-0 md:text-gray-700'>
+            <h3 className='mb-2 text-base text-white md:mb-4 md:text-lg md:text-muted-foreground'>
+              {heroImages[currentIndex].title}
+            </h3>
+            <h1 className='mb-3 font-serif text-2xl font-light underline decoration-gray-300 decoration-1 underline-offset-8 md:mb-4 md:text-4xl lg:text-5xl'>
               {heroImages[currentIndex].heading}
             </h1>
-            <p className='mb-8 max-w-sm pt-8 md:text-base'>
+            <p className='mb-4 max-w-sm text-sm md:mb-8 md:pt-8 md:text-base'>
               {heroImages[currentIndex].description}
             </p>
             <Button className='rounded-full bg-sky-500 text-white' size='lg'>
@@ -221,29 +226,29 @@ export default function HomePage() {
             </Button>
           </div>
 
-          <div className='absolute right-16 top-1/2 max-w-sm -translate-y-1/2 text-sm'>
-            <h1 className='font-serif text-4xl font-light text-white lg:text-6xl'>
+          <div className='absolute right-4 top-4 text-sm text-white md:right-16 md:top-1/2 md:-translate-y-1/2'>
+            <h1 className='font-serif text-2xl font-light md:text-4xl lg:text-6xl'>
               {currentIndex + 1} / {heroImages.length}
             </h1>
           </div>
 
           {/* Buttons */}
-          <div className='absolute bottom-8 right-8 flex gap-4'>
-            <Button className='rounded-full' size='lg'>
+          <div className='absolute bottom-4 right-4 flex gap-2 md:bottom-8 md:right-8 md:gap-4'>
+            <Button className='rounded-full text-sm md:text-base' size='sm'>
               Translate
             </Button>
-            <Button className='rounded-full' size='lg'>
+            <Button className='rounded-full text-sm md:text-base' size='sm'>
               Search
-              <SearchIcon className='ml-4 h-4 w-4' />
+              <SearchIcon className='ml-2 h-3 w-3 md:ml-4 md:h-4 md:w-4' />
             </Button>
           </div>
 
           {/* Image Navigation */}
-          <div className='absolute right-4 top-1/2 flex -translate-y-1/2 flex-col gap-2 rounded-md bg-black/50 p-4'>
+          <div className='absolute right-2 top-1/2 flex -translate-y-1/2 flex-col gap-1 rounded-md bg-black/50 p-2 md:right-4 md:gap-2 md:p-4'>
             {heroImages.map((_, index) => (
               <button
                 key={index}
-                className={`h-2 w-2 rounded-full ${
+                className={`h-1.5 w-1.5 rounded-full md:h-2 md:w-2 ${
                   index === currentIndex ? 'bg-white' : 'bg-white/50'
                 }`}
                 onClick={() => setCurrentIndex(index)}
@@ -312,7 +317,7 @@ export default function HomePage() {
           { orientation: 'horizontal', start: 0, end: 1, position: 0.9 },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.1 },
           { orientation: 'vertical', start: 0, end: 1, position: 0.4 },
-          { orientation: 'vertical', start: 0, end: 0.9, position: 0.1, variant: 'dashed' },
+          { orientation: 'vertical', start: 0, end: 0.9, position: 0.06, variant: 'dashed' },
           { orientation: 'vertical', start: 0, end: 1, position: 0.42, variant: 'dashed' },
         ]}
       >
@@ -337,7 +342,7 @@ export default function HomePage() {
               </p>
             </div>
             {/* Cards */}
-            <div className='grid grid-cols-2 gap-8'>
+            <div className='grid gap-8 px-4 md:grid-cols-2 md:px-0'>
               <div className='overflow-hidden bg-white shadow-md'>
                 <div className='relative h-96'>
                   <Image
@@ -409,11 +414,11 @@ export default function HomePage() {
       {/* Explore Section */}
       <section className='py-12'>
         <div className='mx-auto max-w-7xl px-4'>
-          <div className='grid grid-cols-2 items-center'>
+          <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center'>
             <div>
-              <h2 className='font-serif text-4xl font-light text-gray-700'>EXPLORE</h2>
+              <h2 className='font-serif text-3xl font-light text-gray-700 md:text-4xl'>EXPLORE</h2>
             </div>
-            <div className='flex justify-start gap-2'>
+            <div className='flex flex-wrap justify-start gap-2'>
               <Button
                 variant='outline'
                 className='hover:border-1 rounded-full border-white hover:border-black'
@@ -435,19 +440,21 @@ export default function HomePage() {
             </div>
           </div>
           <div className='mt-2 h-0.5 w-full bg-gray-300'></div>
-          <div className='mt-8 grid h-[600px] grid-cols-4 gap-6'>
+          <div className='mt-8 grid h-auto grid-cols-1 gap-4 sm:h-[600px] sm:grid-cols-2 lg:grid-cols-4'>
             {exploreItems.map((item, index) => (
-              <div
+              <Link
                 key={index}
+                href={`/explore/${index + 1}`}
                 className={cn(
                   'group relative cursor-pointer overflow-hidden',
-                  index == 1 || index == 3 ? 'col-span-2' : 'col-span-1'
+                  'h-[300px] sm:h-full',
+                  index == 1 || index == 3 ? 'sm:col-span-1 lg:col-span-2' : 'col-span-1'
                 )}
               >
                 <Image src={item.image} alt={item.title} fill className='object-cover' />
                 <div className='absolute inset-0 bg-black/0 transition-opacity duration-300 group-hover:bg-black/40' />
-                <div className='absolute left-6 top-[70%] max-w-[60%]'>
-                  <h3 className='text-base font-medium text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]'>
+                <div className='absolute left-4 top-[70%] max-w-[80%] sm:left-6 sm:max-w-[60%]'>
+                  <h3 className='text-sm font-medium text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] sm:text-base'>
                     {item.title}
                   </h3>
                 </div>
@@ -455,13 +462,13 @@ export default function HomePage() {
                   variant='outline'
                   size='icon'
                   className={cn(
-                    'absolute left-4 top-4 h-8 w-8 rounded-full',
+                    'absolute left-2 top-2 h-6 w-6 rounded-full sm:left-4 sm:top-4 sm:h-8 sm:w-8',
                     'flex items-center justify-center'
                   )}
                 >
-                  <ChevronRight className='h-4 w-4' />
+                  <ChevronRight className='h-3 w-3 sm:h-4 sm:w-4' />
                 </Button>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -470,11 +477,11 @@ export default function HomePage() {
       {/* Pillars of Education */}
       <BgPattern
         lines={[
-          { orientation: 'vertical', start: 0, end: 1, position: 0.19 },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.27, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.46, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.65, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.84, variant: 'dashed' },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.22 },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.3, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.49, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.67, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.85, variant: 'dashed' },
         ]}
         className='my-8'
       >
@@ -543,12 +550,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div>
-            <div className='absolute bottom-[4rem] right-[4rem] z-10 hidden text-9xl font-bold text-gray-700 md:block'>
+          <div className='hidden md:block'>
+            <div className='absolute bottom-[4rem] right-[4rem] z-10 text-9xl font-bold text-gray-700'>
               4
             </div>
-            <div className='absolute bottom-0 right-[4.892rem] h-32 w-[17px] bg-sky-500'></div>
-            <div className='absolute bottom-[6.3rem] right-0 h-[17px] w-32 bg-sky-500'></div>
+            <div className='absolute bottom-0 right-[4.8rem] h-32 w-[13px] bg-sky-500'></div>
+            <div className='absolute bottom-[6.05rem] right-0 h-[13px] w-28 bg-sky-500'></div>
           </div>
         </div>
       </BgPattern>
@@ -565,7 +572,7 @@ export default function HomePage() {
             <ArrowLeft className='h-4 w-4' />
           </Button>
 
-          <div className='relative mx-auto flex w-full max-w-7xl items-center justify-center'>
+          <div className='relative mx-auto flex w-full max-w-[90vw] items-center justify-center'>
             {order.map((index, i) => {
               const slide = earlyYearsSlides[index];
               return (
@@ -576,14 +583,19 @@ export default function HomePage() {
                   transition={{ duration: 0.5 }}
                   className={cn(
                     'relative transition-all duration-500',
-                    i === 1 ? 'z-20 h-[600px] w-[800px]' : 'h-[400px] w-[250px]',
+                    i === 1 ? 'z-20 h-[600px] w-[1000px]' : 'h-[400px] w-[300px]',
                     i === 0 ? 'mr-[-100px]' : '',
                     i === 2 ? 'ml-[-100px]' : ''
                   )}
                 >
                   <Image src={slide.image} alt={slide.title} fill className='object-cover' />
-                  {i === 1 && (
-                    <div className='absolute inset-x-0 top-1/2 -translate-y-1/2 bg-sky-600/90 py-8 text-center text-white'>
+                  <div
+                    className={cn(
+                      'absolute inset-x-0 bg-sky-600/90 text-center text-white',
+                      i === 1 ? 'bottom-[20%] py-8' : 'bottom-[30%] py-16'
+                    )}
+                  >
+                    {i === 1 && (
                       <div className='flex flex-col items-center justify-center'>
                         <h3 className='mb-4 text-3xl font-bold'>{slide.title}</h3>
                         <p className='mb-6 max-w-2xl px-8 text-lg'>{slide.description}</p>
@@ -591,8 +603,8 @@ export default function HomePage() {
                           More Info
                         </Button>
                       </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </motion.div>
               );
             })}
@@ -610,22 +622,22 @@ export default function HomePage() {
       </section>
 
       {/* Vision, Mission, Approach and Outlook */}
-      <div className='mx-auto max-w-7xl space-y-24 px-4 py-12'>
+      <div className='mx-auto max-w-7xl space-y-12 px-4 py-8 sm:space-y-24 sm:py-12'>
         {/* Vision Section */}
-        <section className='grid grid-cols-1 gap-8 md:grid-cols-[2fr_3fr]'>
+        <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
           <div className='relative'>
-            <h2 className='pr-4 text-right text-4xl font-light tracking-wide text-gray-700'>
+            <h2 className='text-center text-3xl font-light tracking-wide text-gray-700 sm:text-right sm:text-4xl md:pr-4'>
               VISION
             </h2>
             <div className='absolute right-0 top-0 hidden h-full w-0.5 bg-red-500 md:block' />
           </div>
-          <div className='space-y-6'>
-            <p className='text-lg leading-relaxed text-gray-700'>
+          <div className='space-y-4 sm:space-y-6'>
+            <p className='text-base leading-relaxed text-gray-700 sm:text-lg'>
               The Kulish School will empower future leaders with a focus on innovation, global
               citizenship, and compassionate care giving- blending the skills of futuristic learning
               and traditional Indian values.
             </p>
-            <p className='text-lg leading-relaxed text-gray-700'>
+            <p className='text-base leading-relaxed text-gray-700 sm:text-lg'>
               Our vision is to nurture adaptable, creative thinkers ready to excel in a dynamic,
               interconnected world.
             </p>
@@ -633,53 +645,55 @@ export default function HomePage() {
         </section>
 
         {/* Mission Section */}
-        <section className='grid grid-cols-1 gap-8 md:grid-cols-[2fr_3fr]'>
-          <h2 className='pr-4 text-right text-4xl font-light tracking-wide text-gray-700'>
+        <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
+          <h2 className='text-center text-3xl font-light tracking-wide text-gray-700 sm:text-right sm:text-4xl md:pr-4'>
             MISSION
           </h2>
-          <div className='space-y-6'>
-            <p className='text-lg leading-relaxed text-gray-700'>
+          <div className='space-y-4 sm:space-y-6'>
+            <p className='text-base leading-relaxed text-gray-700 sm:text-lg'>
               The Kulish School is committed to shaping the future by preparing students to excel in
               a globally connected India. Our mission is defined by the acronym L.E.A.D.E.R.S:
             </p>
-            <div className='space-y-4'>
+            <div className='space-y-3 sm:space-y-4'>
               <div>
                 <h3 className='font-medium text-gray-700'>Leadership Skills:</h3>
-                <p className='text-gray-600'>
+                <p className='text-sm text-gray-600 sm:text-base'>
                   Cultivating effective, compassionate leadership abilities in our students.
                 </p>
               </div>
               <div>
                 <h3 className='font-medium text-gray-700'>Excellence in Academics:</h3>
-                <p className='text-gray-600'>
+                <p className='text-sm text-gray-600 sm:text-base'>
                   Ensuring academic rigour and excellence in education.
                 </p>
               </div>
               <div>
                 <h3 className='font-medium text-gray-700'>Awareness:</h3>
-                <p className='text-gray-600'>Promoting cultural awareness and sensitivity.</p>
+                <p className='text-sm text-gray-600 sm:text-base'>
+                  Promoting cultural awareness and sensitivity.
+                </p>
               </div>
               <div>
                 <h3 className='font-medium text-gray-700'>Diversity:</h3>
-                <p className='text-gray-600'>
+                <p className='text-sm text-gray-600 sm:text-base'>
                   Embracing diverse backgrounds to enrich the learning experience.
                 </p>
               </div>
               <div>
                 <h3 className='font-medium text-gray-700'>Ethical Citizenship:</h3>
-                <p className='text-gray-600'>
+                <p className='text-sm text-gray-600 sm:text-base'>
                   Instilling principles of ethical behaviour and responsible citizenship.
                 </p>
               </div>
               <div>
                 <h3 className='font-medium text-gray-700'>Rich Cultural Heritage:</h3>
-                <p className='text-gray-600'>
+                <p className='text-sm text-gray-600 sm:text-base'>
                   Integrating India's rich cultural heritage into our educational approach.
                 </p>
               </div>
               <div>
                 <h3 className='font-medium text-gray-700'>Social Contribution:</h3>
-                <p className='text-gray-600'>
+                <p className='text-sm text-gray-600 sm:text-base'>
                   Preparing students to actively contribute to society, both locally and globally.
                 </p>
               </div>
@@ -688,21 +702,21 @@ export default function HomePage() {
         </section>
 
         {/* Approach and Outlook Section */}
-        <section className='grid grid-cols-1 gap-8 md:grid-cols-[2fr_3fr]'>
-          <h2 className='pr-4 text-right text-4xl font-light tracking-wide text-gray-700'>
+        <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
+          <h2 className='text-center text-3xl font-light tracking-wide text-gray-700 sm:text-right sm:text-4xl md:pr-4'>
             APPROACH
             <br />
             AND
             <br />
             OUTLOOK
           </h2>
-          <div className='space-y-6'>
-            <p className='text-lg leading-relaxed text-gray-700'>
+          <div className='space-y-4 sm:space-y-6'>
+            <p className='text-base leading-relaxed text-gray-700 sm:text-lg'>
               The Kulish School emerges as a future-ready institution, guided by a visionary
               approach to education. It is a school at the forefront of cutting-edge knowledge, and
               evolved learning.
             </p>
-            <p className='text-lg leading-relaxed text-gray-700'>
+            <p className='text-base leading-relaxed text-gray-700 sm:text-lg'>
               At The Kulish School, we are dedicated to fostering the holistic development of our
               students, valuing both internal and external growth. Internally, we prioritize the
               cultivation of knowledge, expertise, and essential so skills. Externally, we recognize
@@ -721,35 +735,35 @@ export default function HomePage() {
       </div>
 
       {/* Awards */}
-      <div className='grid grid-cols-1 gap-6 bg-sky-600 px-4 py-12 text-center text-xl text-white sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
-        <div className='grid place-items-center'>
-          <div className='text-center font-bold'>Oracle</div>
+      <div className='grid grid-cols-2 gap-8 bg-sky-600 px-6 py-16 text-center text-white sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5'>
+        <div className='flex h-24 items-center justify-center'>
+          <div className='text-lg font-bold sm:text-xl'>Oracle</div>
         </div>
-        <div className='grid place-items-center'>
-          <div className='text-center font-bold'>
+        <div className='flex h-24 items-center justify-center'>
+          <div className='text-lg font-bold sm:text-xl'>
             Lego <br /> Education
           </div>
         </div>
-        <div className='grid place-items-center'>
+        <div className='flex h-24 items-center justify-center'>
           <Image
             src='/landing/awards/global-school-award.png'
             width={100}
             height={100}
-            className='h-1/2 w-4/5 object-contain'
-            alt='Award 3'
+            className='h-20 w-auto object-contain'
+            alt='Global School Award'
           />
         </div>
-        <div className='grid place-items-center'>
+        <div className='flex h-24 items-center justify-center'>
           <Image
             src='/landing/awards/global-school-alliance.svg'
             width={100}
             height={100}
-            className='h-full w-full object-contain'
-            alt='Award 4'
+            className='h-20 w-auto object-contain'
+            alt='Global School Alliance'
           />
         </div>
-        <div className='grid place-items-center'>
-          <div className='text-center font-bold'>MINT</div>
+        <div className='col-span-2 flex h-24 items-center justify-center sm:col-span-1'>
+          <div className='text-lg font-bold sm:text-xl'>MINT</div>
         </div>
       </div>
     </main>

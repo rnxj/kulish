@@ -55,20 +55,22 @@ export default function AcademicsPage() {
           <div className='container mx-auto py-12 md:py-48'>
             <div className='grid grid-cols-1 gap-8 lg:grid-cols-[4fr_3fr]'>
               {/* Content */}
-              <div className='mx-auto space-y-8 md:max-w-[60%]'>
-                <h2 className='font-serif text-3xl text-gray-800'>ADMISSIONS PROCESS</h2>
+              <div className='mx-auto space-y-6 px-4 md:max-w-[60%] md:space-y-8 md:px-0'>
+                <h2 className='text-center font-serif text-2xl text-gray-800 md:text-left md:text-3xl'>
+                  ADMISSIONS PROCESS
+                </h2>
 
                 <div className='space-y-4'>
-                  <p className='text-lg text-gray-600'>
+                  <p className='text-base text-gray-600 md:text-lg'>
                     Our admissions process is designed to identify students who will thrive in our
                     dynamic learning environment.
                   </p>
 
                   <div className='space-y-2'>
-                    <p className='text-lg text-gray-600'>
+                    <p className='text-base text-gray-600 md:text-lg'>
                       Please contact the admissions team for further details. You could book your
                       meeting{' '}
-                      <a href='#' className='text-sky-500 hover:text-sky-600'>
+                      <a href='#' className='text-sky-500 underline hover:text-sky-600'>
                         here
                       </a>
                     </p>
@@ -77,18 +79,20 @@ export default function AcademicsPage() {
 
                 {/* Application Form Download Section */}
                 <div className='space-y-4'>
-                  <div className='flex items-center gap-4'>
-                    <div className='bg-sky-400 px-8 py-4 text-xl text-white'>Application Form</div>
+                  <div className='flex flex-col items-center gap-4 sm:flex-row'>
+                    <div className='w-full bg-sky-400 px-6 py-3 text-center text-lg text-white sm:w-auto md:px-8 md:py-4 md:text-xl'>
+                      Application Form
+                    </div>
                     <a
                       href='#'
-                      className='relative overflow-hidden bg-teal-400 px-8 py-4 text-xl text-white transition-colors hover:bg-teal-500'
+                      className='relative w-full overflow-hidden bg-teal-400 px-6 py-3 text-center text-lg text-white transition-colors hover:bg-teal-500 sm:w-auto md:px-8 md:py-4 md:text-xl'
                     >
                       <div className='absolute left-0 top-0 h-full w-2 bg-sky-400'></div>
                       <span className='relative z-10'>DOWNLOAD</span>
                     </a>
                   </div>
 
-                  <div className='space-y-2 text-gray-600'>
+                  <div className='space-y-2 text-center text-gray-600 sm:text-left'>
                     <p className='italic text-sky-500'>[Download Application Form]</p>
                     <p className='text-sm'>and submit it to our admissions office.</p>
                     <p className='text-sm'>You can also apply online through our website.</p>

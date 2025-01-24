@@ -1,19 +1,29 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+const centuryGothic = localFont({
+  src: './fonts/centurygothic.ttf',
+  variable: '--font-century-gothic',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+const centuryGothicBold = localFont({
+  src: './fonts/centurygothic_bold.ttf',
+  variable: '--font-century-gothic-bold',
+});
+
+const candara = localFont({
+  src: './fonts/candara.ttf',
+  variable: '--font-candara',
+});
+
+const pmingliu = localFont({
+  src: './fonts/pmingliu.ttf',
+  variable: '--font-pmingliu',
 });
 
 export const metadata: Metadata = {
@@ -28,9 +38,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${centuryGothic.variable} ${centuryGothicBold.variable} ${candara.variable} ${pmingliu.variable} antialiased`}
+      >
         <Navbar />
-        <main>{children}</main>
+        <main className='font-[family-name:var(--font-century-gothic)]'>{children}</main>
         <Footer />
       </body>
     </html>

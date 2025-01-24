@@ -19,7 +19,7 @@ export const BgPattern = ({ lines, className, children, ...props }: BgPatternPro
   return (
     <div className={cn('relative', className)} {...props}>
       {/* Background lines */}
-      <div className='pointer-events-none absolute inset-0 -z-10'>
+      <div className='pointer-events-none absolute inset-0 -z-10 hidden xl:block'>
         {lines.map((line, index) => {
           const isHorizontal = line.orientation === 'horizontal';
           const start = `${line.start * 100}%`;

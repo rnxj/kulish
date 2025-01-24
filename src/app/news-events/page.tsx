@@ -160,16 +160,20 @@ export default function AcademicsPage() {
             </div>
           </div>
           <div className='mt-2 h-0.5 w-full bg-gray-300'></div>
-          <div className='mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+          <div className='mt-8 grid h-auto grid-cols-1 gap-4 sm:h-[600px] sm:grid-cols-2 lg:grid-cols-4'>
             {exploreItems.map((item, index) => (
               <div
                 key={index}
-                className='group relative aspect-[4/3] cursor-pointer overflow-hidden'
+                className={cn(
+                  'group relative cursor-pointer overflow-hidden',
+                  'h-[300px] sm:h-full',
+                  index == 1 || index == 3 ? 'sm:col-span-1 lg:col-span-2' : 'col-span-1'
+                )}
               >
                 <Image src={item.image} alt={item.title} fill className='object-cover' />
                 <div className='absolute inset-0 bg-black/0 transition-opacity duration-300 group-hover:bg-black/40' />
-                <div className='absolute left-6 top-[70%] max-w-[60%]'>
-                  <h3 className='text-base font-medium text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]'>
+                <div className='absolute left-4 top-[70%] max-w-[80%] sm:left-6 sm:max-w-[60%]'>
+                  <h3 className='text-sm font-medium text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] sm:text-base'>
                     {item.title}
                   </h3>
                 </div>
@@ -177,11 +181,11 @@ export default function AcademicsPage() {
                   variant='outline'
                   size='icon'
                   className={cn(
-                    'absolute left-4 top-4 h-8 w-8 rounded-full',
+                    'absolute left-2 top-2 h-6 w-6 rounded-full sm:left-4 sm:top-4 sm:h-8 sm:w-8',
                     'flex items-center justify-center'
                   )}
                 >
-                  <ChevronRight className='h-4 w-4' />
+                  <ChevronRight className='h-3 w-3 sm:h-4 sm:w-4' />
                 </Button>
               </div>
             ))}
