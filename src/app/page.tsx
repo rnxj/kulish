@@ -159,23 +159,26 @@ export default function HomePage() {
       description:
         'A Nurturing Start: The Early Years Curriculum At our school, the Early Years curriculum provides a warm, stimulating environment where young learers thrive. By fostering natural curiosity and a love for',
       image: '/landing/carousel/1.jpg',
+      href: '/stages/early-years',
     },
     {
       title: 'PRIMARY SCHOOL',
       description:
         'Physical activity is an essential component of our 3l program, promoting a healthy lifestyle and the development of motor skills. We offer a wide range of sports and physical activities that not only enhance',
       image: '/landing/carousel/2.jpg',
+      href: '/stages/primary-school',
     },
     {
       title: 'MIDDLE SCHOOL',
       description:
         'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
       image: '/landing/carousel/3.jpg',
+      href: '/stages/middle-school',
     },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [order, setOrder] = useState([0, 1, 2]);
+  const [order, setOrder] = useState([2, 0, 1]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -199,11 +202,11 @@ export default function HomePage() {
   };
 
   const handleEarlyYearsPrevious = () => {
-    setOrder((prev) => [prev[1], prev[2], prev[0]]);
+    setOrder((prev) => [prev[2], prev[0], prev[1]]);
   };
 
   const handleEarlyYearsNext = () => {
-    setOrder((prev) => [prev[2], prev[0], prev[1]]);
+    setOrder((prev) => [prev[1], prev[2], prev[0]]);
   };
 
   return (
@@ -611,8 +614,11 @@ export default function HomePage() {
                       <div className='flex flex-col items-center justify-center'>
                         <h3 className='mb-4 text-3xl font-bold'>{slide.title}</h3>
                         <p className='mb-6 max-w-2xl px-8 text-lg'>{slide.description}</p>
-                        <Button className='rounded-full bg-white text-sky-600 hover:bg-gray-100'>
-                          More Info
+                        <Button
+                          className='rounded-full bg-white text-sky-600 hover:bg-gray-100'
+                          asChild
+                        >
+                          <Link href={slide.href}>More Info</Link>
                         </Button>
                       </div>
                     )}
