@@ -213,7 +213,7 @@ export default function HomePage() {
     <main className='min-h-screen'>
       {/* Hero Image Section */}
       <div className='flex flex-col'>
-        <section className='relative h-[50vh] w-full md:h-[70vh] lg:h-[80vh]'>
+        <section className='relative h-[70vh] w-full md:h-[850px]'>
           <Image
             src={heroImages[currentIndex].src}
             alt='Curriculum Video Thumbnail'

@@ -86,7 +86,7 @@ export const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className='hidden items-center space-x-4 lg:flex'>
+          <nav className={cn('hidden items-center space-x-8 lg:flex', isHome ? 'ml-16' : '')}>
             {menuItems.map((item) =>
               item.submenu ? (
                 <DropdownMenu key={item.href}>

@@ -126,7 +126,7 @@ export default function AcademicsPage() {
       {/* Curriculum Overview */}
       <div className='bg-sky-600 py-12 text-center text-white'>
         <div className='mx-auto max-w-5xl px-4'>
-          <h3 className='mb-4 text-2xl font-medium uppercase'>Financial Literacy</h3>
+          <h3 className='mb-4 text-2xl font-medium uppercase'>Enrichment Programs</h3>
           <p>
             At The Kulish School, we believe in nurturing the whole child by offering a variety of
             enrichment programmes that complement our core curriculum. These programs are designed
@@ -285,7 +285,7 @@ export default function AcademicsPage() {
           { orientation: 'vertical', start: 0, end: 1, position: 0.41 },
           { orientation: 'horizontal', start: 0, end: 0.41, position: 0.5, variant: 'dashed' },
           { orientation: 'horizontal', start: 0.41, end: 1, position: 0.5, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0.41, end: 1, position: 0.7 },
+          { orientation: 'horizontal', start: 0.41, end: 1, position: 0.67 },
         ]}
       >
         <div className='grid min-h-[700px] grid-cols-1 gap-8 p-4 md:p-12 lg:grid-cols-[3fr_4fr]'>
@@ -315,34 +315,31 @@ export default function AcademicsPage() {
             className='flex h-full flex-col justify-center space-y-6'
           >
             <p className='text-gray-800'>
-              Our STEM program sparks curiosity and innovation by immersing students in hands-on
-              projects that blend science, technology, engineering, and mathematics. From building
-              simple machines to coding their own programs, students apply theoretical knowledge to
-              real-world challenges, deepening their understanding and preparing them for a
-              tech-driven future.
+              Welcome to the STEM Lab at The Kulish School, where we inspire and empower our
+              students to explore the exciting world of Science, Technology, Engineering, and
+              Mathematics (STEM). Our lab is a dynamic space designed to foster creativity, critical
+              thinking, and hands-on learning.
             </p>
 
             <p className='text-gray-800'>
-              The program emphasizes critical thinking, teaching students to analyze data and
-              develop logical, evidence-based solutions. Collaboration is key, with teamwork
-              fostering effective communication and idea-sharing, mirroring real-world environments.
-              Technical skills are honed through projects like constructing models, programming
-              robots, and conducting experiments, providing practical experience with essential
-              tools.
-            </p>
-
-            <p className='text-sm text-gray-700'>
-              Science explores biology, physics, and chemistry; technology covers coding and digital
-              innovation; engineering focuses on designing and testing structures; and mathematics
-              integrates throughout, developing numerical and analytical skills.
+              Through engaging activities, students gain practical experience and deepen their
+              understanding of STEM concepts that are applicable to real-world challenges. In the
+              STEM Lab, students participate in projects that include robotics and engineering,
+              scientific experiments, and problem-solving.
             </p>
 
             <p className='text-gray-800'>
-              By making learning engaging and interactive, the program inspires a love for STEM
-              subjects, encouraging students to pursue further education and careers in these
-              fields. Our STEM program cultivates problem-solving, collaboration, and technical
-              expertise, preparing the next generation of innovators and leaders for a
-              technology-driven world.
+              These activities allow them to develop skills that are not only essential for their
+              academic growth but also highly valuable for their future careers. Students are
+              encouraged to work collaboratively on projects, where they can apply their knowledge
+              to solve problems, create solutions and effectively communicate their ideas.
+            </p>
+
+            <p className='text-gray-800'>
+              Our state-of-the-art equipment and resources provide students with the tools they need
+              to innovate and create. At The Kulish School, we bridge the gap between classroom
+              learning and real-world applications, preparing our students for the exciting
+              opportunities.
             </p>
           </motion.div>
         </div>
@@ -525,36 +522,30 @@ export default function AcademicsPage() {
             <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Geobiology
             </h2>
-
             <p className='text-gray-800'>
-              An assessment of real impact is what drives our service activities. Impact activities
-              are integral to our 31 program, as they encourage students to act on their empathy and
-              compassion. By participating in impactful service projects, students develop a sense
-              of commitment to helping others and learn the importance of giving back to their
-              community.
+              Geobiology is a multidisciplinary field that investigates the complex interactions
+              between Earth's physical systems and the biosphere, shaping life on a global scale. At
+              KULISH, students explore this dynamic field at the intersection of ecology,
+              evolutionary biology, microbiology, paleontology, soil science, biogeochemistry, and
+              advanced technology, gaining insights into processes that connect the Earth's past,
+              present, and future.
             </p>
 
             <p className='text-gray-800'>
-              <strong>Charity Drives:</strong> Organizing food, clothing, and book drives helps
-              students understand the needs of those less fortunate and encourages a spirit of
-              generosity.
+              Through experiential learning, students engage in activities like analyzing soil
+              layers and studying plant growth while integrating mathematical sciences to measure
+              parameters such as plant height, soil quality, and nutrient cycles. Advanced
+              techniques, such as phytochemical testing, help compare the nutritional properties of
+              foods, providing real-world applications. Artistic explorations, like fossil imprint
+              creation, bring an imaginative dimension to understanding Earth's history.
             </p>
 
             <p className='text-gray-800'>
-              <strong>Peer Tutoring:</strong> Older students have the opportunity to mentor and
-              tutor younger peers, fostering a supportive and collaborative school environment.
-            </p>
-
-            <p className='text-gray-800'>
-              <strong>Service-Learning Projects:</strong> Integrated into the curriculum, these
-              projects allow students to apply their learning to real-world challenges, such as
-              creating awareness campaigns for local issues or developing solutions to environmental
-              problems. At The Kulish School, our 31 programme is more than just a set of
-              activities; it is a philosophy that shapes the character and values of our students.
-              By engaging in innovation, initiative and impact, our students grow into well-rounded
-              individuals who are prepared to make positive contributions to the world. We are proud
-              to support our students in their journey to become thoughtful, active, and responsible
-              global citizens.
+              With a focus on global sustainability, KULISH emphasizes the role of geobiology in
+              addressing critical challenges, from climate change to food security. By combining
+              scientific rigor, technology, and creative expression, students develop a
+              comprehensive understanding of Earth's interconnected systems, equipping them to
+              address pressing global issues and contribute to advancements in this vital field.
             </p>
           </motion.div>
 

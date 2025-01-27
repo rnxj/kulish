@@ -51,21 +51,21 @@ function VideoPlaySVG() {
 export default function AcademicsPage() {
   const academicPrograms = [
     {
-      title: 'EARLY YEARS',
+      title: 'Early Years & Primary Years',
       description:
         'A Nurturing Start: The Early Years Curriculum At our school, the Early Years curriculum provides a warm, stimulating environment where young learers thrive. By fostering natural curiosity and a love for',
       image: '/academics/carousel/main-1.jpg',
       logo: '/academics/carousel/logo-1.png',
     },
     {
-      title: 'PRIMARY SCHOOL',
+      title: ' Middle School',
       description:
         'Physical activity is an essential component of our 3l program, promoting a healthy lifestyle and the development of motor skills. We offer a wide range of sports and physical activities that not only enhance',
       image: '/academics/carousel/main-2.jpg',
       logo: '/academics/carousel/logo-2.png',
     },
     {
-      title: 'MIDDLE SCHOOL',
+      title: 'High School',
       description:
         'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
       image: '/academics/carousel/main-3.jpg',
@@ -132,7 +132,7 @@ export default function AcademicsPage() {
         ]}
       >
         <div className='mx-auto max-w-4xl px-4'>
-          <h3 className='mb-4 text-2xl font-medium uppercase'>Curriculum Overview</h3>
+          <h3 className='mb-4 text-2xl font-medium uppercase'>Academics</h3>
           <p>
             The Kulish School offers a balanced curriculum that combines the best of National and
             International Boards. Our curriculum is designed to foster critical thinking,

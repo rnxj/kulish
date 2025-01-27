@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 import { BgPattern } from '@/components/bg-pattern';
@@ -82,11 +81,8 @@ const stagesData = {
     ],
     lines: [
       { orientation: 'horizontal', start: 0, end: 0.33, position: 0.15, variant: 'dashed' },
-      { orientation: 'horizontal', start: 0, end: 1, position: 0.73, variant: 'dashed' },
       { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
     ] as const,
-    image1: '/stages/primary-school/image1.jpg',
-    image2: '/stages/primary-school/image2.jpg',
   },
   'middle-school': {
     title: 'MIDDLE SCHOOL',
@@ -172,27 +168,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                   )}
                 </section>
               ))}
-
-              {'image1' in data && 'image2' in data && (
-                <div className='grid grid-cols-2 gap-8 pt-16'>
-                  <div className='relative aspect-[4/3] overflow-hidden rounded-lg'>
-                    <Image
-                      src={data.image1}
-                      alt={data.title}
-                      fill
-                      className='object-cover transition-transform duration-300 hover:scale-105'
-                    />
-                  </div>
-                  <div className='relative aspect-[4/3] overflow-hidden rounded-lg'>
-                    <Image
-                      src={data.image2}
-                      alt={data.title}
-                      fill
-                      className='object-cover transition-transform duration-300 hover:scale-105'
-                    />
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>

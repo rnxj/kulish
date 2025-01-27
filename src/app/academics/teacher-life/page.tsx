@@ -107,16 +107,16 @@ export default function CampusLifePage() {
               className='flex items-center justify-end'
             >
               <h2 className='text-right font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
-                TEACHER
-                <br /> PROFESSIONAL LIFE
-                <br /> AND TRAINING
-                <br /> OPPORTUNITIES
+                Teacher
+                <br /> Professional
+                <br /> Development
+                <br /> Program
               </h2>
             </motion.div>
             <p className='ml-auto w-2/3 text-right text-gray-800'>
-              At The Kulish School (TKS), we prioritize staff development through a comprehensive
+              At The Kulish School (TKS), we prioritize faculty development through a comprehensive
               and multifaceted approach. Our strategy is intricately linked to the overall school
-              professional development plan, ensuring that our staff's growth aligns with the
+              professional development plan, ensuring that our faculty's growth aligns with the
               school's mission and goals. Here's an elaborate look at our approach:
             </p>
           </div>
@@ -129,45 +129,42 @@ export default function CampusLifePage() {
             className='flex h-full flex-col justify-center space-y-6'
           >
             <p className='text-gray-800'>
-              <strong>IN-HOUSE WORKSHOPS BY RENOWNED EXPERTS:</strong> TKS hosts regular in-house
-              workshops conducted by distinguished experts in the field of education. These
-              workshops cover a wide range of topics, from innovative teaching methods to the latest
-              educational technologies. By bringing experts directly to our staff, we provide
-              immediate and relevant professional development that can be directly applied in the
-              classroom.
+              <strong>IN-HOUSE WORKSHOPS BY RENOWNED EXPERTS</strong>
+              <br />
+              TKS hosts regular in-house workshops conducted by distinguished experts in the field
+              of education. These workshops cover a wide range of topics, from innovative teaching
+              methods to the latest educational technologies. By bringing experts directly to our
+              staff, we provide immediate and relevant professional development that can be directly
+              applied in the classroom.
             </p>
 
             <p className='text-gray-800'>
-              <strong>Visiting Consultants:</strong> We invite visiting consultants to TKS to
-              provide specialized training and insights. These consultants work closely with our
-              staff, offering tailored advice and strategies to address specific needs and
-              challenges. This personalized approach helps our teachers refine their skills and
-              adopt best practices from leading educators around the world.
+              <strong>Visiting Consultants</strong>
+              <br />
+              We invite consultants for specialized training and insights. These consultants work
+              closely with our staff, offering tailored advice and strategies to address specific
+              needs and challenges. This personalized approach helps our teachers refine their
+              skills and adopt best practices from leading educators around the world.
             </p>
 
             <p className='text-gray-800'>
-              <strong>E-Learning Opportunities:</strong> In today's digital age, continuous learning
-              is essential. TKS offers a variety of e-learning opportunities, allowing our staff to
-              engage in professional development at their own pace. These online courses and
-              webinars cover a broad spectrum of subjects, ensuring that our staff remains
-              up-to-date with current trends and advancements in education.
+              <strong>E-Learning Opportunities</strong>
+              <br />
+              TKS offers a variety of e-learning opportunities, allowing our staff to engage in
+              professional development at their own pace. These online courses and webinars cover a
+              broad spectrum of subjects, ensuring that our staff remains up-to-date with current
+              trends and advancements in education.
             </p>
 
             <p className='text-gray-800'>
-              <strong>Training Programmes, Workshops, and Conferences in India:</strong> In today's
-              digital age, continuous learning is essential. TKS offers a variety of e-learning
-              opportunities, allowing our staff to engage in professional development at their own
-              pace. These online courses and webinars cover a broad spectrum of subjects, ensuring
-              that our staff remains up-to-date with current trends and advancements in education.
-            </p>
-
-            <p className='text-gray-800'>
-              <strong>Future Plans: Teacher Exchange Programmes:</strong> Looking ahead, TKS plans
-              to initiate teacher exchange programs with schools across the nation. These programs
-              will enable our teachers to experience different educational environments, learn from
-              diverse practices, and bring back innovative ideas to enhance our own teaching and
-              learning practices. The exchange programs aim to foster collaboration, cultural
-              understanding, and the sharing of best practices on a national level.
+              <strong>Future Plans: Teacher Exchange Programmes</strong>
+              <br />
+              Looking ahead, TKS plans to initiate teacher exchange programs with schools across the
+              nation. These programs will enable our teachers to experience different educational
+              environments, learn from diverse practices, and bring back innovative ideas to enhance
+              our own teaching and learning practices. The exchange programs aim to foster
+              collaboration, cultural understanding, and the sharing of best practices on a national
+              level.
             </p>
           </motion.div>
         </div>
@@ -177,12 +174,11 @@ export default function CampusLifePage() {
       <BgPattern
         lines={[
           { orientation: 'vertical', start: 0, end: 1, position: 0.2 },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.1, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.32, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.37, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.59, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.8, variant: 'dashed' },
-          { orientation: 'horizontal', start: 0, end: 1, position: 0.85, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.11, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.34, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.58, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.79, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.84, variant: 'dashed' },
         ]}
         className='my-8'
       >
@@ -191,7 +187,7 @@ export default function CampusLifePage() {
             <section className='flex gap-8'>
               <div className='w-16 font-serif text-2xl font-medium text-blue-500'>01/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Growing Our Own</h2>
+                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Growing Organically</h2>
                 <p className='text-gray-600'>
                   We believe in nurturing our staff from within. By investing in their continuous
                   development, we ensure that our educators grow alongside our institution.
@@ -202,11 +198,7 @@ export default function CampusLifePage() {
             <section className='flex gap-8'>
               <div className='w-16 font-serif text-2xl font-medium text-blue-500'>02/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>
-                  Harnessing and
-                  <br />
-                  Building Potential
-                </h2>
+                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Harnessing Potential</h2>
                 <p className='text-gray-600'>
                   We recognize the potential of our educators and are committed to helping them
                   realize and enhance their capabilities. This involves providing them with the
@@ -219,7 +211,7 @@ export default function CampusLifePage() {
               <div className='w-16 font-serif text-2xl font-medium text-blue-500'>03/</div>
               <div>
                 <h2 className='mb-4 font-serif text-3xl text-gray-700'>
-                  Building Capacity from Within
+                  Capacity Building from Within
                 </h2>
                 <p className='text-gray-600'>
                   Our approach focuses on developing internal capacity. By strengthening our staff's
@@ -235,7 +227,7 @@ export default function CampusLifePage() {
                 <h2 className='mb-4 font-serif text-3xl text-gray-700'>
                   Developing Leaders
                   <br />
-                  and Leadership Skills
+                  Teacher Leadership
                 </h2>
                 <p className='text-gray-600'>
                   TKS is dedicated to providing opportunities for our staff to develop leadership

@@ -23,7 +23,7 @@ export default function CampusLifePage() {
       logo: '/campus-life/carousel/logo-2.png',
     },
     {
-      title: 'SCIENCE AND COMPUTER LABS',
+      title: 'SCIENCE AND STEM LABS',
       description: 'Cutting-edge facilities for hands-on experiments and technological learning.',
       image: '/campus-life/carousel/main-3.jpg',
       logo: '/campus-life/carousel/logo-3.png',

@@ -21,10 +21,8 @@ export default function AcademicsPage() {
       {/* Info Section */}
       <section className='bg-[#f7f7f7] px-5 py-10'>
         <div className='container mx-auto text-center'>
-          <h2 className='mb-4 font-serif text-4xl font-light text-[#333]'>ACADEMICS</h2>
-          <h3 className='mb-5 text-xl font-normal text-[#555]'>
-            Community, Activity, and Service at The Kulish School
-          </h3>
+          <h2 className='mb-4 font-serif text-4xl font-light text-[#333]'>ENHANCERS</h2>
+          <h3 className='mb-5 text-xl font-normal text-[#555]'>Kulish Community Service Program</h3>
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
             At The Kulish School, we believe in nurturing the holistic development of our students
             through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
@@ -50,8 +48,10 @@ export default function AcademicsPage() {
           {/* Title */}
           <div className='mb-12'>
             <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
-              Innovation, initiative
-              <br />& impact at The Kulish School
+              Innovation, Initiative
+              <br />& Impact at The Kulish
+              <br />
+              School
             </h2>
           </div>
 
@@ -385,12 +385,12 @@ export default function AcademicsPage() {
                 those less fortunate and encourages a spirit of generosity.
               </p>
               <p className='text-sm text-gray-800'>
-                <strong>Peer Tutoring</strong>
+                <strong>Peer Tutoring </strong>
                 Older students have the opportunity to mentor and tutor younger peers, fostering a
                 supportive and collaborative school environment.
               </p>
               <p className='text-sm text-gray-800'>
-                <strong>Service-Learning Projects</strong>
+                <strong>Service-Learning Project </strong>
                 Integrated into the curriculum, these projects allow students to apply their
                 learning to real-world challenges, such as creating awareness campaigns for local
                 issues or developing solutions to environmental problems.
@@ -423,18 +423,21 @@ export default function AcademicsPage() {
             <div className='flex h-full flex-col justify-center'>
               <div className='mb-12 max-w-[60%]'>
                 <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
-                  Education for sustainable development at
+                  Education for
                   <br />
-                  The Kulish School
+                  sustainable development
+                  <br />
+                  at The Kulish School
                 </h2>
               </div>
               <div className='space-y-3'>
                 <p>
-                  At our school, we are committed to integrating the principles of Education for
-                  Sustainable Development (ESD) into our everyday teaching and learning. By
-                  embedding the Sustainable Development Goals (SDGs) into our curriculum, we empower
-                  our students to become informed, responsible, and proactive global citizens who
-                  understand and act on the world's most pressing challenges.
+                  At our school, we are committed to integrating the principles of{' '}
+                  <span className='underline'>Education for Sustainable Development </span>
+                  (ESD) into our everyday teaching and learning. By embedding the Sustainable
+                  Development Goals (SDGs) into our curriculum, we empower our students to become
+                  informed, responsible, and proactive global citizens who understand and act on the
+                  world's most pressing challenges.
                 </p>
 
                 <p>

@@ -70,14 +70,6 @@ export default function AboutPage() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value='item-4' className='border-sky-500'>
-              <AccordionTrigger>Welcome Message From The Principal</AccordionTrigger>
-              <AccordionContent>
-                Welcome to The Kulish School. We are committed to providing a nurturing environment
-                where students can thrive academically and personally.
-              </AccordionContent>
-            </AccordionItem>
-
             <AccordionItem value='item-5' className='border-sky-500'>
               <AccordionTrigger>Our Vision</AccordionTrigger>
               <AccordionContent>
@@ -91,6 +83,14 @@ export default function AboutPage() {
               <AccordionContent>
                 To provide quality education that develops well-rounded individuals prepared for the
                 challenges of tomorrow.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value='item-4' className='border-sky-500'>
+              <AccordionTrigger>Welcome Message From The Principal</AccordionTrigger>
+              <AccordionContent>
+                Welcome to The Kulish School. We are committed to providing a nurturing environment
+                where students can thrive academically and personally.
               </AccordionContent>
             </AccordionItem>
 
@@ -161,9 +161,15 @@ export default function AboutPage() {
             <p className='text-gray-800'>
               At The Kulish School, we combine academic excellence with personal growth, preparing
               students to become curious, creative, and independent learners with a global
-              perspective. As a candidate school for IB PYP authorization, we are committed to
-              fostering inquiry-driven, hands-on, and experiential learning, seamlessly integrating
-              the IB framework with the CBSE curriculum.
+              perspective. We are committed to fostering inquiry-driven, hands-on, and experiential
+              learning, seamlessly integrating with our curricular framework.
+            </p>
+
+            <p className='text-gray-800'>
+              The Kulish School is a candidate school for the IB-PYP. The school is pursuing
+              authorization as an IB World School. These are schools that share a common philosophy
+              as commitment to high quality, challenging, international that The Kulish School
+              believes in for enriching the lives of students.
             </p>
 
             <p className='text-sm text-gray-700'>
