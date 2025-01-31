@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { ArrowLeft, ArrowRight, ChevronRight, MapPin } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -261,27 +261,26 @@ export default function AcademicsPage() {
               <Image
                 src='/news-events/highlights/4.jpg'
                 alt='Event Image'
-                width={400}
-                height={200}
-                className='h-[200px] w-4/5 object-cover'
+                width={800}
+                height={600}
+                className='aspect-[2/1] w-full object-cover'
               />
-              <h3 className='mt-4 text-xl font-medium'>
-                Empowering Parents <br />
-                in Innovative Education
+              <h3 className='mt-4 text-center text-xl font-medium'>
+                Empowering Parents in Innovative Education
               </h3>
-              <p className='mt-2 max-w-md text-gray-600'>
+              <p className='mt-2 w-full text-center text-gray-600'>
                 Along with innovation in education, parents will have to recognize the potential of
                 their children. Life Craft Workshop was organized on Sunday at The Kulish School,
                 Jagatpura.
               </p>
-              <Button className='relative mt-4 overflow-hidden rounded-none bg-sky-600 hover:bg-sky-700'>
+              {/* <Button className='relative mt-4 overflow-hidden rounded-none bg-sky-600 hover:bg-sky-700'>
                 <div className='absolute left-0 top-0 h-full w-2 bg-teal-500'></div>
                 <span className='relative z-10'>Read More</span>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Middle Column */}
-            <div className='flex-1'>
+            {/* <div className='flex-1'>
               <div className='relative'>
                 <h3 className='mb-8 text-lg font-medium'>Upcoming Events</h3>
                 <div className='absolute right-0 top-3 h-[1px] w-2/5 bg-gray-300'></div>
@@ -309,10 +308,10 @@ export default function AcademicsPage() {
               <a href='#' className='mt-6 block text-sky-600 hover:underline'>
                 View All Events
               </a>
-            </div>
+            </div> */}
 
             {/* Right Column */}
-            <div className='lg:w-80'>
+            {/* <div className='lg:w-80'>
               <div className='relative h-[450px] w-full overflow-hidden bg-[url("/news-events/newsletter-bg.png")] bg-cover bg-center p-6 text-center text-white'>
                 <Image
                   src='/news-events/envelope.png'
@@ -333,7 +332,7 @@ export default function AcademicsPage() {
                   <Button className='w-full bg-sky-400 hover:bg-sky-500'>Subscribe</Button>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

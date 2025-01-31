@@ -21,7 +21,7 @@ export default function AboutPage() {
         transition={{ duration: 0.8 }}
         className='relative min-h-[800px] w-full'
       >
-        <Image src='/about/hero.jpg' alt='Hero image' fill className='object-cover' priority />
+        <Image src='/about/hero.jpeg' alt='Hero image' fill className='object-cover' priority />
       </motion.div>
 
       {/* About Content */}
@@ -403,8 +403,8 @@ export default function AboutPage() {
             <p className='text-gray-800'>
               Inspired by Kurt Hahn's words, "There is more in us than we know," we are committed to
               unlocking the full potential of every student. Through our unique blend of the IB PYP
-              framework, CBSE curriculum, Vedic values, and Round Square principles, we aim to
-              foster holistic development that prepares students for a rapidly evolving world.
+              framework, Vedic values, and Round Square principles, we aim to foster holistic
+              development that prepares students for a rapidly evolving world.
             </p>
 
             <h3 className='font-medium text-gray-800'>Our Educational Pathway</h3>

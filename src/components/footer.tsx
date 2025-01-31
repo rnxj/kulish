@@ -2,8 +2,6 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Button } from '@/components/ui/button';
-
 const SocialLink = ({
   href,
   icon: Icon,
@@ -32,7 +30,6 @@ export const Footer = () => {
     { href: '/about', label: 'About Us' },
     { href: '/key-information', label: 'Key Information' },
     { href: '/news-events', label: 'News & Events' },
-    { href: '/parents', label: 'Parents' },
     { href: '/admission', label: 'Admission' },
     { href: '/contact', label: 'Contact Us' },
   ];
@@ -55,10 +52,12 @@ export const Footer = () => {
       {/* Blue Background Section */}
       <div className='bg-sky-500 px-4 py-6 text-center text-white'>
         <h2 className='mb-2 text-xl uppercase md:text-2xl'>Ready to take the next step?</h2>
-        <p className='mb-6 text-sm md:mb-8 md:text-base'>Classes Start June 3 | Term Dates</p>
-        <Button size='lg' className='rounded-none text-sm md:text-base'>
+        <p className='mb-6 text-sm md:mb-8 md:text-base'>
+          Classes Start April 7, 2025 | Term Dates
+        </p>
+        {/* <Button size='lg' className='rounded-none text-sm md:text-base'>
           REQUEST INFO
-        </Button>
+        </Button> */}
       </div>
 
       {/* Middle Section */}
@@ -83,7 +82,7 @@ export const Footer = () => {
             <strong>E-mail Address:</strong> enquiry@thekulishschool.com <br />
             <strong>Mobile No.:</strong> +91 90575 31015
           </p>
-          <div className='mt-4 flex flex-col justify-center gap-3 md:flex-row md:gap-5'>
+          {/* <div className='mt-4 flex flex-col justify-center gap-3 md:flex-row md:gap-5'>
             {socialLinks.map((social, index) => (
               <span key={index}>
                 <SocialLink href='#' icon={social.icon} className='text-[#373c42] md:justify-start'>
@@ -91,7 +90,7 @@ export const Footer = () => {
                 </SocialLink>
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -105,7 +104,7 @@ export const Footer = () => {
           ))}
         </nav>
         <div className='flex w-full flex-row md:w-[45%]'>
-          <div className='mx-auto flex flex-wrap justify-center gap-3 md:gap-4'>
+          {/* <div className='mx-auto flex flex-wrap justify-center gap-3 md:gap-4'>
             {footerSocialIcons.map((social, index) => (
               <SocialLink
                 key={index}
@@ -118,7 +117,7 @@ export const Footer = () => {
             <Button className='mt-2 bg-sky-500 text-xs text-white hover:bg-sky-600 md:mt-0 md:text-sm'>
               Call to Action
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

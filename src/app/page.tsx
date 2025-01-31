@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { ArrowLeft, ArrowRight, ChevronRight, SearchIcon } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 
 import { BgPattern } from '@/components/bg-pattern';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 function VideoPlaySVG() {
   return (
@@ -92,7 +91,7 @@ export default function HomePage() {
     {
       title: 'Global Curriculum',
       description:
-        'Offering both National and International Boards, including CBSE and ill, 10 provide a comprehensive education',
+        'Offering both National and International Boards, to provide a comprehensive education',
       image: '/landing/overview/global-curriculum.png',
     },
     {
@@ -236,9 +235,9 @@ export default function HomePage() {
             <p className='mb-4 max-w-sm text-sm md:mb-8 md:pt-8 md:text-base'>
               {heroImages[currentIndex].description}
             </p>
-            <Button className='rounded-full bg-sky-500 text-white' size='lg'>
+            {/* <Button className='rounded-full bg-sky-500 text-white' size='lg'>
               Call To Action
-            </Button>
+            </Button> */}
           </div>
 
           <div className='absolute right-4 top-4 text-sm text-white md:right-16 md:top-1/2 md:-translate-y-1/2'>
@@ -248,7 +247,7 @@ export default function HomePage() {
           </div>
 
           {/* Buttons */}
-          <div className='absolute bottom-4 right-4 flex gap-2 md:bottom-8 md:right-8 md:gap-4'>
+          {/* <div className='absolute bottom-4 right-4 flex gap-2 md:bottom-8 md:right-8 md:gap-4'>
             <Button className='rounded-full text-sm md:text-base' size='sm'>
               Translate
             </Button>
@@ -256,7 +255,7 @@ export default function HomePage() {
               Search
               <SearchIcon className='ml-2 h-3 w-3 md:ml-4 md:h-4 md:w-4' />
             </Button>
-          </div>
+          </div> */}
 
           {/* Image Navigation */}
           <div className='absolute right-2 top-1/2 flex -translate-y-1/2 flex-col gap-1 rounded-md bg-black/50 p-2 md:right-4 md:gap-2 md:p-4'>
@@ -303,7 +302,7 @@ export default function HomePage() {
           priority
         />
         <div className='absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center text-white'>
-          <Dialog>
+          {/* <Dialog>
             <DialogTrigger asChild>
               <Button
                 variant='ghost'
@@ -317,7 +316,7 @@ export default function HomePage() {
               <DialogTitle className='hidden'>Video Tour in The Kulish School </DialogTitle>
               <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
           <h3 className='mb-4 text-2xl font-medium'>Video Tour in The Kulish School </h3>
           <p className='max-w-3xl px-4'>
             Experience The Kulish School through our tour video, showcasing every corner of our

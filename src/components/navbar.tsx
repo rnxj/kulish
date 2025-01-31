@@ -121,7 +121,7 @@ export const Navbar = () => {
 
           {/* Social Icons & CTA */}
           <div className='hidden items-center space-x-4 lg:flex'>
-            <div className='flex items-center space-x-2'>
+            {/* <div className='flex items-center space-x-2'>
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -134,8 +134,8 @@ export const Navbar = () => {
                   </Link>
                 );
               })}
-            </div>
-            <Button className='bg-white text-sky-500 hover:bg-white/90'>Call to Action</Button>
+            </div> */}
+            {/* <Button className='bg-white text-sky-500 hover:bg-white/90'>Call to Action</Button> */}
           </div>
 
           {/* Mobile Menu */}
@@ -183,7 +183,7 @@ export const Navbar = () => {
                   )
                 )}
                 <div className='flex justify-center space-x-4 pt-4'>
-                  {socialLinks.map((social, index) => {
+                  {/* {socialLinks.map((social, index) => {
                     const Icon = social.icon;
                     return (
                       <Link
@@ -195,13 +195,13 @@ export const Navbar = () => {
                         <Icon className='h-4 w-4' />
                       </Link>
                     );
-                  })}
+                  })} */}
                 </div>
               </div>
               <DrawerFooter>
-                <Button className='w-full bg-sky-500 text-white hover:bg-sky-600'>
+                {/* <Button className='w-full bg-sky-500 text-white hover:bg-sky-600'>
                   Call to Action
-                </Button>
+                </Button> */}
                 <DrawerClose asChild>
                   <Button variant='outline' className='w-full rounded-full'>
                     Close

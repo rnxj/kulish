@@ -297,30 +297,29 @@ export default function AcademicsPage() {
                 </p>
               </div>
             </div>
-
             {/* Image Grid */}
             <div className='flex flex-col justify-start space-y-4'>
-              <div className='flex flex-col justify-start space-x-4 md:flex-row'>
+              <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
                 <Image
                   src='/key-information/initiative/2.png'
                   alt='Initiative Activity 2'
                   width={400}
                   height={300}
-                  className='h-[250px] w-[40%] object-cover'
+                  className='h-[250px] w-full object-cover'
                 />
                 <Image
                   src='/key-information/initiative/3.jpg'
                   alt='Initiative Activity 2'
                   width={400}
                   height={300}
-                  className='h-[250px] w-[20%] object-cover'
+                  className='h-[250px] w-full object-cover'
                 />
                 <Image
                   src='/key-information/initiative/4.jpg'
                   alt='Initiative Activity 3'
                   width={400}
                   height={300}
-                  className='h-[250px] w-[40%] object-cover'
+                  className='h-[250px] w-full object-cover'
                 />
               </div>
               <div className='space-y-3'>

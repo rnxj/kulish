@@ -3,7 +3,6 @@
 import Image from 'next/image';
 
 import { BgPattern } from '@/components/bg-pattern';
-import { RegistrationForm } from '@/components/registration-form';
 
 export default function AcademicsPage() {
   return (
@@ -27,8 +26,8 @@ export default function AcademicsPage() {
             <p>
               We welcome you to visit our school, book appointment and have a conversation with our
               academic team to understand our vision and value delivery. We offer an internationally
-              poised curriculum, including IB and CBSE, further enhanced by advanced subjects that
-              prepare children for the unforeseeable and rapidly changing future.
+              poised curriculum, further enhanced by advanced subjects that prepare children for the
+              unforeseeable and rapidly changing future.
             </p>
           </div>
         </div>
@@ -66,7 +65,7 @@ export default function AcademicsPage() {
                     dynamic learning environment.
                   </p>
 
-                  <div className='space-y-2'>
+                  {/* <div className='space-y-2'>
                     <p className='text-base text-gray-600 md:text-lg'>
                       Please contact the admissions team for further details. You could book your
                       meeting{' '}
@@ -74,11 +73,11 @@ export default function AcademicsPage() {
                         here
                       </a>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Application Form Download Section */}
-                <div className='space-y-4'>
+                {/* <div className='space-y-4'>
                   <div className='flex flex-col items-center gap-4 sm:flex-row'>
                     <div className='w-full bg-sky-400 px-6 py-3 text-center text-lg text-white sm:w-auto md:px-8 md:py-4 md:text-xl'>
                       Application Form
@@ -97,7 +96,7 @@ export default function AcademicsPage() {
                     <p className='text-sm'>and submit it to our admissions office.</p>
                     <p className='text-sm'>You can also apply online through our website.</p>
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* Image */}
               <div>
@@ -119,11 +118,11 @@ export default function AcademicsPage() {
       </div>
 
       {/* Registration form */}
-      <div className='bg-gray-50 py-16'>
+      {/* <div className='bg-gray-50 py-16'>
         <div className='container mx-auto px-4'>
           <RegistrationForm />
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
