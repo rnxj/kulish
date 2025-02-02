@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { BgPattern } from '@/components/bg-pattern';
+import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 function VideoPlaySVG() {
   return (
@@ -91,7 +93,7 @@ export default function AcademicsPage() {
           priority
         />
         <div className='absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center text-white'>
-          {/* <Dialog>
+          <Dialog>
             <DialogTrigger asChild>
               <Button
                 variant='ghost'
@@ -107,7 +109,7 @@ export default function AcademicsPage() {
               </DialogTitle>
               <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
             </DialogContent>
-          </Dialog> */}
+          </Dialog>
 
           <h3 className='mb-4 text-2xl font-medium'>Enrichment Programmes In The Kulish School</h3>
           <p className='max-w-3xl px-4'>
