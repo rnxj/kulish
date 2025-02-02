@@ -127,7 +127,7 @@ export default function AcademicsPage() {
           <p>
             At The Kulish School, we believe in nurturing the whole child by offering a variety of
             enrichment programmes that complement our core curriculum. These programs are designed
-            to develop essentiai life skills, spark curiosity, and inspire a love of learning.
+            to develop essential life skills, spark curiosity, and inspire a love of learning.
             <br />
             Here are the skill-based opportunities available for our primary students:
           </p>
@@ -164,8 +164,8 @@ export default function AcademicsPage() {
               At The Kulish School, we believe in starting early to equip students with essential
               life skills. Our Financial Literacy program introduces Nursery students to saving,
               budgeting, and informed decision-making, laying a foundation for confident money
-              management. Through interactive activities and real- life simulations, students
-              develop patience, goal-setting. critical thinking, and risk assessment.
+              management. Through interactive activities and real-life simulations, students develop
+              patience, goal-setting, critical thinking, and risk assessment.
             </p>
 
             <p className='text-gray-800'>
@@ -259,7 +259,7 @@ export default function AcademicsPage() {
               </p>
 
               <p className='text-gray-800'>
-                The program enhances innovation, problem-solving. leadership, and critical thinking.
+                The program enhances innovation, problem-solving, leadership, and critical thinking.
                 Students gain confidence in managing finances and making informed decisions,
                 building a solid foundation for their future.
               </p>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import { BgPattern } from '@/components/bg-pattern';
 
-export default function AcademicsPage() {
+export default function KeyInformationPage() {
   return (
     <main className='min-h-screen'>
       {/* Hero Section */}
@@ -61,8 +61,8 @@ export default function AcademicsPage() {
             <div className='flex h-full flex-col justify-start space-y-6'>
               <p className='text-gray-800'>
                 At The Kulish School, we believe in nurturing the holistic development of our
-                students through a well-rounded curriculum that includes the 3Is—Innovation,
-                Initiative & Impact. Our 3I program is designed to instill a sense of
+                students through a well-rounded curriculum that includes the '3Is'—Innovation,
+                Initiative & Impact. Our '3Is' program is designed to instill a sense of
                 responsibility, teamwork, and empathy in our young learners. Through a variety of
                 engaging and meaningful activities, we encourage students to become active,
                 compassionate, and lifelong learners who understand the importance of contributing
@@ -156,8 +156,8 @@ export default function AcademicsPage() {
                       Local Environmental Projects:
                     </h3>
                     <p className='text-xs text-gray-700'>
-                      Students take part in activities such as Xeriscaping, reconstructive recycling
-                      drives, and sustainability rights & awareness campaigns.
+                      Students take part in activities such as Xeriscaping, recycling drives, and
+                      sustainability rights & awareness campaigns.
                     </p>
                   </div>
                   <div>
@@ -292,8 +292,8 @@ export default function AcademicsPage() {
                 </p>
                 <p className='text-md font-bold text-gray-800'>Sports Teams and Clubs</p>
                 <p className='text-sm text-gray-700'>
-                  Students can join teams or clubs for sports like soccer, basketball, Volleyball,
-                  Skating where they learn the importance of cooperation and sportsmanship.
+                  Students can join teams or clubs for sports like soccer, basketball, volleyball,
+                  and skating, where they learn the importance of cooperation and sportsmanship.
                 </p>
               </div>
             </div>

@@ -97,19 +97,19 @@ export default function HomePage() {
     {
       title: 'Holistic Development',
       description:
-        'Balancing academic excellence with personal growth through edracumcuior activities and character education.',
+        'Balancing academic excellence with personal growth through extracurricular activities and character education.',
       image: '/landing/overview/holistic-development.png',
     },
     {
       title: 'Innovative Learning',
       description:
-        'Utilaing cutting-edge technology and teaching methods to foster critical thinking and problem solving skills',
+        'Utilizing cutting-edge technology and teaching methods to foster critical thinking and problem-solving skills',
       image: '/landing/overview/innovative-learning.png',
     },
     {
       title: 'Rich Cultural Heritage',
       description:
-        "Integrating india's rich cultural heritage into our adsicational approach to create a wel-rounded leaming experience",
+        "Integrating India's rich cultural heritage into our educational approach to create a well-rounded learning experience",
       image: '/landing/overview/rich-cultural-heritage.png',
     },
   ];

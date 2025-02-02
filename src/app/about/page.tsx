@@ -211,8 +211,8 @@ export default function AboutPage() {
               The Kulish School is associated with the Patrika Group, one of the most widely
               recognized and accomplished media houses in the world. The Patrika Group is dedicated
               to democracy and promotes cherished values enshrined in the Indian Constitution.
-              Forbes describes it as "Keeping readers above advertisers", The New York Times calls
-              it "Civic-minded hyper-local with large circulation", and a Wharton University article
+              Forbes describes it as "Keeping readers above advertisers," The New York Times calls
+              it "Civic-minded hyper-local with large circulation," and a Wharton University article
               describes it as a "Publishing House with pan-India presence." It is among the three
               most trusted newspapers according to a BBC-Reuters survey and among Asia's five top
               community newspapers per AMIC UNESCO.
@@ -281,7 +281,7 @@ export default function AboutPage() {
             className='flex h-full flex-col justify-center space-y-6 lg:p-8'
           >
             <p className='text-gray-800'>
-              Karpoor Chadra 'Kulish' was born in the village Soda, Rajasthan. Since childhood, he
+              Karpoor Chandra 'Kulish' was born in the village Soda, Rajasthan. Since childhood, he
               aspired to scale new heights. His fiery verses were revolutionary, promising the
               common man liberation, in a world gripped by chains. His verses articulated the
               essence of strife, the prescience of upheaval to bring about the dawn of a new era; he
@@ -290,7 +290,7 @@ export default function AboutPage() {
 
             <p className='text-gray-800'>
               In his poetic musings, there resided a profound belief in the potential for
-              transformation, in the resilience of the human spirit against adversity, drawing
+              transformation and the resilience of the human spirit against adversity, drawing
               inspiration from mythological narratives of cosmic battles, where righteousness
               eternally triumphs over malevolence. Karpoor Chandra adopted the pen name "Kulish,"
               which signified the very lightning that the Vedic Indra wielded against the demon of

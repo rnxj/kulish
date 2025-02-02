@@ -133,9 +133,9 @@ export default function CampusLifePage() {
               <br />
               TKS hosts regular in-house workshops conducted by distinguished experts in the field
               of education. These workshops cover a wide range of topics, from innovative teaching
-              methods to the latest educational technologies. By bringing experts directly to our
-              staff, we provide immediate and relevant professional development that can be directly
-              applied in the classroom.
+              methods to the latest educational technologies. By bringing experts to our staff, we
+              provide immediate and relevant professional development that can be applied in the
+              classroom.
             </p>
 
             <p className='text-gray-800'>
@@ -159,7 +159,7 @@ export default function CampusLifePage() {
             <p className='text-gray-800'>
               <strong>Future Plans: Teacher Exchange Programmes</strong>
               <br />
-              Looking ahead, TKS plans to initiate teacher exchange programs with schools across the
+              Looking ahead, TKS plans to launch teacher exchange programs with schools across the
               nation. These programs will enable our teachers to experience different educational
               environments, learn from diverse practices, and bring back innovative ideas to enhance
               our own teaching and learning practices. The exchange programs aim to foster
