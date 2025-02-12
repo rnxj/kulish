@@ -55,6 +55,7 @@ export default function AcademicsPage() {
         'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize',
       image: '/academics/carousel/main-1.jpg',
       logo: '/academics/carousel/logo-1.png',
+      href: '/stages/early-years'
     },
     {
       title: 'Primary Years Programme',
@@ -62,6 +63,7 @@ export default function AcademicsPage() {
         'The Primary School, offering international curriculum caters to students from Nursery to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing ',
       image: '/academics/carousel/main-2.jpg',
       logo: '/academics/carousel/logo-2.png',
+      href: '/stages/primary-school'
     },
     {
       title: 'Middle Years',
@@ -69,6 +71,7 @@ export default function AcademicsPage() {
         'The Middle Years curriculum (national and international) is designed to give the learners a robust and rigorous academic learning experience. The learners will be exposed to various disciplines',
       image: '/academics/carousel/main-3.jpg',
       logo: '/academics/carousel/logo-3.png',
+      href: '/stages/middle-school'
     },
   ];
 
@@ -173,7 +176,7 @@ export default function AcademicsPage() {
                     <h5 className='mb-2 font-medium'>{program.title}</h5>
                     <p className='mb-2 text-xs text-gray-600'>{program.description}</p>
                     <Button variant='link' className='p-0 text-sky-600'>
-                      Read More
+                      <a href={program.href}>Read More</a>
                     </Button>
                   </div>
                 </div>

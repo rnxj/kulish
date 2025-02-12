@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { ChevronDown, Facebook, Linkedin, Menu, Twitter, Youtube } from 'lucide-react';
+import { ChevronDown, Facebook, Instagram, Linkedin, Menu, Twitter, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -34,10 +34,10 @@ export const Navbar = () => {
     { href: '/about', 
       label: 'About Us',
       submenu: [
-        { href: '/about/vision', label: 'Vision' },
-        { href: '/about/mission', label: 'Mission' },
-        { href: '/about/legacy', label: 'Our Legacy - Patrika Group' },
-        { href: '/about/leadership-team', label: 'Leadership Team' },
+        { href: '/about/#vision', label: 'Vision' },
+        { href: '/about/#mission', label: 'Mission' },
+        { href: '/about/#legacy', label: 'Our Legacy - Patrika Group' },
+        { href: '/about/#leadership-team', label: 'Leadership Team' },
       ],
      },
     { href: '/key-information', label: 'Key Information' },
@@ -60,10 +60,9 @@ export const Navbar = () => {
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: '#' },
-    { icon: Facebook, href: '#' },
-    { icon: Youtube, href: '#' },
-    { icon: Linkedin, href: '#' },
+    { icon: Facebook, url: 'https://www.facebook.com/thekulishschool/' },
+    { icon: Instagram, url: 'https://www.instagram.com/the_kulish_school/'  },
+    { icon: Linkedin, url:'https://www.linkedin.com/company/the-kulish-school-jaipur/'},
   ];
 
   return (
@@ -128,20 +127,20 @@ export const Navbar = () => {
 
           {/* Social Icons & CTA */}
           <div className='hidden items-center space-x-4 lg:flex'>
-            {/* <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2'>
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
                   <Link
                     key={index}
-                    href={social.href}
+                    href={social.url}
                     className='rounded-full bg-white/10 p-1.5 text-white transition-colors hover:bg-white/20'
                   >
                     <Icon className='h-4 w-4' />
                   </Link>
                 );
               })}
-            </div> */}
+            </div>
             {/* <Button className='bg-white text-sky-500 hover:bg-white/90'>Call to Action</Button> */}
           </div>
 
