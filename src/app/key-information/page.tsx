@@ -44,21 +44,21 @@ export default function KeyInformationPage() {
           { orientation: 'vertical', start: 0.03, end: 0.97, position: 0.33, variant: 'dashed' },
         ]}
       >
-        <div className='container mx-auto p-4 md:py-12'>
+        <div className='container mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Innovation, Initiative
               <br />& Impact at The Kulish
               <br />
               School
             </h2>
-          </div>
+          </div> */}
 
           {/* Content Container */}
-          <div className='grid grid-cols-1 gap-8 lg:grid-cols-[1fr_2fr]'>
+          <div className='grid grid-cols-1 gap-8 '>
             {/* Left Column - Text */}
-            <div className='flex h-full flex-col justify-start space-y-6'>
+            {/* <div className='flex h-full flex-col justify-start space-y-6'>
               <p className='text-gray-800'>
                 At The Kulish School, we believe in nurturing the holistic development of our
                 students through a well-rounded curriculum that includes the '3Is'—Innovation,
@@ -68,7 +68,7 @@ export default function KeyInformationPage() {
                 compassionate, and lifelong learners who understand the importance of contributing
                 to their communities.
               </p>
-            </div>
+            </div> */}
 
             {/* Right Column - Cards */}
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
@@ -79,7 +79,7 @@ export default function KeyInformationPage() {
                   alt='Innovation'
                   width={400}
                   height={400}
-                  className='h-[300px] w-full object-cover'
+                  className='h-[500px] w-full object-cover'
                 />
                 <div className='bg-blue-600 p-4 text-center text-white'>
                   <h5 className='font-serif font-normal'>INNOVATION</h5>
@@ -93,7 +93,7 @@ export default function KeyInformationPage() {
                   alt='Initiative'
                   width={400}
                   height={400}
-                  className='h-[300px] w-full object-cover'
+                  className='h-[500px] w-full object-cover'
                 />
                 <div className='bg-[#3aa4b4] p-4 text-center text-white'>
                   <h5 className='font-serif font-normal'>INITIATIVE</h5>
@@ -107,7 +107,7 @@ export default function KeyInformationPage() {
                   alt='Impact'
                   width={400}
                   height={400}
-                  className='h-[300px] w-full object-cover'
+                  className='h-[500px] w-full object-cover'
                 />
                 <div className='bg-[#5cbccb] p-4 text-center text-white'>
                   <h5 className='font-serif font-normal'>IMPACT</h5>
@@ -119,7 +119,7 @@ export default function KeyInformationPage() {
       </BgPattern>
 
       {/* Innovation Section */}
-      <BgPattern
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.03, variant: 'dashed' },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
@@ -127,20 +127,20 @@ export default function KeyInformationPage() {
           { orientation: 'vertical', start: 0.03, end: 0.97, position: 0.33, variant: 'dashed' },
         ]}
       >
-        <div className='container mx-auto p-4 md:py-12'>
+        <div className='container mx-auto p-4 md:py-12'> */}
           {/* Title */}
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Innovation
             </h2>
-          </div>
+          </div> */}
 
           {/* Container */}
-          <div className='grid grid-cols-1 gap-8 lg:grid-cols-[2fr_1fr]'>
+          {/* <div className='grid grid-cols-1 gap-8 lg:grid-cols-[2fr_1fr]'> */}
             {/* Content Columns */}
-            <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
+            {/* <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'> */}
               {/* First Column */}
-              <div className='flex h-full flex-col justify-start space-y-4'>
+              {/* <div className='flex h-full flex-col justify-start space-y-4'>
                 <p className='text-xs text-gray-800'>
                   Our community-focused innovation initiatives aim to connect students with the
                   world around them, fostering a sense of belonging and purpose. Students
@@ -170,10 +170,10 @@ export default function KeyInformationPage() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Second Column */}
-              <div className='flex h-full flex-col justify-start space-y-4'>
+              {/* <div className='flex h-full flex-col justify-start space-y-4'>
                 <p className='text-xs text-gray-800'>
                   The Kulish School are cutting-edge spaces designed to inspire curiosity and
                   creativity in students through hands-on exploration. Built around the themes of
@@ -186,10 +186,10 @@ export default function KeyInformationPage() {
                   innovation. These interdisciplinary experiences empower students to think
                   critically, collaborate, and develop practical solutions to complex problems.
                 </p>
-              </div>
+              </div> */}
 
               {/* Third Column */}
-              <div className='flex h-full flex-col justify-start space-y-4'>
+              {/* <div className='flex h-full flex-col justify-start space-y-4'>
                 <div className='space-y-3'>
                   <div>
                     <h3 className='text-xs font-medium text-gray-800'>Cultural Celebrations:</h3>
@@ -218,10 +218,10 @@ export default function KeyInformationPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Image Grid */}
-            <div className='grid grid-cols-2 gap-4'>
+            {/* <div className='grid grid-cols-2 gap-4'>
               <Image
                 src='/key-information/innovation/1.jpg'
                 alt='Innovation Activity 1'
@@ -253,10 +253,10 @@ export default function KeyInformationPage() {
             </div>
           </div>
         </div>
-      </BgPattern>
+      </BgPattern> */}
 
       {/* Initiative Section */}
-      <BgPattern
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.03, variant: 'dashed' },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
@@ -264,18 +264,18 @@ export default function KeyInformationPage() {
           { orientation: 'vertical', start: 0.03, end: 0.97, position: 0.33, variant: 'dashed' },
         ]}
       >
-        <div className='container mx-auto p-4 md:py-12'>
+        <div className='container mx-auto p-4 md:py-12'> */}
           {/* Title */}
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Initiative
             </h2>
-          </div>
+          </div> */}
 
           {/* Container */}
-          <div className='grid grid-cols-1 gap-8 lg:grid-cols-[3fr_4fr]'>
+          {/* <div className='grid grid-cols-1 gap-8 lg:grid-cols-[3fr_4fr]'> */}
             {/* Content Columns */}
-            <div className='flex flex-col justify-start space-y-4'>
+            {/* <div className='flex flex-col justify-start space-y-4'>
               <Image
                 src='/key-information/initiative/1.jpg'
                 alt='Initiative Activity 1'
@@ -296,9 +296,9 @@ export default function KeyInformationPage() {
                   and skating, where they learn the importance of cooperation and sportsmanship.
                 </p>
               </div>
-            </div>
+            </div> */}
             {/* Image Grid */}
-            <div className='flex flex-col justify-start space-y-4'>
+            {/* <div className='flex flex-col justify-start space-y-4'>
               <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
                 <Image
                   src='/key-information/initiative/2.png'
@@ -337,10 +337,10 @@ export default function KeyInformationPage() {
             </div>
           </div>
         </div>
-      </BgPattern>
+      </BgPattern> */}
 
       {/* Impact Section */}
-      <BgPattern
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.03, variant: 'dashed' },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
@@ -348,18 +348,18 @@ export default function KeyInformationPage() {
           { orientation: 'vertical', start: 0.03, end: 0.97, position: 0.33, variant: 'dashed' },
         ]}
       >
-        <div className='container mx-auto p-4 md:py-12'>
+        <div className='container mx-auto p-4 md:py-12'> */}
           {/* Title */}
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Impact
             </h2>
-          </div>
+          </div> */}
 
           {/* Container */}
-          <div className='grid grid-cols-1 gap-8 lg:grid-cols-[3fr_4fr]'>
+          {/* <div className='grid grid-cols-1 gap-8 lg:grid-cols-[3fr_4fr]'> */}
             {/* Content Columns */}
-            <div>
+            {/* <div>
               <Image
                 src='/key-information/impact-lines.jpg'
                 alt='Impact Activity 1'
@@ -367,10 +367,10 @@ export default function KeyInformationPage() {
                 height={300}
                 className='h-[400px] w-full object-cover'
               />
-            </div>
+            </div> */}
 
             {/* Image Grid */}
-            <div className='flex flex-col justify-start space-y-4'>
+            {/* <div className='flex flex-col justify-start space-y-4'>
               <p className='text-sm text-gray-800'>
                 An assessment of real impact is what drives our service activities. Impact
                 activities are integral to our 3l program, as they encourage students to act on
@@ -405,10 +405,10 @@ export default function KeyInformationPage() {
             </div>
           </div>
         </div>
-      </BgPattern>
+      </BgPattern> */}
 
       {/* Education for sustainability Section */}
-      <BgPattern
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.03, variant: 'dashed' },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
@@ -417,9 +417,9 @@ export default function KeyInformationPage() {
         ]}
       >
         <div className='container mx-auto p-4 md:py-12'>
-          <div className='grid grid-cols-1 gap-8 lg:grid-cols-[4fr_3fr]'>
+          <div className='grid grid-cols-1 gap-8 lg:grid-cols-[4fr_3fr]'> */}
             {/* Content Columns */}
-            <div className='flex h-full flex-col justify-center'>
+            {/* <div className='flex h-full flex-col justify-center'>
               <div className='mb-12 max-w-[60%]'>
                 <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                   Education for
@@ -447,9 +447,9 @@ export default function KeyInformationPage() {
                   meaningful and practical ways
                 </p>
               </div>
-            </div>
+            </div> */}
             {/* Image Grid */}
-            <div className='grid grid-cols-2 gap-4'>
+            {/* <div className='grid grid-cols-2 gap-4'>
               <div className='flex flex-col gap-4'>
                 <div className='h-[10%]' />
                 <div className='relative aspect-square h-[70%] overflow-hidden'>
@@ -491,7 +491,7 @@ export default function KeyInformationPage() {
             </div>
           </div>
         </div>
-      </BgPattern>
+      </BgPattern> */}
     </main>
   );
 }

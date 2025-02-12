@@ -31,7 +31,15 @@ export const Navbar = () => {
   const isHome = pathname === '/';
 
   const menuItems = [
-    { href: '/about', label: 'About Us' },
+    { href: '/about', 
+      label: 'About Us',
+      submenu: [
+        { href: '/about/vision', label: 'Vision' },
+        { href: '/about/mission', label: 'Mission' },
+        { href: '/about/legacy', label: 'Our Legacy - Patrika Group' },
+        { href: '/about/leadership-team', label: 'Leadership Team' },
+      ],
+     },
     { href: '/key-information', label: 'Key Information' },
     { href: '/news-events', label: 'News & Events' },
     {
@@ -39,7 +47,6 @@ export const Navbar = () => {
       label: 'Academics',
       submenu: [
         { href: '/academics', label: 'Curriculum Overview' },
-        { href: '/academics/leadership-team', label: 'Leadership Team' },
         { href: '/academics/enrichment-programmes', label: 'Enrichment Programmes' },
         { href: '/academics/campus-life', label: 'Campus Life' },
         {

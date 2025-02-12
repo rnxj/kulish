@@ -53,36 +53,71 @@ function VideoPlaySVG() {
 export default function HomePage() {
   const heroImages = [
     {
-      src: '/landing/slider/1.jpg',
+      src: '/landing/slider/SLIDER 1.jpg',
       title: 'WELCOME TO',
       heading: 'The Kulish School',
       description:
         'The Kulish School emerges as a future-ready institution, guided by a visionary approach to education. It is a school at the forefront of cutting-edge and evolved learning.',
     },
     {
-      src: '/landing/slider/2.jpg',
+      src: '/landing/slider/SLIDER 2.jpg',
       title: 'OUR MISSION',
       heading: 'Inspiring Excellence',
       description:
         'We strive to create an environment where every student can discover their potential and develop into confident, compassionate global citizens.',
     },
     {
-      src: '/landing/slider/3.jpg',
+      src: '/landing/slider/SLIDER 3.jpg',
       title: 'OUR VISION',
       heading: 'Future Ready',
       description:
         "Preparing students for tomorrow's world through innovative teaching methods, cutting-edge technology, and a values-based approach to education.",
     },
     {
-      src: '/landing/slider/4.jpg',
+      src: '/landing/slider/SLIDER 4.jpg',
       title: 'OUR VALUES',
       heading: 'Character Building',
       description:
         'We believe in nurturing not just academic excellence, but also strong moral values, leadership skills, and social responsibility.',
     },
     {
-      src: '/landing/slider/5.jpg',
+      src: '/landing/slider/SLIDER 5.jpg',
       title: 'JOIN US',
+      heading: 'Begin Your Journey',
+      description:
+        'Take the first step towards providing your child with an education that will shape their future and open doors to endless possibilities.',
+    },
+    {
+      src: '/landing/slider/SLIDER 6.jpg',
+      title: 'WELCOME TO',
+      heading: 'Global Curriculum',
+      description:
+        'Offering both National and International Boards Including CBSE and IB, to provide a comprehensive education.',
+    },
+    {
+      src: '/landing/slider/SLIDER 7.jpg',
+      title: '',
+      heading: 'Holistic Development ',
+      description:
+        'Balancing academic excellence with personal growth through extracurricular activities and character education.',
+    },
+    {
+      src: '/landing/slider/SLIDER 8.jpg',
+      title: '',
+      heading: 'Innovative Learning',
+      description:
+        'Utilizing cutting-edge technology and teaching methods to foster critical thinking and problem-solving skills.',
+    },
+    {
+      src: '/landing/slider/SLIDER 9.jpg',
+      title: '',
+      heading: 'Rich Cultural Heritage',
+      description:
+        'Integrating India\'s rich cultural heritage into our educational approach to create a well-rounded learning experience.',
+    },
+    {
+      src: '/landing/slider/SLIDER 10.jpg',
+      title: '',
       heading: 'Begin Your Journey',
       description:
         'Take the first step towards providing your child with an education that will shape their future and open doors to endless possibilities.',
@@ -274,8 +309,8 @@ export default function HomePage() {
 
         {/*  Overview */}
 
-        <div className='grid grid-cols-1 gap-6 px-4 py-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
-          {overview.map((item, index) => (
+        <div className='grid grid-cols-1 w-full place-items-center gap-6 px-4 py-12 items-center justify-center text-center sm:grid-cols-1'>
+          {/* {overview.map((item, index) => (
             <div key={index} className='flex flex-col items-start gap-4 text-left'>
               <Image
                 src={item.image}
@@ -289,9 +324,33 @@ export default function HomePage() {
                 <p className='text-sm'>{item.description}</p>
               </div>
             </div>
-          ))}
+          ))} */}
+
+{/* <div className='absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center text-white'> */}
+          {/* <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant='ghost'
+                size='icon'
+                className='mb-4 h-16 w-16 rounded-full bg-white/20 p-0 hover:bg-white/30 [&_svg]:h-full [&_svg]:w-full'
+              >
+                <VideoPlaySVG />
+              </Button>
+            </DialogTrigger>
+            <DialogContent className='p-0 sm:max-w-[800px]'>
+              <DialogTitle className='hidden '>Video Tour in The Kulish School </DialogTitle>
+              <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
+            </DialogContent>
+          </Dialog> */}
+          <h3 className='mb-4 text-2xl  text-sky-500 font-bold'>Video Tour in The Kulish School </h3>
+          <p className='max-w-3xl text-center px-4'>
+            Experience The Kulish School through our tour video, showcasing every corner of our
+            vibrant campus. Discover why we are the best choice for your child's education!
+          </p>
         </div>
-      </div>
+
+        </div>
+      {/* </div> */}
 
       {/* Video Section */}
       <section className='relative h-[70vh] w-full'>
@@ -299,7 +358,7 @@ export default function HomePage() {
           src='/landing/video-thumbnail.png'
           alt='Curriculum Video Thumbnail'
           fill
-          className='object-cover'
+          className='object-cover grayscale-[100]'
           priority
         />
         <div className='absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center text-white'>
@@ -315,14 +374,14 @@ export default function HomePage() {
             </DialogTrigger>
             <DialogContent className='p-0 sm:max-w-[800px]'>
               <DialogTitle className='hidden'>Video Tour in The Kulish School </DialogTitle>
-              <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
+              <video controls autoPlay className='h-full backdrop-grayscale-[100] w-full' src='/academics/video.mp4' />
             </DialogContent>
           </Dialog>
-          <h3 className='mb-4 text-2xl font-medium'>Video Tour in The Kulish School </h3>
+          {/* <h3 className='mb-4 text-2xl font-medium'>Video Tour in The Kulish School </h3>
           <p className='max-w-3xl px-4'>
             Experience The Kulish School through our tour video, showcasing every corner of our
             vibrant campus. Discover why we are the best choice for your child's education!
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -640,9 +699,9 @@ export default function HomePage() {
       </section>
 
       {/* Vision, Mission, Approach and Outlook */}
-      <div className='mx-auto max-w-7xl space-y-12 px-4 py-8 sm:space-y-24 sm:py-12'>
+      {/* <d      iv className='mx-auto max-w-7xl space-y-12 px-4 py-8 sm:space-y-24 sm:py-12'> */}
         {/* Vision Section */}
-        <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
+        {/* <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
           <div className='relative'>
             <h2 className='text-center text-3xl font-light tracking-wide text-gray-700 sm:text-right sm:text-4xl md:pr-4'>
               VISION
@@ -660,10 +719,10 @@ export default function HomePage() {
               interconnected world.
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* Mission Section */}
-        <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
+        {/* <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
           <h2 className='text-center text-3xl font-light tracking-wide text-gray-700 sm:text-right sm:text-4xl md:pr-4'>
             MISSION
           </h2>
@@ -717,10 +776,10 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Approach and Outlook Section */}
-        <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
+        {/* <section className='flex flex-col gap-4 sm:gap-8 md:grid md:grid-cols-[2fr_3fr]'>
           <h2 className='text-center text-3xl font-light tracking-wide text-gray-700 sm:text-right sm:text-4xl md:pr-4'>
             APPROACH
             <br />
@@ -750,7 +809,7 @@ export default function HomePage() {
             </p>
           </div>
         </section>
-      </div>
+      </div> */}
 
       {/* Awards */}
       <div className='grid grid-cols-2 gap-8 bg-sky-600 px-6 py-16 text-center text-white sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5'>
