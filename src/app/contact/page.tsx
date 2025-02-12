@@ -16,12 +16,12 @@ export default function ContactPage() {
         <Image src='/contact/hero.jpg' alt='Hero image' fill className='object-cover' priority />
       </motion.div>
 
-      <div className='py-8 text-center'>
+      {/* <div className='py-8 text-center'>
         <h2 className='text-2xl font-bold text-gray-800'>Contact Us</h2>
         <p className='mt-2 text-gray-600'>
           Call us at: <a href='tel:+919057531015'>+91 90575 31015</a>
         </p>
-      </div>
+      </div> */}
 
       {/* Contact Form Section */}
       {/* <ContactForm /> */}

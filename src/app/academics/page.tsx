@@ -50,23 +50,23 @@ function VideoPlaySVG() {
 export default function AcademicsPage() {
   const academicPrograms = [
     {
-      title: 'Early Years & Primary Years',
+      title: 'Early Years',
       description:
-        'A Nurturing Start: The Early Years Curriculum At our school, the Early Years curriculum provides a warm, stimulating environment where young learers thrive. By fostering natural curiosity and a love for',
+        'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize',
       image: '/academics/carousel/main-1.jpg',
       logo: '/academics/carousel/logo-1.png',
     },
     {
-      title: ' Middle School',
+      title: 'Primary Years Programme',
       description:
-        'Physical activity is an essential component of our 3l program, promoting a healthy lifestyle and the development of motor skills. We offer a wide range of sports and physical activities that not only enhance',
+        'The Primary School, offering international curriculum caters to students from Nursery to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing ',
       image: '/academics/carousel/main-2.jpg',
       logo: '/academics/carousel/logo-2.png',
     },
     {
-      title: 'High School',
+      title: 'Middle Years',
       description:
-        'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
+        'The Middle Years curriculum (national and international) is designed to give the learners a robust and rigorous academic learning experience. The learners will be exposed to various disciplines',
       image: '/academics/carousel/main-3.jpg',
       logo: '/academics/carousel/logo-3.png',
     },
@@ -211,11 +211,7 @@ export default function AcademicsPage() {
             </h2>
 
             <p className='text-gray-800'>
-              As we embrace the transformative impact of AI and automation in the job market, it's
-              crucial to prepare our students with the skills and opportunities needed. The Kulish
-              School, in collaboration with esteemed partners, aims to equip students with the
-              skills and knowledge necessary for the future. By combining traditional learning
-              facets, we can ensure that our students are empowered to thrive in the age of AI.
+            As we embrace the transformative impact of AI and automation in the job market, it's crucial to prepare our students with the skills and opportunities needed. The Kulish School, in collaboration with esteemed partners, aims to equip students with the skills and knowledge necessary for the future. By combining traditional learning facets, we can ensure that our students are empowered to thrive in the age of AI.
             </p>
           </motion.div>
 

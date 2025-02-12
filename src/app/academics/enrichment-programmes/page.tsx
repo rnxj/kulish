@@ -275,7 +275,7 @@ export default function AcademicsPage() {
         </div>
       </BgPattern>
 
-      <BgPattern
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.1 },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.9, variant: 'dashed' },
@@ -342,10 +342,85 @@ export default function AcademicsPage() {
             </p>
           </motion.div>
         </div>
+      </BgPattern> */}
+
+      {/* Stem  Section */}
+      <BgPattern
+        lines={[
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.1 },
+          { orientation: 'horizontal', start: 0, end: 0.58, position: 0.27, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.92, variant: 'dashed' },
+          { orientation: 'vertical', start: 0.1, end: 0.92, position: 0.1 },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.58 },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.56, variant: 'dashed' },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
+        ]}
+      >
+        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[4fr_3fr]'>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className='flex h-full flex-col justify-start space-y-6 lg:px-24'
+          >
+            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            STEM
+                <br /> (Science, Technology, Engineering,
+                <br /> and Mathematics)
+            </h2>
+
+            <p className='text-gray-800'>
+              Welcome to the STEM Lab at The Kulish School, where we inspire and empower our
+              students to explore the exciting world of Science, Technology, Engineering, and
+              Mathematics (STEM). Our lab is a dynamic space designed to foster creativity, critical
+              thinking, and hands-on learning.
+            </p>
+
+            <p className='text-gray-800'>
+              Through engaging activities, students gain practical experience and deepen their
+              understanding of STEM concepts that are applicable to real-world challenges. In the
+              STEM Lab, students participate in projects that include robotics and engineering,
+              scientific experiments, and problem-solving.
+            </p>
+
+            <p className='text-gray-800'>
+              These activities allow them to develop skills that are not only essential for their
+              academic growth but also highly valuable for their future careers. Students are
+              encouraged to work collaboratively on projects, where they can apply their knowledge
+              to solve problems, create solutions and effectively communicate their ideas.
+            </p>
+
+            <p className='text-gray-800'>
+              Our state-of-the-art equipment and resources provide students with the tools they need
+              to innovate and create. At The Kulish School, we bridge the gap between classroom
+              learning and real-world applications, preparing our students for the exciting
+              opportunities.
+            </p>
+          </motion.div>
+
+          <div className='flex justify-center'>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className='w-[400px]'
+            >
+              <Image
+                src='/enrichment-programmes/bento/1.jpg'
+                alt='Patrika Group Logo'
+                width={600}
+                height={800}
+                className='h-[700px] w-full rounded-2xl object-cover'
+              />
+            </motion.div>
+          </div>
+        </div>
       </BgPattern>
 
       {/* Bento Grid */}
-      <BgPattern
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.1 },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.9, variant: 'dashed' },
@@ -401,10 +476,72 @@ export default function AcademicsPage() {
             />
           </motion.div>
         </div>
-      </BgPattern>
+      </BgPattern> */}
 
       {/* Tinkering */}
+
       <BgPattern
+        lines={[
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.1 },
+          { orientation: 'horizontal', start: 0, end: 0.58, position: 0.27, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.88, variant: 'dashed' },
+          { orientation: 'vertical', start: 0.1, end: 0.88, position: 0.1 },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.58 },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.56, variant: 'dashed' },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
+        ]}
+      >
+        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[3fr_2fr]'>
+          <div className='flex justify-center'>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className='w-[600px]'
+            >
+              <Image
+                src='/enrichment-programmes/tinkering/1.jpg'
+                alt='Tinkering Image'
+                width={600}
+                height={600}
+                className='h-[500px] w-full rounded-2xl object-cover'
+              />
+            </motion.div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className='flex h-full flex-col justify-start space-y-6'
+          >
+            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            Tinkering
+            </h2>
+
+            <div className='flex flex-col space-y-2'>
+            <p className='text-gray-800'>
+              The Tinkering program promotes creativity and problem-solving by encouraging students
+              to explore, experiment, and invent in a hands-on environment. Students use tools and
+              materials to build projects, such as taking apart electronics or creating prototypes
+              with 3D printers and robotics kits.
+            </p>
+
+            <p className='text-gray-800'>
+              The program emphasizes key skills like creativity, resilience, and a growth mindset,
+              teaching students that persistence and experimentation lead to innovation. By engaging
+              in practical activities, students develop engineering principles, design thinking, and
+              confidence in problem-solving. Overall, the Tinkering program equips students with
+              valuable skills and a mindset for success in a technology-driven world, fostering
+              innovative thinkers ready to tackle future challenges.
+            </p>
+            </div>
+          </motion.div>
+        </div>
+      </BgPattern>
+
+      {/* <BgPattern
         lines={[
           { orientation: 'horizontal', start: 0, end: 1, position: 0.025 },
           { orientation: 'horizontal', start: 0, end: 1, position: 0.189 },
@@ -444,9 +581,9 @@ export default function AcademicsPage() {
               innovative thinkers ready to tackle future challenges.
             </p>
           </motion.div>
-          <div className='flex justify-center gap-4'>
+          <div className='flex justify-center gap-4'> */}
             {/* First Column */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -468,10 +605,10 @@ export default function AcademicsPage() {
                 height={400}
                 className='h-[15%] w-[300px] object-cover object-bottom'
               />
-            </motion.div>
+            </motion.div> */}
 
             {/* Second Column */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -496,7 +633,7 @@ export default function AcademicsPage() {
             </motion.div>
           </div>
         </div>
-      </BgPattern>
+      </BgPattern> */}
 
       {/* Geobiology */}
       <BgPattern
