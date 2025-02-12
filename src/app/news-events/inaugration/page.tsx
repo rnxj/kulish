@@ -1,0 +1,66 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+
+import { BgPattern } from '@/components/bg-pattern';
+
+export default function InaugrationPage() {
+  const inaugrationGrid = [
+    { key:1, src:"/news-events/inaugration/1.jpg" },
+    { key:2, src:"/news-events/inaugration/2.jpg" },
+    { key:3, src:"/news-events/inaugration/3.jpg" },
+    { key:4, src:"/news-events/inaugration/4.jpg" },
+    { key:5, src:"/news-events/inaugration/5.jpg" },
+    { key:6, src:"/news-events/inaugration/6.jpg" },
+  ];
+
+  return (
+    <main className='min-h-screen'>
+      {/* Hero Section */}
+      <div className='relative h-[70vh] w-full overflow-hidden'>
+        <Image
+          src='/news-events/inaugration/TOP.jpg'
+          alt='Academics Hero'
+          fill
+          className='object-cover transition-transform duration-500 hover:scale-110'
+          priority
+        />
+      </div>
+
+      {/* Info Section */}
+      <section className='bg-[#f7f7f7] px-5 py-10'>
+        <div className='container mx-auto text-center'>
+          <h2 className='mb-4 font-serif text-3xl font-light text-[#333]'>Vice President Jagdeep Dhankhar inaugurated<br/> The Kulish School located in Jagatpura in the capital Jaipur</h2>
+          {/* <h3 className='mb-5 text-xl font-normal text-[#555]'>Kulish Community Service Program</h3> */}
+          <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
+          Hon'ble Vice-President, Shri Jagdeep Dhankhar and Dr.Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan
+          </p>
+        </div>
+      </section>
+
+      {/* Cards Section */}
+      <div className='container mx-auto p-4 w-10/12 md:py-12'>
+            <div className='grid grid-cols-1 gap-8 '>
+      
+                  <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+                  {inaugrationGrid.map((imgMap, index) =>(
+                  <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+                      <Image
+                        src={imgMap.src}
+                        alt='Tech Lab Grid'
+                        key={index}
+                        width={200}
+                        height={200}
+                        className='h-[400px] w-[400px] object-cover'
+                      />
+                    </div>
+                    )
+                  )}
+                  </div>
+                </div>
+            </div>
+    </main>
+  );
+}

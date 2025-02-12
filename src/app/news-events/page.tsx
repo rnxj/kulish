@@ -16,24 +16,28 @@ export default function AcademicsPage() {
       description:
         "Hon'ble Vice-President, Shri Jagdeep Dhankhar and Dr.Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan",
       image: '/news-events/highlights/1.jpg',
+      bg: 'bg-[#3aa4b4]'
     },
     {
       title: 'The Kulish School Inauguration',
       description:
         'Vice President Jagdeep Dhankhar inaugurated The Kulish School located in Jagatpura in the capital Jaipur.',
       image: '/news-events/highlights/2.jpg',
+      bg: 'bg-[#3aa4b4]'
     },
     {
       title: 'Experience the thrill of adventure!...',
       description:
         'Experience the thrill of adventure! Our primary students embarked on an exhilarating trekking expedition, conquering towering rock walls and zipping...',
       image: '/news-events/highlights/3.jpg',
+      bg: 'bg-[#3aa4b4]'
     },
     {
       title: "Hon'ble Vice-President, Shri Jagdeep Dhankhar at The Kulish School",
       description:
         "Hon'ble Vice-President, Shri Jagdeep Dhankhar and Dr. Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan",
       image: '/news-events/highlights/4.jpg',
+      bg: 'bg-[#3aa4b4]'
     },
   ];
 
@@ -145,7 +149,7 @@ export default function AcademicsPage() {
       </div>
 
       {/* Explore Section */}
-      <section className='py-12'>
+      {/* <section className='py-12'>
         <div className='mx-auto max-w-7xl px-4'>
           <div className='grid grid-cols-2 items-center'>
             <div>
@@ -205,7 +209,7 @@ export default function AcademicsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Academic Programs */}
       <div className='relative flex flex-col items-start justify-center p-4 md:p-12'>
@@ -215,14 +219,14 @@ export default function AcademicsPage() {
           fill
           className='object-cover opacity-90'
         />
-        <div className='relative mx-auto flex w-full max-w-5xl items-center py-8'>
+        {/* <div className='relative mx-auto flex w-full max-w-5xl items-center py-8'>
           <h2 className='font-serif text-4xl font-light text-gray-700'>Highlights</h2>
-        </div>
+        </div> */}
         <div className='relative flex w-full items-center justify-center'>
-          <Button variant='secondary' size='icon' onClick={handlePrevious}>
+          {/* <Button variant='secondary' size='icon' onClick={handlePrevious}>
             <ArrowLeft className='h-4 w-4' />
-          </Button>
-          <div className='mx-auto grid max-w-5xl gap-12 px-4 md:grid-cols-3'>
+          </Button> */}
+          {/* <div className='mx-auto grid max-w-5xl gap-12 px-4 md:grid-cols-3'>
             {getVisibleIndices().map((index) => {
               const program = academicPrograms[index];
               return (
@@ -240,24 +244,73 @@ export default function AcademicsPage() {
                     <div>
                       <h5 className='mb-2 font-medium'>{program.title}</h5>
                       <p className='mb-2 text-xs text-gray-600'>{program.description}</p>
-                    </div>
+                    </div> 
                   </div>
                 </motion.div>
               );
             })}
-          </div>
-          <Button variant='secondary' size='icon' onClick={handleNext}>
+          </div> */}
+          <div className='mx-auto grid max-w-5xl gap-12 px-4 md:grid-cols-3'>
+              {/* Innovation Card */}
+              <div className='relative overflow-hidden'>
+               <Link href='/news-events/inaugration'>
+                <Image
+                  src='/news-events/highlights/1.jpg'
+                  alt='Innovation'
+                  width={400}
+                  height={400}
+                  className='h-96 max-w-5xl object-cover'
+                />
+                <div className='bg-blue-600 p-4 text-center text-white'>
+                  <h5 className='font-serif font-normal'>INAUGURATION</h5>
+                </div>
+                </Link>
+              </div>
+
+              {/* Initiative Card */}
+              <div className='relative overflow-hidden'>
+              <Link href='/news-events/in-house-event'>
+                <Image
+                  src='/news-events/highlights/2.jpg'
+                  alt='Initiative'
+                  width={400}
+                  height={400}
+                  className='h-96 max-w-5xl object-cover'
+                />
+                <div className='bg-sky-500 p-4 text-center text-white'>
+                  <h5 className='font-serif font-normal'>IN HOUSE EVENT</h5>
+                </div>
+                </Link>
+              </div>
+
+              {/* Impact Card */}
+              <div className='relative overflow-hidden'>
+              <Link href='/news-events/news'>
+                <Image
+                  src='/news-events/highlights/3.jpg'
+                  alt='Impact'
+                  width={400}
+                  height={400}
+                  className='h-96 max-w-5xl object-cover'
+                />
+                <div className='bg-[#5cbccb] p-4 text-center text-white'>
+                  <h5 className='font-serif font-normal'>NEWS</h5>
+                </div>
+                </Link>
+              </div>
+            </div>
+          {/* <Button variant='secondary' size='icon' onClick={handleNext}>
             <ArrowRight className='h-4 w-4' />
-          </Button>
+          </Button> */}
         </div>
       </div>
 
       {/* Newsletter Section */}
-      <section className='bg-gray-50 py-20'>
+      {/* <section className='bg-gray-50 py-20'>
         <div className='mx-auto max-w-7xl px-4'>
-          <div className='flex flex-col gap-8 lg:flex-row lg:gap-12'>
+          <div className='flex flex-col gap-8 lg:flex-row lg:gap-12'> */}
             {/* Left Column */}
-            <div className='flex-1'>
+            {/* <div className='flex-1'>
               <Image
                 src='/news-events/highlights/4.jpg'
                 alt='Event Image'
@@ -272,12 +325,12 @@ export default function AcademicsPage() {
                 Along with innovation in education, parents will have to recognize the potential of
                 their children. Life Craft Workshop was organized on Sunday at The Kulish School,
                 Jagatpura.
-              </p>
+              </p> */}
               {/* <Button className='relative mt-4 overflow-hidden rounded-none bg-sky-600 hover:bg-sky-700'>
                 <div className='absolute left-0 top-0 h-full w-2 bg-teal-500'></div>
                 <span className='relative z-10'>Read More</span>
               </Button> */}
-            </div>
+            {/* </div> */}
 
             {/* Middle Column */}
             {/* <div className='flex-1'>
@@ -333,9 +386,9 @@ export default function AcademicsPage() {
                 </form>
               </div>
             </div> */}
-          </div>
-        </div>
-      </section>
+          {/* </div> */}
+        {/* </div> */}
+      {/* // </section> */}
     </main>
   );
 }
