@@ -1,6 +1,12 @@
+'use client';
+
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
+
 
 const SocialLink = ({
   href,
@@ -26,6 +32,10 @@ const SocialLink = ({
 );
 
 export const Footer = () => {
+
+  const pathname = usePathname();
+  const isContactUs = pathname === '/contact';
+
   const menuItems = [
     { href: '/about', label: 'About Us' },
     { href: '/key-information', label: 'Key Information' },
@@ -73,18 +83,31 @@ export const Footer = () => {
           />
         </div>
         <div className='text-center text-[#4a4a4a] md:text-left'>
-          {/* <p>
-            <strong>The Kulish School,</strong>
+        {isContactUs? 
+        <>
+          <p className={cn('text-sm md:text-xl', !isContactUs ? 'hidden' : '')}>
+            Management & Administration,
           </p>
-          <p className='text-sm md:text-base'>
-            INS-1, Opposite Bombay Hospital, Mahal Road, Jagatpura, Jaipur
-          </p> */}
+          <p className={cn('text-sm md:text-xl mb-8', !isContactUs ? 'hidden' : '')}>
+            Working hours: 9:00 AM to 4:30 PM | Sunday: Closed
+          </p>
+          </> :
+          <>
+          <p className={cn('text-sm md:text-xl')}>
+            <strong>The Kulish School</strong>
+          </p>
+          <p className={cn('text-sm md:text-xl mb-8')}>
+          INS-1, Opposite Bombay Hospital, Mahal Road, Jagatpura, Jaipur
+          </p>
+          </>
+          }
+
           <p className='text-sm md:text-xl mb-6'>
             Mobile No.: +91 90575 31015 <br />
-            E-mail Address: enquiry@thekulishschool.com 
+            E-mail Address:  admission@thekulishschool.com 
             
           </p>
-          <div className='mt-4 flex flex-col justify-center gap-3 md:flex-col md:gap-5'>
+          <div className={cn('mt-4 flex flex-col justify-center gap-3 md:gap-5', isContactUs? 'md:flex-col' : 'md:flex-row')}>
             {socialLinks.map((social, index) => (
               <div key={index}>
                 <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] md:justify-start'>
