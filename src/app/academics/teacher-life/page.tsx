@@ -98,22 +98,22 @@ export default function CampusLifePage() {
         ]}
       >
         <div className='grid min-h-[700px] grid-cols-1 gap-8 p-4 md:p-12 lg:grid-cols-[3fr_4fr]'>
-          <div className='mr-8 grid h-full gap-8 lg:grid-rows-2'>
+          <div className='md:mr-8 grid h-full gap-8 lg:grid-rows-2'>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className='flex items-center justify-end'
+              className='flex items-center md:justify-end'
             >
-              <h2 className='text-right font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+              <h2 className='md:text-right font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                 Teacher
-                <br /> Professional
-                <br /> Development
-                <br /> Program
+                <br className='hidden md:block' /> Professional
+                <br className='hidden md:block' /> Development
+                <br className='hidden md:block' /> Program
               </h2>
             </motion.div>
-            <p className='ml-auto w-2/3 text-right text-gray-800'>
+            <p className='md:ml-auto w-full md:w-2/3 md:text-right text-gray-800'>
               At The Kulish School (TKS), we prioritize faculty development through a comprehensive
               and multifaceted approach. Our strategy is intricately linked to the overall school
               professional development plan, ensuring that our faculty's growth aligns with the
@@ -284,7 +284,7 @@ export default function CampusLifePage() {
               height={500}
               className='h-[400px] w-[600px] rounded-2xl object-cover'
             />
-            <div className='flex items-start pt-4 text-sm font-bold'>In house workshops by<br/> renowed experts</div>
+            <div className='flex w-full items-center text-center justify-center md:justify-start md:text-left md:items-start pt-4 text-sm font-bold'>In house workshops by<br/> renowed experts</div>
           </motion.div>
 
           <motion.div

@@ -12,9 +12,9 @@ import { Button } from '@/components/ui/button';
 export default function AcademicsPage() {
   const academicPrograms = [
     {
-      title: "Hon'ble Vice-President, Shri Jagdeep Dhankhar at The Kulish School",
+      title: "Hon'ble Vice President, Shri Jagdeep Dhankhar at The Kulish School",
       description:
-        "Hon'ble Vice-President, Shri Jagdeep Dhankhar and Dr.Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan",
+        "Hon'ble Vice President, Shri Jagdeep Dhankhar and Dr. Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan",
       image: '/news-events/highlights/1.jpg',
       bg: 'bg-[#3aa4b4]'
     },
@@ -33,9 +33,9 @@ export default function AcademicsPage() {
       bg: 'bg-[#3aa4b4]'
     },
     {
-      title: "Hon'ble Vice-President, Shri Jagdeep Dhankhar at The Kulish School",
+      title: "Hon'ble Vice President, Shri Jagdeep Dhankhar at The Kulish School",
       description:
-        "Hon'ble Vice-President, Shri Jagdeep Dhankhar and Dr. Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan",
+        "Hon'ble Vice President, Shri Jagdeep Dhankhar and Dr. Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan",
       image: '/news-events/highlights/4.jpg',
       bg: 'bg-[#3aa4b4]'
     },

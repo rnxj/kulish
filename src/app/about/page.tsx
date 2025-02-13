@@ -128,7 +128,7 @@ export default function AboutPage() {
                   <div></div>
                 </div>
       
-              <div id='vision' className='grid min-h-[700px] grid-cols-1 gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
+              <div id='vision' className='grid md:min-h-[700px] grid-cols-1 md:gap-8 md:p-12 lg:grid-cols-[1fr_2fr]'>
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -136,7 +136,7 @@ export default function AboutPage() {
                   transition={{ duration: 0.6 }}
                   className='flex h-full flex-col justify-center lg:p-8'
                 >
-                  <h2 className='font-serif text-4xl font-light text-gray-700 decoration-gray-300 decoration-1 underline-offset-8'>
+                  <h2 className='font-serif text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
                     Vision
                   </h2>
                 </motion.div>
@@ -169,7 +169,7 @@ export default function AboutPage() {
           { orientation: 'vertical', start: 0.07, end: 0.93, position: 0.33, variant: 'dashed' },
         ]}
       >
-        <div id='mission' className='grid min-h-[700px] grid-cols-1 gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
+        <div id='mission' className='grid min-h-[700px] grid-cols-1 md:gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -187,7 +187,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className='flex h-full mt-12 flex-col space-y-6 lg:p-8'
+            className='flex h-full lg:mt-12 flex-col space-y-6 lg:p-8'
           >
             <p className='text-gray-800'>
                   The Kulish School is committed to shaping the future by preparing students to
@@ -340,7 +340,7 @@ export default function AboutPage() {
                             <Image src={member.image} alt={member.name} fill className='object-cover' />
                             <div className={`absolute bottom-0 h-8 w-full ${member.color}`} />
                           </div>
-                          <div className='mt-4 space-y-1'>
+                          <div className='mt-4 text-center space-y-1'>
                             <h4 className='font-serif text-xl text-gray-700'>{member.name}</h4>
                             <p className='text-gray-600'>{member.title}</p>
                           </div>

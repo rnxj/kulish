@@ -92,7 +92,7 @@ export default function HomePage() {
       title: 'WELCOME TO',
       heading: 'Global Curriculum',
       description:
-        'Offering both National and International Boards Including CBSE and IB, to provide a comprehensive education.',
+        'Offering both national and international boards including CBSE and IB, to provide a comprehensive education.',
     },
     {
       src: '/landing/slider/SLIDER 7.jpg',
@@ -192,21 +192,21 @@ export default function HomePage() {
     {
       title: 'EARLY YEARS',
       description:
-        'A Nurturing Start: The Early Years Curriculum At our school, the Early Years curriculum provides a warm, stimulating environment where young learers thrive. By fostering natural curiosity and a love for',
+        'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize play-based learning, where children explore and discover through hands-on activities that engage their senses and imaginations.',
       image: '/landing/carousel/1.jpg',
       href: '/stages/early-years',
     },
     {
       title: 'PRIMARY YEARS PROGRAMME',
       description:
-        'Physical activity is an essential component of our 3l program, promoting a healthy lifestyle and the development of motor skills. We offer a wide range of sports and physical activities that not only enhance',
+        'The Primary School, offering international curriculum caters to students from Nursery to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, ',
       image: '/landing/carousel/2.jpg',
       href: '/stages/primary-school',
     },
     {
       title: 'MIDDLE YEARS',
       description:
-        'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
+        'The Middle Years curriculum (national and international) is designed to give the learners a robust and rigorous academic learning experience. The learners will be exposed to various disciplines and its',
       image: '/landing/carousel/3.jpg',
       href: '/stages/middle-school',
     },
@@ -388,7 +388,7 @@ export default function HomePage() {
               <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
             </DialogContent>
           </Dialog> */}
-          <h3 className='mb-4 text-2xl  text-sky-500 font-bold'>Video Tour in The Kulish School </h3>
+          <h3 className='mb-4 text-2xl  text-sky-500 font-bold'>Video Tour of The Kulish School </h3>
           <p className='max-w-3xl text-center px-4'>
             Experience The Kulish School through our tour video, showcasing every corner of our
             vibrant campus. Discover why we are the best choice for your child's education!
@@ -614,7 +614,7 @@ export default function HomePage() {
                 ))}
               </div>
               <p className='ml-24 text-xl text-gray-700'>
-                The Kulish School is attempting to empower the children by addressing the main
+                The Kulish School is attempting to empower children by addressing the main
                 pillars of education, researching, and reinventing them to suit modern times. The
                 four pillars of education are
               </p>

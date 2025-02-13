@@ -134,28 +134,29 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const data = stagesData[slug as keyof typeof stagesData];
 
   return (
+    
     <BgPattern lines={[...data.lines]}>
       <div className='min-h-screen'>
         <div className='px-4 md:px-16'>
-          <div className='grid grid-cols-[15fr_15fr_70fr] gap-8'>
+          <div className='grid md:grid-cols-[15fr_15fr_70fr] gap-8'>
             {/* First column - 15% - Number */}
-            <div className='border-r border-gray-400 pt-8'>
+            <div className='md:border-r border-gray-400 pt-8'>
               <div className='text-5xl font-light text-sky-500'>
-                <div className='w-16 font-serif text-6xl font-medium text-sky-500'>
+                <div className='w-16 font-serif text-5xl md:text-6xl font-medium text-sky-500'>
                   {data.number}/
                 </div>
               </div>
             </div>
 
             {/* Second column - 15% - Title */}
-            <div className='border-r border-gray-400 pt-20'>
+            <div className='md:border-r pr-4 border-gray-400 md:pt-20'>
               <h1 className='text-xl font-extrabold tracking-wide text-gray-700 md:text-4xl'>
                 {data.title}
               </h1>
             </div>
 
             {/* Third column - 70% - Content */}
-            <div className='space-y-6 py-20'>
+            <div className='space-y-6 md:py-20'>
               {data.content.map((section, index) => (
                 <section key={index} className='space-y-3'>
                   <h2 className='font-extrabold text-black'>{section.title}</h2>

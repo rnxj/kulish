@@ -194,19 +194,20 @@ export const Navbar = () => {
                   )
                 )}
                 <div className='flex justify-center space-x-4 pt-4'>
-                  {/* {socialLinks.map((social, index) => {
+                  {socialLinks.map((social, index) => {
                     const Icon = social.icon;
                     return (
                       <Link
                         key={index}
-                        href={social.href}
+                        href={social.url}
+                        target='_blank'
                         className='rounded-full bg-gray-100 p-2 text-gray-600 transition-colors hover:bg-sky-500 hover:text-white'
                         onClick={() => setOpen(false)}
                       >
                         <Icon className='h-4 w-4' />
                       </Link>
                     );
-                  })} */}
+                  })}
                 </div>
               </div>
               <DrawerFooter>
