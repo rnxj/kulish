@@ -6,7 +6,7 @@ import { BgPattern } from '@/components/bg-pattern';
 
 export default function Innovation() {
 const techLabGrid = [
-  { key:1, src:"/key-information/innovation/TECH LAB 1.jpg" },
+  { key:1, src:"/key-information/innovation/TECH LAB 1.JPG" },
   { key:2, src:"/key-information/innovation/TECH LAB 2.jpg" },
   { key:3, src:"/key-information/innovation/TECH LAB 3.jpg" },
   { key:4, src:"/key-information/innovation/TECH LAB 4.jpg" },
@@ -150,11 +150,11 @@ const artLabSrc = [
           <div className='grid grid-cols-1 gap-8 '>
 
             <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
-            {geobiologySrc.map((imgMap, index) =>(
+            {artLabSrc.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
+                  alt='ART LAB'
                   key={index}
                   width={400}
                   height={400}

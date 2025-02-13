@@ -6,12 +6,12 @@ import { BgPattern } from '@/components/bg-pattern';
 
 export default function NewsPage() {
 const newsGrid = [
-  { key:1, src:"/news-events/news/1.jpg" },
-  { key:2, src:"/news-events/news/2.jpg" },
-  { key:3, src:"/news-events/news/3.jpg" },
-  { key:4, src:"/news-events/news/4.jpg" },
-  { key:5, src:"/news-events/news/5.jpg" },
-  { key:6, src:"/news-events/news/6.jpg" },
+  { key:1, src:"/news-events/NEWS/1.jpg" },
+  { key:2, src:"/news-events/NEWS/2.jpg" },
+  { key:3, src:"/news-events/NEWS/3.jpg" },
+  { key:4, src:"/news-events/NEWS/4.jpg" },
+  { key:5, src:"/news-events/NEWS/5.jpg" },
+  { key:6, src:"/news-events/NEWS/6.jpg" },
 
 ];
 
@@ -20,7 +20,7 @@ const newsGrid = [
       {/* Hero Section */}
       <div className='relative h-[70vh] w-full overflow-hidden'>
         <Image
-          src='/news-events/news/TOP.jpg'
+          src='/news-events/NEWS/TOP.jpg'
           alt='Academics Hero'
           fill
           className='object-cover transition-transform duration-500 hover:scale-110'
