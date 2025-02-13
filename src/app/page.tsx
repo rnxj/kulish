@@ -154,37 +154,37 @@ export default function HomePage() {
       title: 'Tinkering: The Gateway to Imagination!',
       description:
         "In our Tinkering Lab, students are discovering the joy of creating and exploring. Through hands-on experiments, they're learning to turn ideas into reality, sparking innovation and imagination along the way. This is where the magic of learning begins!",
-      image: '/news-events/explore/1.jpg',
+      image: '/explore-section/1.jpg',
     },
     {
       title: 'Earth Day in Action: Learning Through Planting!',
       description:
         "Celebrating Earth Day with action and education! Our students planted saplings and engaged in interactive lessons about environmental conservation, the water cycle, and the benefits of greenery. Through this activity, they've learned that small steps can lead to big changes for a healthier planet.",
-      image: '/news-events/explore/2.jpg',
+      image: '/explore-section/2.jpg',
     },
     {
       title: 'Starting the Day with Energy and Balance!',
       description:
         "Active mornings, active minds! In our school, physical activities like yoga and sports during the morning assembly are not just exercises; they're life lessons. Students learn the value of fitness, mindfulness, and teamwork, building habits that support their academic and personal growth.",
-      image: '/news-events/explore/3.jpg',
+      image: '/explore-section/3.jpg',
     },
     {
       title: 'Art in Action: Unleashing Imagination!',
       description:
         'At our school, every child is an artist! Through colors and creativity, students bring their imaginations to life, exploring new perspectives and expressing their unique ideas in a supportive and inspiring environment.',
-      image: '/news-events/explore/4.jpg',
+      image: '/explore-section/4.jpg',
     },
     {
       title: 'Innovation in Action: Learning Robotics!',
       description:
         "In our robotics lab, students are diving into the world of technology, coding, and engineering. Through hands-on learning, they are building robots that not only ignite their creativity but also develop critical thinking, problem-solving, and teamwork skills. It's more than just robots—it's about preparing for the future!",
-      image: '/news-events/explore/5.jpg',
+      image: '/explore-section/5.jpg',
     },
     {
       title: 'Enrichment Programmes',
       description:
         "In our robotics lab, students are diving into the world of technology, coding, and engineering. Through hands-on learning, they are building robots that not only ignite their creativity but also develop critical thinking, problem-solving, and teamwork skills. It's more than just robots—it's about preparing for the future!",
-      image: '/news-events/explore/6.jpg',
+      image: '/explore-section/6.jpg',
     },
   ];
 
@@ -197,21 +197,20 @@ export default function HomePage() {
       href: '/stages/early-years',
     },
     {
-      title: 'PRIMARY SCHOOL',
+      title: 'PRIMARY YEARS PROGRAMME',
       description:
         'Physical activity is an essential component of our 3l program, promoting a healthy lifestyle and the development of motor skills. We offer a wide range of sports and physical activities that not only enhance',
       image: '/landing/carousel/2.jpg',
       href: '/stages/primary-school',
     },
     {
-      title: 'MIDDLE SCHOOL',
+      title: 'MIDDLE YEARS',
       description:
         'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
       image: '/landing/carousel/3.jpg',
       href: '/stages/middle-school',
     },
   ];
-
 
   const innovationSlides = [
     {
@@ -261,7 +260,6 @@ export default function HomePage() {
 
     return () => clearInterval(timer);
   }, [order]);
-
 
   const handleInnovationPrevious = () => {
     setInnovationCurrentIndex((prev) => (prev === 0 ? innovationSlides.length - 1 : prev - 1));
@@ -465,7 +463,6 @@ export default function HomePage() {
             </div>
 
             {/* Cards */}
-
          <div className='flex w-full mx-auto pr-4 items-center justify-center'>      
             <Button 
               variant='outline'

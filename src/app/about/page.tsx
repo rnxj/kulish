@@ -27,9 +27,9 @@ export default function AboutPage() {
       name: 'Mrs. Vrinda Kothari',
       title: 'Director',
       description: [
-        "Kulish Ji's unwavering commitment to the significance of value-based living remains a perpetual source of inspiration for us.",
-        'Central to our educational approach is the assimilation of a robust value system. This entails the inculcation of principles such as integrity, empathy, responsibility, compassion, resilience, and respect within each student.',
-        'At ‘The Kulsh School,’ our unwavering commitment extends to the creation of an environment conducive to the flourishing of our students. Our objective is to provide a space where they can explore and unveil their inherent genius, enabling them to contribute their utmost to all endeavors and positively impact society.',
+        "Vrinda Kothari heads the education wing of Rajasthan Patrika, one of India’s leading Hindi dailies. A visionary entrepreneur, she was honored with the YFLO Entrepreneur of the Year Award in 2018.",
+        'With a deep passion for education, art, design, and architecture, Vrinda brings a multidisciplinary approach to her work. A trained jewelry designer, she also holds a diploma in Interior Design from Parsons – The New School, New York, reflecting her keen eye for aesthetics and innovation.',
+        'Her love for children and commitment to education led her to lead The Kulish School, where she plays an active role in both academics and administration. She envisions the school as a thriving learning community that fosters holistic growth for all—students, parents, and educators alike. Through her leadership, Vrinda strives to create an environment where education is not just about knowledge but about empowerment, creativity, and meaningful engagement.',
       ],
       image: '/leadership-team/team/vrinda.jpg',
       color: 'bg-blue-600',
@@ -41,16 +41,16 @@ export default function AboutPage() {
         'Mr. Arvind Kalia, a renowned academician, is the Director of the board of Kulish School.',
         'Dr. Kalia is a management expert who completed his Advanced Management Program at one of America\'s premier institutions, The Kellogg School of Business, Chicago. Dr. Kalia was recently invited to be a member of the Advisory Council for the prestigious journal \'Harvard Business Review,\' published by Harvard University. Dr. Kalia has also completed an Advanced Analytics MDP from IIM Ahmedabad. With this knowledge, he has developed a \'Special Assessment Suite\' for school education, which will enable 360-degree evaluation of students.',
       ],
-      image: '/leadership-team/team/arvind.jpg',
+      image: '/leadership-team/team/MR. ARVIND KALIA ON ABOUT US LEADERSHIP TEAM.png',
       color: 'bg-cyan-600',
     },
     {
       name: 'Debasish Chakrabarty',
       title: 'Principal',
       description: [
-        'Debasish Chakrabarty, the principal of The Kulish School, is an alumnus of Jawaharlal Nehru University with a Master’s and academic research experience in English and Semiotics.',
-        'He has nearly three decades of experience in teaching, leading, and mentoring at institutions such as the National Institute of Design, Ahmedabad; The Doon School, Dehradun; and GEMS Modern Academy, Dubai.',
-        'Passionate about designing enriching experiences and nurturing young minds, he loves engaging students in conversations about world literature, mythology, poetry, semiotics, and ways of seeing.',
+        'Debasish Chakrabarty, an alumnus of Jawaharlal Nehru University with a background in English and Semiotics, has nearly three decades of experience in teaching and mentoring at institutions such as the National Institute of Design, Ahmedabad, The Doon School, Dehradun and GEMS Education, Dubai.',
+        'Passionate about designing enriching experiences and nurturing young minds, he is well-versed in world literature and mythology, particularly the role of women in shaping mythologies and the history of ideas. His love for teaching extends to poetry, literature, semiotics, and ways of seeing. With a keen interest and expertise in instructional design, change leadership, and sustainable education systems, he has developed impactful assessment programs and academic appraisal systems.',
+        'Chakrabarty serves and champions in many roles at the IB Education Network. He holds a Certificate in School Management and Leadership from Harvard and an IPGCE from University College London. He is passionate about educational leadership and systems thinking and currently leads The Kulish School, an educational extension of the Rajasthan Patrika Group.',
       ],
       image: '/leadership-team/team/debasish.jpg',
       color: 'bg-teal-600',
@@ -58,22 +58,25 @@ export default function AboutPage() {
   ];
   const experts = [
     {
-      name: 'Abha Seth',
-      title: "Middle Years' Coordinator",
+      name: 'Sandhya Gatti',
+      title: "Vice Principal",
       description: [
-        'Abha Seth, the Middle Years’ Coordinator at The Kulish School, is a dedicated educator with a passion for nurturing young minds.',
-        'With a Master’s degree in English Literature and a background in teaching, Abha brings a wealth of experience to the table.',
-        'Her role involves overseeing the Middle Years’ Programme, ensuring that students receive a comprehensive and engaging educational experience.',
+        'Sandhya is a passionate and pioneering force in teacher education with over 30 years of experience. Holding a Bachelor\'s in Education, a Master\'s in Social Work, and a Ph.D. candidacy with the European International University, Paris, she exemplifies lifelong learning through continuous professional development. Her credentials include multiple International Baccalaureate certifications, a Cambridge International Diploma in Teaching and Learning, and numerous certifications in teacher training and assessment from prestigious institutions like MIT, Cambridge, and Intel.',
+        'Having begun her career as a teacher of Social Sciences and English, Sandhya has spent the last 18 years designing and delivering innovative teacher education programs, both nationally and internationally. She has co-authored a book on teaching English and written for educational publications, while her groundbreaking work includes designing the Post-Graduate Diploma in New Education, accredited by Martin Luther Christian University. This program challenges teachers to reflect on their professional and personal growth, aligning with her ultimate vision of fostering happy, effective teachers and self-directed, joyful learners across India.',
+        'Sandhya is also an advocate for integrating creativity into education. Her previous work includes leading educational projects for an NGO, blending technology with art, music, and theatre for government school children and teachers. A content developer and resource person for leading educational publishers like Cambridge University Press and Pearson, she has also been instrumental in setting up teacher development departments in schools.',
+        'Currently heading Curriculum, Pedagogy, and Professional Development at a progressive learning space in Bangalore, Sandhya also serves as an advisor to several schools and guest faculty at renowned universities like Christ and Azim Premji. Known for her unconventional approach to teaching and learning, she challenges the status quo and fosters transformative, reflective interactions in her training programs.',
+        'Founder of initiatives like Teacher Ink, the Sandhya Gatti Educators\' Trust, and The Skandagiri Commune, Sandhya is dedicated to creating learning environments that empower both teachers and students. A Zen practitioner, deep reader, and avid traveller, she brings a rich, holistic perspective to her work, continuously striving to shape a better, more reflective educational landscape.',
+
       ],
-      image: '/leadership-team/team/abha.jpg',
+      image: '/leadership-team/team/VICE PRINCIPAL PHOTO.png',
     },
     {
       name: 'Antara Naik',
       title: "Primary Years' Programme Coordinator",
       description: [
-        'Antara Naik, the Primary Years’ Programme Coordinator at The Kulish School, is an experienced educator with a strong commitment to nurturing young learners.',
-        'With a Master’s degree in English Literature and a background in teaching, Antara brings a wealth of experience to the table.',
-        'Her role involves overseeing the Primary Years’ Programme, ensuring that students receive a comprehensive and engaging educational experience.',
+        'Antara is a dedicated educator, mentor, and facilitator with a strong foundation in the International Baccalaureate Primary Years Programme (IB PYP). Since beginning her IB career in 2010, she has been instrumental in founding several IB schools across NCR. Her early experiences sparked a deep fascination with how students construct understanding, leading to her passion for inquiry-based and integrative teaching methods. She strongly believes in the uniqueness of every child, advocating for individualized care and attention to nurture their growth.',
+        'Her commitment extends beyond the classroom, working collaboratively with teachers and school leaders to enhance student engagement, improve academic achievement, and support educators through professional development. A trailblazer in the field of education, Antara is currently associated with The Kulish School of the Patrika Group, where she is actively developing a curriculum that fosters well-being and emphasizes skill-based learning.In addition to her contributions to education, Antara is a dedicated animal activist.',
+        'She has worked closely with numerous rescue shelters, playing a vital role in rehabilitating abandoned animals. Her compassion extends into her personal life, where three of these rescued animals have found a special place in her home and heart.',
       ],
       image: '/leadership-team/team/antara.jpg',
     },
@@ -399,7 +402,7 @@ export default function AboutPage() {
               </BgPattern>
 
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                      <DialogContent className='max-w-5xl p-0'>
+                      <DialogContent className='max-w-5xl overflow-auto max-h-full p-0'>
                         <DialogHeader className='hidden' />
                         <DialogTitle className='hidden'>{selectedPerson?.name}</DialogTitle>
                         {selectedPerson && (
