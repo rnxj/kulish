@@ -70,7 +70,7 @@ export const Navbar = () => {
       className={cn(
         'z-50 flex items-center',
         isHome ? 'sticky top-0 lg:py-2 lg:absolute lg:left-0 lg:right-0 lg:top-10' : 'sticky top-0',
-        isHome ? 'h-20 lg:h-18' : 'h-20',
+        isHome ? 'h-20 lg:h-14' : 'h-20',
         isHome
           ? 'bg-sky-500 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgb(14,165,233)_0%,rgb(14,165,233)_8%,transparent_8%,transparent_20%,rgb(14,165,233)_20%,rgb(14,165,233)_100%)]'
           : 'bg-sky-500'
@@ -79,7 +79,7 @@ export const Navbar = () => {
       {isHome && (
         <div className='absolute left-[8%] hidden lg:block'>
           <Link href='/'>
-            <Image src='/logo.png' alt='Logo' width={220} height={80} />
+            <Image src='/logo.png' alt='Logo' width={200} height={80} />
           </Link>
         </div>
       )}
@@ -126,11 +126,11 @@ export const Navbar = () => {
           </nav>
 
           {/* Social Icons & CTA */}
-          <div className='hidden items-center space-x-4 md:flex md:flex-row'>
+          <div className='hidden items-center space-x-4 mr-4 md:flex md:flex-row'>
             {/* <div className='text-white text-xs border-2 rounded-full p-2'>Connect with us</div> */}
-            <div className='items-center flex-row space-x-2'>
-            <div className='text-white text-center text-xs mb-2 border-2 rounded-full p-1'>Connect with us</div>
-            <div className='flex items-center space-x-2'>
+            {/* <div className='items-center flex-row space-x-2'> */}
+            {/* <div className='text-white text-center text-xs mb-2 border-2 rounded-full p-1'>Connect with us</div> */}
+            {/* <div className='flex items-center space-x-2'> */}
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -144,8 +144,8 @@ export const Navbar = () => {
                   </Link>
                 ); 
               })}
-              </div>
-            </div>
+              {/* </div> */}
+            {/* </div> */}
             {/* <Button className='bg-white text-sky-500 hover:bg-white/90'>Call to Action</Button> */}
           </div>
 

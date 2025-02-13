@@ -14,20 +14,22 @@ const SocialLink = ({
   icon: Icon,
   children,
   size = 28,
+  stroke='#0ea5e9',
   className = '',
 }: {
   href: string;
   icon: React.ElementType;
   children?: React.ReactNode;
   size?: number;
+  stroke?: string;
   className?: string;
 }) => (
   <a
     href={href}
     target='_blank'
-    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-2xl ${className}`}
+    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-lg ${className}`}
   >
-    <Icon className='hover:text-sky-500 mr-2' size={size} stroke='#0ea5e9' />
+    <Icon className='hover:text-sky-500 mr-2' size={size} stroke={stroke} />
     {children}
   </a>
 );
@@ -36,6 +38,7 @@ export const Footer = () => {
 
   const pathname = usePathname();
   const isContactUs = pathname === '/contact';
+  const isAboutUs = pathname === '/about'
 
   const menuItems = [
     { href: '/about', label: 'About Us' },
@@ -45,6 +48,14 @@ export const Footer = () => {
     { href: '/admission', label: 'Admission' },
     { href: '/contact', label: 'Contact Us' },
   ];
+
+  const sociallogo = [
+    {icon: Facebook, src:"social-logo/facebook footer.svg", href: "https://www.facebook.com/thekulishschool/"},
+    {icon: Instagram, src:"social-logo/instagram footer.svg", href: "https://www.instagram.com/the_kulish_school/"},
+    {icon: Linkedin, src:"social-logo/linkedin footer.svg", href: "https://www.linkedin.com/company/the-kulish-school-jaipur/"},
+
+
+  ]
 
   const socialLinks = [
     { icon: Facebook, label: 'thekulishschool', url: 'https://www.facebook.com/thekulishschool/' },
@@ -67,9 +78,26 @@ export const Footer = () => {
         <p className='mb-6 text-sm md:mb-8 md:text-base'>
           Classes Start April 7, 2025 | Term Dates
         </p> */}
-        {/* <Button size='lg' className='rounded-none text-sm md:text-base'>
-          REQUEST INFO
-        </Button> */}
+
+        {isAboutUs? 
+        <div className='justify-items-center  py-6'>
+          <div className='border-2 border-dotted text-center p-2 mb-6 text-sm rounded-xl w-fit'>Connect with us</div>
+        <div className='flex text-sm md:text-lg'>
+           {footerSocialIcons.map((social, index) => (
+              <SocialLink
+                key={index}
+                href={social.url}
+                icon={social.icon}
+                size={48}
+                stroke="#ffffff"
+                className='text-white mx-6'
+              />
+            ))}
+        </div>
+        </div> :
+        <></>
+        }
+        
       </div>
 
       {/* Middle Section */}
@@ -108,6 +136,7 @@ export const Footer = () => {
             E-mail Address:  admission@thekulishschool.com 
             
           </p>
+          {!isAboutUs?
           <div className={cn('mt-4 flex flex-col justify-center gap-3 md:gap-5', isContactUs? 'md:flex-col' : 'md:flex-row')}>
             {socialLinks.map((social, index) => (
               <div key={index}>
@@ -116,8 +145,9 @@ export const Footer = () => {
                 </SocialLink>
               </div>
             ))}
-          </div>
-          <div className='flex mt-6'>
+          </div>:<></>}
+          
+          <div className={cn('flex mt-6', !isContactUs? 'hidden': '')}>
             <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ">
             <Button className='mt-2 mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
               Admissions
