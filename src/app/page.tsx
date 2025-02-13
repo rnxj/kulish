@@ -464,18 +464,17 @@ export default function HomePage() {
               </p>
             </div>
 
-
-
             {/* Cards */}
 
-         <div className='flex w-full mx-auto items-center justify-center'>      
+         <div className='flex w-full mx-auto pr-4 items-center justify-center'>      
             <Button 
               variant='outline'
               size='icon'
               className='z-10 rounded-full'
               onClick={handleInnovationPrevious}>
-                  <ArrowLeft className='h-4 w-4' />
+                  <ArrowLeft className='h-4 w-4 m-6' />
             </Button>
+
             <div className='grid gap-8 px-4 md:grid-cols-2 md:px-4'>
                {getVisibleIndices().map((index) => {
               const program = innovationSlides[index];
@@ -528,7 +527,7 @@ export default function HomePage() {
               size='icon'
               className='z-10 rounded-full'
               onClick={handleInnovationNext}>
-            <ArrowRight className='h-4 w-4' />
+            <ArrowRight className='h-4 w-4 m-6' />
           </Button>
           </div>
           </div>

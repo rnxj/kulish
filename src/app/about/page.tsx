@@ -38,8 +38,8 @@ export default function AboutPage() {
       name: 'Dr. Arvind Kalia',
       title: 'Director',
       description: [
-        'Dr. Arvind Kalia is a visionary Director focused on fostering innovation and excellence in education.',
-        'With years of experience in the education sector, Dr. Kalia has been instrumental in implementing policies that inspire students and teachers alike. His leadership has transformed the academic culture, emphasizing a collaborative and value-driven learning environment.',
+        'Mr. Arvind Kalia, a renowned academician, is the Director of the board of Kulish School.',
+        'Dr. Kalia is a management expert who completed his Advanced Management Program at one of America\'s premier institutions, The Kellogg School of Business, Chicago. Dr. Kalia was recently invited to be a member of the Advisory Council for the prestigious journal \'Harvard Business Review,\' published by Harvard University. Dr. Kalia has also completed an Advanced Analytics MDP from IIM Ahmedabad. With this knowledge, he has developed a \'Special Assessment Suite\' for school education, which will enable 360-degree evaluation of students.',
       ],
       image: '/leadership-team/team/arvind.jpg',
       color: 'bg-cyan-600',
@@ -397,6 +397,58 @@ export default function AboutPage() {
                   </div>
                 </div>
               </BgPattern>
+
+              <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                      <DialogContent className='max-w-5xl p-0'>
+                        <DialogHeader className='hidden' />
+                        <DialogTitle className='hidden'>{selectedPerson?.name}</DialogTitle>
+                        {selectedPerson && (
+                          <BgPattern
+                            lines={[
+                              { orientation: 'horizontal', start: 0, end: 1, position: 0.12 },
+                              { orientation: 'horizontal', start: 0, end: 1, position: 0.88 },
+                              {
+                                orientation: 'horizontal',
+                                start: 0.37,
+                                end: 1,
+                                position: 0.72,
+                                variant: 'dashed',
+                              },
+                              { orientation: 'vertical', start: 0, end: 1, position: 0.03, variant: 'dashed' },
+                              { orientation: 'vertical', start: 0, end: 1, position: 0.37 },
+                              { orientation: 'vertical', start: 0, end: 1, position: 0.39, variant: 'dashed' },
+                            ]}
+                            className='p-4 md:px-12 md:py-24'
+                          >
+                            <div className='flex flex-col gap-16 sm:flex-row'>
+                              <div className='relative w-1/3 shrink-0'>
+                                <div className='relative aspect-[3/4] w-full overflow-hidden'>
+                                  <Image
+                                    src={selectedPerson.image}
+                                    alt={selectedPerson.name}
+                                    fill
+                                    className='object-cover'
+                                  />
+                                </div>
+                              </div>
+                              <div className='flex flex-col justify-between'>
+                                <div className='flex flex-col space-y-4'>
+                                  {selectedPerson.description.map((paragraph, index) => (
+                                    <p key={index} className='leading-relaxed text-gray-700'>
+                                      {paragraph}
+                                    </p>
+                                  ))}
+                                </div>
+                                <div className='mt-4 space-y-1'>
+                                  <h4 className='font-serif text-xl text-gray-700'>{selectedPerson.name}</h4>
+                                  <p className='text-gray-600'>{selectedPerson.title}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </BgPattern>
+                        )}
+                      </DialogContent>
+                    </Dialog>
 
     
     </main>
