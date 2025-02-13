@@ -8,11 +8,11 @@ import { BgPattern } from '@/components/bg-pattern';
 
 export default function InaugrationPage() {
   const inaugrationGrid = [
-    { key:1, src:"/news-events/inaugration/1.jpg" },
-    { key:2, src:"/news-events/inaugration/2.jpg" },
-    { key:3, src:"/news-events/inaugration/3.jpg" },
-    { key:4, src:"/news-events/inaugration/4.jpg" },
-    { key:5, src:"/news-events/inaugration/5.jpg" },
+    { key:1, src:"/news-events/inaugration/1.JPG" },
+    { key:2, src:"/news-events/inaugration/2.JPG" },
+    { key:3, src:"/news-events/inaugration/3.JPG" },
+    { key:4, src:"/news-events/inaugration/4.JPG" },
+    { key:5, src:"/news-events/inaugration/5.JPG" },
     { key:6, src:"/news-events/inaugration/6.jpg" },
   ];
 
@@ -21,7 +21,7 @@ export default function InaugrationPage() {
       {/* Hero Section */}
       <div className='relative h-[70vh] w-full overflow-hidden'>
         <Image
-          src='/news-events/inaugration/TOP.jpg'
+          src='/news-events/inaugration/TOP.JPG'
           alt='Academics Hero'
           fill
           className='object-cover transition-transform duration-500 hover:scale-110'
