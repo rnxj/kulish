@@ -78,7 +78,7 @@ const artLabSrc = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {techLabGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -113,7 +113,7 @@ const artLabSrc = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {geobiologySrc.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -149,7 +149,7 @@ const artLabSrc = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {artLabSrc.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image

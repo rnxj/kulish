@@ -93,7 +93,7 @@ const saveGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {blindGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -128,7 +128,7 @@ const saveGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {globalGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -164,7 +164,7 @@ const saveGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {roadGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -200,7 +200,7 @@ const saveGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {sambherGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -244,7 +244,7 @@ const saveGrid = [
                   className='h-[500px] w-full object-cover'
                 />
               </div>
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {saveGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
