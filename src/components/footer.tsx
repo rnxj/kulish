@@ -25,7 +25,7 @@ const SocialLink = ({
   <a
     href={href}
     target='_blank'
-    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-2xl ${className}`}
+    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-xl ${className}`}
   >
     <Icon className='hover:text-sky-500 mr-2' size={size} stroke='#0ea5e9' />
     {children}
@@ -117,7 +117,7 @@ export const Footer = () => {
               </div>
             ))}
           </div>
-          <div className='flex mt-6'>
+          <div className={cn('flex mt-6', !isContactUs? 'hidden': '')}>
             <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ">
             <Button className='mt-2 mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
               Admissions
