@@ -8,115 +8,118 @@ const stagesData = {
     number: '01',
     content: [
       {
-        title: 'A Nurturing Start: The Early Years Curriculum',
+        title: '',
         description:
-          'At our school, the Early Years curriculum provides a warm, stimulating environment where young learners thrive. By fostering natural curiosity and a love for learning, we create a space where children feel encouraged to explore and discover. Our approach emphasizes play-based learning, allowing students to engage in hands-on activities that stimulate their senses and spark their imaginations.',
+          'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize play-based learning, where children explore and discover through hands-on activities that engage their senses and imaginations. Our experiential learning approach is enhanced by our extensive outdoor learning spaces, where children can connect with nature and learn through real-world experiences.',
       },
       {
-        title: 'Experiential Learning in Nature',
+        title: '',
         description:
-          'Our curriculum is enhanced by extensive outdoor learning spaces, where children explore their environment and engage in real-world experiences. This approach not only enhances their understanding of the environment but also instills a sense of wonder and respect for the world around them. Through these outdoor activities, children learn by doing, building confidence as they navigate new challenges.',
+          'We offer robust programs in sports, promoting physical development and teamwork. Our specially curated literacy sessions and math lab provide targeted support to strengthen foundational skills. These sessions are designed to build critical skills, including thinking, communication, social, self-management, and research skills.',
       },
       {
-        title: 'Creativity through the Arts',
+        title: '',
         description:
-          'A cornerstone of our Early Years program is a focus on storytelling, performing arts, and visual art. These creative outlets allow students to express themselves freely while developing essential skills in empathy and communication. By exploring different perspectives, children cultivate Learner Profile attributes, such as open-mindedness, communicative skills, and reflection, which are central to their personal growth.',
+          'Our Early Years curriculum lays a solid foundation for lifelong learning through a rich tapestry of play, creativity, and experiential education',
       },
-      {
-        title: 'Building Strong Foundations: Literacy, Math, and Sports',
-        description:
-          'We offer robust programs that build critical literacy and math foundations through curated lessons and hands-on learning in our math lab. Alongside academic development, our sports program promotes physical fitness and teamwork, helping children be active while building important social skills. These experiences also focus on developing key Approaches to Learning (ATL) skills, including thinking, communication, social, self-management, and research abilities.',
-      },
-      {
-        title: 'Cultivating the Learner Profile',
-        description:
-          'Our curriculum seamlessly integrates the Learner Profile attributes—such as being inquirers, knowledgeable, thinkers, communicators, principled, open-minded, caring, risk-takers, balanced, and reflective—into everyday activities. By nurturing these traits, we empower students to grow into well-rounded individuals ready to engage with a changing world, demonstrating local and global mindedness.',
-      },
-      {
-        title: 'Laying the Foundation for Lifelong Learning',
-        description:
-          'Our Early Years curriculum is a rich tapestry of play, creativity, and experiential exploration, fostering a deep sense of wonder and curiosity about the world. With a strong emphasis on holistic development, we help shape confident, curious, and resilient individuals ready to navigate the world with enthusiasm.',
-      },
+      // {
+      //   title: 'Building Strong Foundations: Literacy, Math, and Sports',
+      //   description:
+      //     'We offer robust programs that build critical literacy and math foundations through curated lessons and hands-on learning in our math lab. Alongside academic development, our sports program promotes physical fitness and teamwork, helping children be active while building important social skills. These experiences also focus on developing key Approaches to Learning (ATL) skills, including thinking, communication, social, self-management, and research abilities.',
+      // },
+      // {
+      //   title: 'Cultivating the Learner Profile',
+      //   description:
+      //     'Our curriculum seamlessly integrates the Learner Profile attributes—such as being inquirers, knowledgeable, thinkers, communicators, principled, open-minded, caring, risk-takers, balanced, and reflective—into everyday activities. By nurturing these traits, we empower students to grow into well-rounded individuals ready to engage with a changing world, demonstrating local and global mindedness.',
+      // },
+      // {
+      //   title: 'Laying the Foundation for Lifelong Learning',
+      //   description:
+      //     'Our Early Years curriculum is a rich tapestry of play, creativity, and experiential exploration, fostering a deep sense of wonder and curiosity about the world. With a strong emphasis on holistic development, we help shape confident, curious, and resilient individuals ready to navigate the world with enthusiasm.',
+      // },
     ],
     lines: [
-      { orientation: 'horizontal', start: 0, end: 0.33, position: 0.2, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0, end: 0.33, position: 0.3, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0.33, end: 1, position: 0.08 },
       { orientation: 'horizontal', start: 0.33, end: 1, position: 0.95, variant: 'dashed' },
     ] as const,
   },
   'primary-school': {
-    title: 'PRIMARY SCHOOL',
+    title: 'PRIMARY YEARS PROGRAMME',
     number: '02',
     content: [
       {
-        title: "The Kulish School's Primary Years Programme (PYP)",
+        title: "",
         description:
-          'As a candidate school for IB PYP authorization, the Primary Years Programme (PYP) at The Kulish School is designed to create a joyful and nurturing learning environment where children feel secure, confident, and connected to their identities. This foundational stage of education emphasizes emotional and social well-being, ensuring every child feels valued and included as they adjust to new surroundings.',
+          'The Primary School, offering an international curriculum, caters to students from Nursery to Grade 8. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing a broad academic experience that emphasizes the connections between subjects and fosters an international perspective.',
       },
       {
-        title: 'Fostering Inquiry and Exploration',
+        title: '',
         description:
-          "At the heart of the PYP is a deep commitment to inquiry and exploration as fundamental pathways for learning. Children are naturally curious and eager to understand the world around them. To nurture this curiosity, we offer a wide range of hands-on experiences that engage children's senses and imagination. These activities are carefully organized around thematic units and expeditions, which connect various subjects, enabling children to explore complex ideas within meaningful contexts.",
+          "Teaching practices encourage curiosity, inquiry, and critical thinking through an inquiry-based approach, allowing students to learn individually or collaboratively. Lessons build on students' understanding and interests, engaging them in real-life, purposeful learning. Technology is integrated into all subjects, enhancing the learning experience.",
       },
       {
-        title: 'Integrated and Holistic Learning',
+        title: '',
         description:
-          'The PYP integrates subjects such as language, science, social studies, music, movement, physical education, and STEM, breaking down traditional boundaries between disciplines. This approach encourages children to see the connections between different areas of knowledge. For example, a unit on ecosystems might combine:',
-        bulletPoints: [
-          'Science: Understanding habitats',
-          'Language: Reading and writing about animals',
-          'Art: Creating representations of flora and fauna',
-          'Music: Exploring natural sounds',
-        ],
+          'We aim to nurture attitudes like creativity, empathy, independence, and respect, and encourage students to take meaningful action within and beyond the school community. Assessment strategies are varied, offering insight into student progress, with opportunities for students to share their learning through student-led conferences.',
+        // bulletPoints: [
+        //   'Science: Understanding habitats',
+        //   'Language: Reading and writing about animals',
+        //   'Art: Creating representations of flora and fauna',
+        //   'Music: Exploring natural sounds',
+        // ],
       },
-      {
-        title: 'Collaborative Learning and Social Skills Development',
-        description:
-          'The experiential units in the PYP foster collaborative learning, where children work together to investigate, ask questions, and share ideas. This collaborative environment helps develop essential social skills such as communication, teamwork, and empathy, which are critical for their future interactions both inside and outside the classroom.',
-      },
-      {
-        title: 'Building Critical Thinkers and Lifelong Learners',
-        description:
-          'Through inquiry-based learning, children at The Kulish School develop critical thinking skills and gain a sense of ownership over their learning process. By asking questions, seeking answers, and reflecting on their experiences, they become empowered to take control of their education. The PYP aims to inspire lifelong learners who are not only knowledgeable but also adaptable and innovative in their approach to problem-solving.',
-      },
+      // {
+      //   title: 'Collaborative Learning and Social Skills Development',
+      //   description:
+      //     'The experiential units in the PYP foster collaborative learning, where children work together to investigate, ask questions, and share ideas. This collaborative environment helps develop essential social skills such as communication, teamwork, and empathy, which are critical for their future interactions both inside and outside the classroom.',
+      // },
+      // {
+      //   title: 'Building Critical Thinkers and Lifelong Learners',
+      //   description:
+      //     'Through inquiry-based learning, children at The Kulish School develop critical thinking skills and gain a sense of ownership over their learning process. By asking questions, seeking answers, and reflecting on their experiences, they become empowered to take control of their education. The PYP aims to inspire lifelong learners who are not only knowledgeable but also adaptable and innovative in their approach to problem-solving.',
+      // },
     ],
     lines: [
-      { orientation: 'horizontal', start: 0, end: 0.33, position: 0.15, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0, end: 0.35, position: 0.3, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0.33, end: 1, position: 0.08 },
       { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
     ] as const,
   },
   'middle-school': {
-    title: 'MIDDLE SCHOOL',
+    title: 'MIDDLE YEARS',
     number: '03',
     content: [
       {
-        title: 'Middle Years Curriculum (MYC): A Holistic Approach',
+        title: '',
         description:
-          'The Middle Years Curriculum (MYC) at The Kulish School challenges students intellectually while supporting their personal, social, and emotional growth. Through Problem-Based Learning (PBL), Project-Based Learning, and Design Thinking, students engage in real-world challenges, honing critical thinking, creativity, and collaboration skills.',
+          'The Middle Years curriculum (national and international) is designed to provide learners with a robust and rigorous academic experience. Students will be exposed to various disciplines and their connections to future careers and vocations.',
       },
       {
-        title: 'Interdisciplinary and Global Learning',
+        title: '',
         description:
-          "The MYC integrates subjects like science, mathematics, humanities, technology, and foreign languages, enhancing students' global perspectives and communication skills. Language acquisition is a key element, fostering appreciation for diverse cultures and promoting international-mindedness.",
+          "The pedagogy in the Middle Years focuses on investigation and exploration, along with hands-on experiences. The academic curriculum is supplemented and complemented by strong arts and sports programs.",
       },
-      {
-        title: 'Real-World Connections',
-        description:
-          'Our interdisciplinary approach ensures that learning is interconnected across subjects, encouraging students to make meaningful connections. For instance, a project on climate change may involve scientific research, technological innovation, and effective communication, equipping students with the tools to address complex global issues.',
-      },
-      {
-        title: 'Collaboration and Leadership Development',
-        description:
-          'Collaboration is at the heart of the MYC, with students working closely with peers and teachers to develop leadership, teamwork, and communication skills. By fostering student agency and reflective practices, the MYC nurtures capable, independent learners prepared for future challenges.',
-      },
-      {
-        title: 'Globally Minded and Resilient Learners',
-        description:
-          "The Kulish School's MYC cultivates globally minded, resilient individuals who are ready to thrive both academically and personally. Our holistic approach ensures students are equipped to succeed in an interconnected world.",
-      },
+      // {
+      //   title: 'Real-World Connections',
+      //   description:
+      //     'Our interdisciplinary approach ensures that learning is interconnected across subjects, encouraging students to make meaningful connections. For instance, a project on climate change may involve scientific research, technological innovation, and effective communication, equipping students with the tools to address complex global issues.',
+      // },
+      // {
+      //   title: 'Collaboration and Leadership Development',
+      //   description:
+      //     'Collaboration is at the heart of the MYC, with students working closely with peers and teachers to develop leadership, teamwork, and communication skills. By fostering student agency and reflective practices, the MYC nurtures capable, independent learners prepared for future challenges.',
+      // },
+      // {
+      //   title: 'Globally Minded and Resilient Learners',
+      //   description:
+      //     "The Kulish School's MYC cultivates globally minded, resilient individuals who are ready to thrive both academically and personally. Our holistic approach ensures students are equipped to succeed in an interconnected world.",
+      // },
     ],
     lines: [
-      { orientation: 'horizontal', start: 0, end: 0.33, position: 0.2, variant: 'dashed' },
-      { orientation: 'horizontal', start: 0.33, end: 1, position: 0.95, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0, end: 0.33, position: 0.3, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0.33, end: 1, position: 0.08 },
+      { orientation: 'horizontal', start: 0.33, end: 1, position: 0.98, variant: 'dashed' },
     ] as const,
   },
 } as const;
@@ -157,7 +160,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 <section key={index} className='space-y-3'>
                   <h2 className='font-extrabold text-black'>{section.title}</h2>
                   <p className='leading-relaxed'>{section.description}</p>
-                  {'bulletPoints' in section && section.bulletPoints && (
+                  {/* {'bulletPoints' in section && section.bulletPoints && (
                     <ul className='list-disc space-y-2 pl-4'>
                       {section.bulletPoints.map((point, i) => (
                         <li key={i}>
@@ -165,7 +168,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                         </li>
                       ))}
                     </ul>
-                  )}
+                  )} */}
                 </section>
               ))}
             </div>

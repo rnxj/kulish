@@ -61,15 +61,15 @@ export const Footer = () => {
   return (
     <footer className='footer-section'>
       {/* Blue Background Section */}
-      {/* <div className='bg-sky-500 px-4 py-6 text-center text-white'>
-        <h2 className='mb-2 text-xl uppercase md:text-2xl'>Ready to take the next step?</h2>
+      <div className='bg-sky-500 px-4 py-6 text-center text-white'>
+        {/* <h2 className='mb-2 text-xl uppercase md:text-2xl'>Ready to take the next step?</h2>
         <p className='mb-6 text-sm md:mb-8 md:text-base'>
           Classes Start April 7, 2025 | Term Dates
-        </p>
-        <Button size='lg' className='rounded-none text-sm md:text-base'>
+        </p> */}
+        {/* <Button size='lg' className='rounded-none text-sm md:text-base'>
           REQUEST INFO
-        </Button>
-      </div> */}
+        </Button> */}
+      </div>
 
       {/* Middle Section */}
       <div className='my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8'>

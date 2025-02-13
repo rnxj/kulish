@@ -126,7 +126,8 @@ export const Navbar = () => {
           </nav>
 
           {/* Social Icons & CTA */}
-          <div className='hidden items-center space-x-4 lg:flex'>
+          <div className='hidden items-center space-x-4 lg:flex lg:flex-row'>
+            {/* <div className='text-white text-xs border-2 rounded-full p-2'>Connect with us</div> */}
             <div className='flex items-center space-x-2'>
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;

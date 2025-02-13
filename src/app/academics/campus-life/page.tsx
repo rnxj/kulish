@@ -98,16 +98,14 @@ export default function CampusLifePage() {
 
         {/* Campus Life Overview */}
         <div className='bg-sky-600 py-12 text-center text-white'>
-          <div className='mx-auto max-w-4xl px-4'>
+          <div className='mx-auto max-w-5xl px-4'>
             <h3 className='mb-4 font-serif text-2xl uppercase'>Campus Life</h3>
             <p>
-              Our vibrant campus life includes a state-of-the-art facilities, green spaces, and a
-              variety of activities to engage students beyond the classroom. We believe in creating
-              a supportive and dynamic environment where students can thrive.
+              Our vibrant campus life includes a state-of-the-art facilities, green spaces, and a variety of activities to engage students beyond the classroom. We believe in creating a supportive and dynamic environment where students can thrive.
               <br />
               Our campus features:
             </p>
-            <p className='text-gray-800'>Our campus life includes a state-of-the-art facilities</p>
+            {/* <p className='text-gray-800'>Our campus life includes a state-of-the-art facilities</p> */}
           </div>
         </div>
       </div>
