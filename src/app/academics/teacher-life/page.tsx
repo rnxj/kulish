@@ -225,7 +225,7 @@ export default function CampusLifePage() {
               <div className='w-16 font-serif text-2xl font-medium text-blue-500'>04/</div>
               <div>
                 <h2 className='mb-4 font-serif text-3xl text-gray-700'>
-                  Developing Leaders
+                  Developing
                   <br />
                   Teacher Leadership
                 </h2>
