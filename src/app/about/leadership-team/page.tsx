@@ -6,8 +6,29 @@ import { useEffect, useState } from 'react';
 import { BgPattern } from '@/components/bg-pattern';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 
-export default function LeadershipTeamPage() {
+export default function AboutPage() {
   const heroImages = ['/leadership-team/hero/1.jpg'];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [selectedPerson, setSelectedPerson] = useState<(typeof leadershipTeam)[0] | (typeof experts)[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(true);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const handleLeadershipClick = ()=>{
+    console.log("clicked finally");
+  }
+
   const leadershipTeam = [
     {
       name: 'Mrs. Vrinda Kothari',
@@ -65,23 +86,6 @@ export default function LeadershipTeamPage() {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const [selectedPerson, setSelectedPerson] = useState<(typeof leadershipTeam)[0] | (typeof experts)[0] | null>(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(true);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      handleNext();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-  };
-
   return (
     <main className='min-h-screen'>
       {/* Hero Image Section */}
@@ -124,7 +128,7 @@ export default function LeadershipTeamPage() {
           <div className='mx-4 px-4 pb-24 pt-36 md:mx-12'>
             <div className='grid grid-cols-1 gap-16 lg:grid-cols-[2fr_5fr]'>
               {/* Left Section - Positioned higher */}
-              <div className='-mt-20'>
+              <div onClick={handleLeadershipClick} className='-mt-20'>
                 <h2 className='mb-4 font-serif text-4xl font-light tracking-wide text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                   Leadership
                 </h2>
@@ -144,10 +148,14 @@ export default function LeadershipTeamPage() {
                   <div
                     key={member.name}
                     className='flex cursor-pointer flex-col'
-                    onClick={(s) => {
-                      setSelectedPerson(member);
-                      setIsDialogOpen(true);
-                    }}
+                    onClick={handleLeadershipClick
+                    //   () => {
+                    //   console.log("hello",member);
+                    //   setSelectedPerson(member);
+                    //   setIsDialogOpen(true);
+                    //   console.log(member);
+                    // }
+                  }
                   >
                     <div className='relative aspect-[3/4] w-full overflow-hidden'>
                       <Image src={member.image} alt={member.name} fill className='object-cover' />
@@ -214,7 +222,7 @@ export default function LeadershipTeamPage() {
           </div>
         </BgPattern>
       </div>
-
+            
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className='max-w-5xl p-0'>
           <DialogHeader className='hidden' />
