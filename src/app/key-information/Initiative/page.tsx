@@ -100,7 +100,7 @@ const radioGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {bakeryGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -135,7 +135,7 @@ const radioGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {plantationGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -179,7 +179,7 @@ const radioGrid = [
                   className='h-[500px] w-full object-cover'
                 />
               </div>
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {mountainGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -224,7 +224,7 @@ const radioGrid = [
                   className='h-[500px] w-full object-cover'
                 />
               </div>
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {artGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -259,7 +259,7 @@ const radioGrid = [
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {jaipurGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
@@ -301,7 +301,7 @@ const radioGrid = [
                   className='h-[500px] w-full object-cover'
                 />
               </div>
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {radioGrid.map((imgMap, index) =>(
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image

@@ -284,7 +284,7 @@ export default function CampusLifePage() {
               height={500}
               className='h-[400px] w-[600px] rounded-2xl object-cover'
             />
-            <div className='flex items-start pt-16'>In house workshops by renowed experts</div>
+            <div className='flex items-start pt-4 text-sm font-bold'>In house workshops by<br/> renowed experts</div>
           </motion.div>
 
           <motion.div
