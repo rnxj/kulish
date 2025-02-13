@@ -66,10 +66,9 @@ export default function LeadershipTeamPage() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedPerson, setSelectedPerson] = useState<
-    (typeof leadershipTeam)[0] | (typeof experts)[0] | null
-  >(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const [selectedPerson, setSelectedPerson] = useState<(typeof leadershipTeam)[0] | (typeof experts)[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -145,7 +144,7 @@ export default function LeadershipTeamPage() {
                   <div
                     key={member.name}
                     className='flex cursor-pointer flex-col'
-                    onClick={() => {
+                    onClick={(s) => {
                       setSelectedPerson(member);
                       setIsDialogOpen(true);
                     }}

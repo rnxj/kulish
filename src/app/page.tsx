@@ -212,12 +212,42 @@ export default function HomePage() {
     },
   ];
 
+
+  const innovationSlides = [
+    {
+      title: 'Innovation',
+      description:
+        'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
+        image: '/landing/cards/innovation.jpg',
+        logoImage: '/landing/cards/logo-innovation.png',
+      href: '/key-information/Innovation',
+    },
+    {
+      title: 'Initiative',
+      description:
+        'Physical activity is an essential component of our 3l program, promoting a healthy lifestyle and the development of motor skills. We offer a wide range of sports and physical activities that not only enhance',
+        logoImage: '/landing/cards/logo-initiative.png',
+        image: '/landing/cards/initiative.jpg',
+      href: '/key-information/Initiative',
+    },
+    {
+      title: 'Impact',
+      description:
+        'Our community-focused innovation initiatives aim to connect students with the world around them, fostering a sense of belonging and purpose. Students participate in innovation led projects that',
+      image: '/key-information/impact.jpg',
+      logoImage: '/landing/cards/Global Curriculum.svg',
+      href: '/key-information/Impact',
+    },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentInnovationIndex, setInnovationCurrentIndex] = useState(0);
   const [order, setOrder] = useState([2, 0, 1]);
 
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
+      handleInnovationNext();
     }, 10000);
 
     return () => clearInterval(timer);
@@ -231,6 +261,24 @@ export default function HomePage() {
 
     return () => clearInterval(timer);
   }, [order]);
+
+
+  const handleInnovationPrevious = () => {
+    setInnovationCurrentIndex((prev) => (prev === 0 ? innovationSlides.length - 1 : prev - 1));
+  };
+
+  const handleInnovationNext = () => {
+    setInnovationCurrentIndex((prev) => (prev + 1) % innovationSlides.length);
+  };
+
+  const visibleCount = 2;
+  const getVisibleIndices = () => {
+    const indices = [];
+    for (let i = 0; i < visibleCount; i++) {
+      indices.push((currentInnovationIndex + i) % innovationSlides.length);
+    }
+    return indices;
+  };
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % heroImages.length);
@@ -415,45 +463,36 @@ export default function HomePage() {
                 to their communities.
               </p>
             </div>
-            {/* Cards */}
-            <div className='grid gap-8 px-4 md:grid-cols-2 md:px-0'>
-              <div className='overflow-hidden bg-white shadow-md'>
-                <div className='relative h-96'>
-                  <Image
-                    src='/landing/cards/innovation.jpg'
-                    alt='Admission Image'
-                    fill
-                    className='object-cover'
-                  />
-                </div>
-                <div className='flex gap-4 p-4'>
-                  <div className='flex-shrink-0'>
-                    <Image
-                      src='/landing/cards/logo-innovation.png'
-                      alt='Admission Icon'
-                      width={60}
-                      height={60}
-                    />
-                  </div>
-                  <div>
-                    <h5 className='mb-2 font-medium'>Innovation</h5>
-                    <p className='mb-2 text-xs text-gray-600'>
-                      Our community-focused innovation initiatives aim to connect students with the
-                      world around them, fostering a sense of belonging and purpose. Students
-                      participate in innovation led projects that
-                    </p>
-                    <Button variant='link' className='p-0 text-sky-600'>
-                      Read More
-                    </Button>
-                  </div>
-                </div>
-              </div>
 
-              <div className='overflow-hidden bg-white shadow-md'>
+
+
+            {/* Cards */}
+
+         <div className='flex w-full mx-auto items-center justify-center'>      
+            <Button 
+              variant='outline'
+              size='icon'
+              className='z-10 rounded-full'
+              onClick={handleInnovationPrevious}>
+                  <ArrowLeft className='h-4 w-4' />
+            </Button>
+            <div className='grid gap-8 px-4 md:grid-cols-2 md:px-4'>
+               {getVisibleIndices().map((index) => {
+              const program = innovationSlides[index];
+              return (
+                <motion.div
+                key={`${program.title}-${index}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className='overflow-hidden bg-white shadow-md'
+              >
+
+                <div className='overflow-hidden bg-white shadow-md'>
                 <div className='relative h-96'>
                   <Image
-                    src='/landing/cards/initiative.jpg'
-                    alt='Secondary Admission'
+                    src={program.image}
+                    alt={program.title}
                     fill
                     className='object-cover'
                   />
@@ -461,26 +500,37 @@ export default function HomePage() {
                 <div className='flex gap-4 p-4'>
                   <div className='flex-shrink-0'>
                     <Image
-                      src='/landing/cards/logo-initiative.png'
-                      alt='Secondary Icon'
+                      src={program.logoImage}
+                      alt={program.title}
                       width={60}
                       height={60}
                     />
                   </div>
                   <div>
-                    <h5 className='mb-2 font-medium'>Initiative</h5>
+                    <h5 className='mb-2 font-medium'>{program.title}</h5>
                     <p className='mb-2 text-xs text-gray-600'>
-                      Physical activity is an essential component of our 3l program, promoting a
-                      healthy lifestyle and the development of motor skills. We offer a wide range
-                      of sports and physical activities that not only enhance
+                    {program.description}
                     </p>
+                    <Link href={program.href}>
                     <Button variant='link' className='p-0 text-sky-600'>
                       Read More
                     </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
+              </motion.div>
+              );
+            })}
             </div>
+            <Button
+              variant='outline'
+              size='icon'
+              className='z-10 rounded-full'
+              onClick={handleInnovationNext}>
+            <ArrowRight className='h-4 w-4' />
+          </Button>
+          </div>
           </div>
         </div>
       </BgPattern>

@@ -162,7 +162,7 @@ export default function AcademicsPage() {
               Literacy
             </h2>
 
-            <p className='text-gray-800'>
+            <p className='text-md text-gray-800'>
               At The Kulish School, we believe in starting early to equip students with essential
               life skills. Our Financial Literacy program introduces Nursery students to saving,
               budgeting, and informed decision-making, laying a foundation for confident money
@@ -170,7 +170,7 @@ export default function AcademicsPage() {
               patience, goal-setting, critical thinking, and risk assessment.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-md text-gray-800'>
               Blending modern learning with ancient Indian values, we foster innovation, global
               citizenship, and compassionate caregiving. Our holistic approach nurtures adaptable
               thinkers with strong ethical grounding, cultural awareness, and the skills needed to
@@ -239,34 +239,27 @@ export default function AcademicsPage() {
               Entrepreneurship
             </h2>
 
-            <div className='flex flex-col space-y-2'>
-              <p className='text-gray-800'>
+            <div className='flex flex-col text-md space-y-2'>
+              <p className='text-gray-800 text-md'>
                 The Entrepreneurship program fosters creativity and an entrepreneurial mindset,
                 preparing students to be future leaders. Through hands-on projects and teamwork,
                 they learn the entrepreneurial process from idea to execution.
               </p>
 
-              <p className='text-gray-800'>
-                Blending modern learning with ancient Indian values, we foster innovation, global
-                citizenship, and compassionate caregiving. Our holistic approach nurtures adaptable
-                thinkers with strong ethical grounding, cultural awareness, and the skills needed to
-                excel in a globally connected world.
-              </p>
-
-              <p className='text-gray-800'>
+              <p className='text-gray-800 text-md'>
                 Key elements include market research, product development, marketing strategies, and
                 financial planning. Students develop skills in generating ideas, conducting market
                 research, testing products, and implementing marketing strategies. They also learn
                 budgeting and forecasting.
               </p>
 
-              <p className='text-gray-800'>
+              <p className='text-gray-800 text-md'>
                 The program enhances innovation, problem-solving, leadership, and critical thinking.
                 Students gain confidence in managing finances and making informed decisions,
                 building a solid foundation for their future.
               </p>
 
-              <p className='text-gray-800'>
+              <p className='text-gray-800 text-md'>
                 In short, the Entrepreneurship program equips students with essential skills,
                 preparing them to be innovative leaders and problem-solvers.
               </p>
@@ -370,28 +363,28 @@ export default function AcademicsPage() {
                 <br /> and Mathematics)
             </h2>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-md'>
               Welcome to the STEM Lab at The Kulish School, where we inspire and empower our
               students to explore the exciting world of Science, Technology, Engineering, and
               Mathematics (STEM). Our lab is a dynamic space designed to foster creativity, critical
               thinking, and hands-on learning.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-md'>
               Through engaging activities, students gain practical experience and deepen their
               understanding of STEM concepts that are applicable to real-world challenges. In the
               STEM Lab, students participate in projects that include robotics and engineering,
               scientific experiments, and problem-solving.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-md'>
               These activities allow them to develop skills that are not only essential for their
               academic growth but also highly valuable for their future careers. Students are
               encouraged to work collaboratively on projects, where they can apply their knowledge
               to solve problems, create solutions and effectively communicate their ideas.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-md'>
               Our state-of-the-art equipment and resources provide students with the tools they need
               to innovate and create. At The Kulish School, we bridge the gap between classroom
               learning and real-world applications, preparing our students for the exciting
