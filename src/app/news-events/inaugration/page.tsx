@@ -35,7 +35,7 @@ export default function InaugrationPage() {
           <h2 className='mb-4 font-serif text-3xl font-light text-[#333]'>Vice President Jagdeep Dhankhar inaugurated<br/> The Kulish School located in Jagatpura in the capital Jaipur</h2>
           {/* <h3 className='mb-5 text-xl font-normal text-[#555]'>Kulish Community Service Program</h3> */}
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
-          Hon'ble Vice-President, Shri Jagdeep Dhankhar and Dr.Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan
+          Hon'ble Vice President, Shri Jagdeep Dhankhar and Dr. Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan
           </p>
         </div>
       </section>

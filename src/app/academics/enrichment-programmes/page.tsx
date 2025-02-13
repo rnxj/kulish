@@ -105,16 +105,15 @@ export default function AcademicsPage() {
             </DialogTrigger>
             <DialogContent className='p-0 sm:max-w-[800px]'>
               <DialogTitle className='hidden'>
-                Enrichment Programmes In The Kulish School
+                Enrichment Programmes At The Kulish School
               </DialogTitle>
               <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
             </DialogContent>
           </Dialog>
 
-          <h3 className='mb-4 text-2xl font-medium'>Enrichment Programmes In The Kulish School</h3>
-          <p className='max-w-3xl px-4'>
-            Experience Kulish School's Enrichment Programmes, where innovation and creativity come
-            to life.
+          <h3 className='mb-4 text-2xl font-medium'>Enrichment Programmes At The Kulish School</h3>
+          <p className='max-w-4xl px-4'>
+            Experience The Kulish School's Enrichment Programmes, where innovation and creativity come to life.
             <br />
             Discover how our hands-on experiences and diverse activities ignite curiosity and foster
             growth in every student
@@ -125,10 +124,10 @@ export default function AcademicsPage() {
       {/* Curriculum Overview */}
       <div className='bg-sky-600 py-12 text-center text-white'>
         <div className='mx-auto max-w-5xl px-4'>
-          <h3 className='mb-4 text-2xl font-medium uppercase'>Enrichment Programs</h3>
+          <h3 className='mb-4 text-2xl font-medium uppercase'>Enrichment Programmes</h3>
           <p>
             At The Kulish School, we believe in nurturing the whole child by offering a variety of
-            enrichment programmes that complement our core curriculum. These programs are designed
+            enrichment Programmes that complement our core curriculum. These programs are designed
             to develop essential life skills, spark curiosity, and inspire a love of learning.
             <br />
             Here are the skill-based opportunities available for our primary students:
@@ -148,7 +147,7 @@ export default function AcademicsPage() {
           { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
         ]}
       >
-        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[4fr_3fr]'>
+        <div className='grid grid-cols-1 gap-8 p-6 md:p-24 lg:grid-cols-[4fr_3fr]'>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -173,7 +172,7 @@ export default function AcademicsPage() {
             </p>
 
             <p className='text-md text-gray-800'>
-              Blending modern learning with ancient Indian values, we foster innovation, global
+              By blending modern learning with ancient Indian values, we foster innovation, global
               citizenship, and compassionate caregiving. Our holistic approach nurtures adaptable
               thinkers with strong ethical grounding, cultural awareness, and the skills needed to
               excel in a globally connected world.
@@ -212,7 +211,7 @@ export default function AcademicsPage() {
           { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
         ]}
       >
-        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[3fr_2fr]'>
+        <div className='grid grid-cols-1 gap-8 p-6 md:p-24 lg:grid-cols-[3fr_2fr]'>
           <div className='flex justify-center'>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -351,7 +350,7 @@ export default function AcademicsPage() {
           { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
         ]}
       >
-        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[4fr_3fr]'>
+        <div className='grid grid-cols-1 gap-8 p-6 md:p-24 lg:grid-cols-[4fr_3fr]'>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -470,7 +469,7 @@ export default function AcademicsPage() {
           { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
         ]}
       >
-        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[3fr_2fr]'>
+        <div className='grid grid-cols-1 gap-8 p-6 md:p-24 lg:grid-cols-[3fr_2fr]'>
           <div className='flex justify-center'>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -626,7 +625,7 @@ export default function AcademicsPage() {
           { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
         ]}
       >
-        <div className='grid grid-cols-1 gap-8 p-4 md:p-24 lg:grid-cols-[4fr_3fr]'>
+        <div className='grid grid-cols-1 gap-8 p-6 md:p-24 lg:grid-cols-[4fr_3fr]'>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
