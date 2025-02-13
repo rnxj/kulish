@@ -14,7 +14,7 @@ export default function AcademicsPage() {
             src='/admission/hero.jpg'
             alt='Curriculum Video Thumbnail'
             fill
-            className='object-cover'
+            className='object-fill'
             priority
           />
         </section>

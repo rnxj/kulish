@@ -4,6 +4,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
@@ -116,6 +117,18 @@ export const Footer = () => {
               </div>
             ))}
           </div>
+          <div className='flex mt-6'>
+            <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ">
+            <Button className='mt-2 mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+              Admissions
+            </Button>
+            </Link>
+            <Link target="_blank" href="https://dev.thekulishschool.com/career.php">
+            <Button className='mt-2 ml-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+              Careers
+            </Button>
+            </Link>
+            </div>
         </div>
       </div>
 
@@ -128,7 +141,7 @@ export const Footer = () => {
             </Link>
           ))}
         </nav>
-        <div className='flex w-full flex-row items-end justify-end md:w-[45%]'>
+        <div className='flex w-full flex-row items-end justify-center md:justify-end md:w-[45%]'>
           <div className='mr-4 flex flex-wrap justify-center gap-3 md:gap-4'>
             {footerSocialIcons.map((social, index) => (
               <SocialLink
