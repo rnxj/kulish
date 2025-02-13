@@ -6,12 +6,12 @@ import { BgPattern } from '@/components/bg-pattern';
 
 export default function Innovation() {
 const bakeryGrid = [
-  { key:1, src:"/key-information/initiative/BAKERY VISIT/1.jpg" },
-  { key:2, src:"/key-information/initiative/BAKERY VISIT/2.jpg" },
-  { key:3, src:"/key-information/initiative/BAKERY VISIT/3.jpg" },
-  { key:4, src:"/key-information/initiative/BAKERY VISIT/4.jpg" },
-  { key:5, src:"/key-information/initiative/BAKERY VISIT/5.jpg" },
-  { key:6, src:"/key-information/initiative/BAKERY VISIT/6.jpg" },
+  { key:1, src:"/key-information/initiative/BAKERY VISIT/1.JPG" },
+  { key:2, src:"/key-information/initiative/BAKERY VISIT/2.JPG" },
+  { key:3, src:"/key-information/initiative/BAKERY VISIT/3.JPG" },
+  { key:4, src:"/key-information/initiative/BAKERY VISIT/4.JPG" },
+  { key:5, src:"/key-information/initiative/BAKERY VISIT/5.JPG" },
+  { key:6, src:"/key-information/initiative/BAKERY VISIT/6.JPG" },
 
 ];
 
@@ -58,7 +58,7 @@ const radioGrid = [
       {/* Hero Section */}
       <div className='relative h-[60vh] w-full overflow-hidden'>
         <Image
-          src='/key-information/Initiative/The Kulish School key information INITIATIVE TOP.jpg'
+          src='/key-information/initiative/The Kulish School key information INITIATIVE TOP.jpg'
           alt='Academics Hero'
           fill
           className='object-cover transition-transform duration-500 hover:scale-110'
@@ -105,7 +105,7 @@ const radioGrid = [
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Tech Lab Grid'
+                  alt='BAKERY VISIT'
                   key={index}
                   width={400}
                   height={400}
@@ -140,7 +140,7 @@ const radioGrid = [
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
+                  alt='PLANTATION Grid'
                   key={index}
                   width={400}
                   height={400}
@@ -173,7 +173,7 @@ const radioGrid = [
           <div className='relative grid-cols-1 gap-4 overflow-hidden' >
                 <Image
                   src="/key-information/initiative/MOUNTENIERING/1.png"
-                  alt='Initiative Grid'
+                  alt='MOUNTAINEERING'
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -184,7 +184,7 @@ const radioGrid = [
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
+                  alt='MOUNTAINEERING'
                   key={index}
                   width={400}
                   height={400}
@@ -218,7 +218,7 @@ const radioGrid = [
           <div className='relative grid-cols-1 gap-4 overflow-hidden' >
                 <Image
                   src="/key-information/initiative/ART MURAL/1.png"
-                  alt='Initiative Grid'
+                  alt='ART MURAL Grid'
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -229,7 +229,7 @@ const radioGrid = [
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
+                  alt='ART MURAL Grid'
                   key={index}
                   width={400}
                   height={400}
@@ -264,7 +264,7 @@ const radioGrid = [
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
+                  alt='JAIPUR RUGS'
                   key={index}
                   width={400}
                   height={400}
@@ -295,7 +295,7 @@ const radioGrid = [
           <div className='relative grid-cols-1 gap-4 overflow-hidden' >
                 <Image
                   src="/key-information/initiative/RADIO VISIT/1.jpg"
-                  alt='Geobiology Grid'
+                  alt='RADIO STATION'
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -306,7 +306,7 @@ const radioGrid = [
             <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
+                  alt='RADIO STATION'
                   key={index}
                   width={400}
                   height={400}

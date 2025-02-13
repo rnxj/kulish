@@ -25,21 +25,21 @@ const globalGrid = [
 ]
 
 const roadGrid = [
-  { key:1, src:"/key-information/Impact/Road/1.jpg" },
-  { key:2, src:"/key-information/Impact/Road/2.jpg" },
-  { key:3, src:"/key-information/Impact/Road/3.jpg" },
-  { key:4, src:"/key-information/Impact/Road/4.jpg" },
-  { key:5, src:"/key-information/Impact/Road/5.jpg" },
-  { key:6, src:"/key-information/Impact/Road/6.jpg" },
+  { key:1, src:"/key-information/Impact/Road/1.JPG" },
+  { key:2, src:"/key-information/Impact/Road/2.JPG" },
+  { key:3, src:"/key-information/Impact/Road/3.JPG" },
+  { key:4, src:"/key-information/Impact/Road/4.JPG" },
+  { key:5, src:"/key-information/Impact/Road/5.JPG" },
+  { key:6, src:"/key-information/Impact/Road/6.JPG" },
 ]
 
 const sambherGrid = [
-  { key:1, src:"/key-information/Impact/sambher/1.jpg" },
-  { key:2, src:"/key-information/Impact/sambher/2.jpg" },
-  { key:3, src:"/key-information/Impact/sambher/3.jpg" },
-  { key:4, src:"/key-information/Impact/sambher/4.jpg" },
-  { key:5, src:"/key-information/Impact/sambher/5.jpg" },
-  { key:6, src:"/key-information/Impact/sambher/6.jpg" },
+  { key:1, src:"/key-information/Impact/sambher/1.JPG" },
+  { key:2, src:"/key-information/Impact/sambher/2.JPG" },
+  { key:3, src:"/key-information/Impact/sambher/3.JPG" },
+  { key:4, src:"/key-information/Impact/sambher/4.JPG" },
+  { key:5, src:"/key-information/Impact/sambher/5.JPG" },
+  { key:6, src:"/key-information/Impact/sambher/6.JPG" },
 ]
 const saveGrid = [
   { key:1, src:"/key-information/Impact/Save/1.png" },
