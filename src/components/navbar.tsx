@@ -31,6 +31,7 @@ export const Navbar = () => {
   const isHome = pathname === '/';
 
   const menuItems = [
+    { href: '/', label: 'Home' },
     { href: '/about', 
       label: 'About Us',
       submenu: [

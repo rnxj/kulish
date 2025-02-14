@@ -41,6 +41,7 @@ export const Footer = () => {
   const isAboutUs = pathname === '/about'
 
   const menuItems = [
+    { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
     { href: '/key-information', label: 'Key Information' },
     { href: '/news-events', label: 'News & Events' },
@@ -165,8 +166,9 @@ export const Footer = () => {
       {/* Bottom Section */}
       <div className='flex flex-col items-center bg-neutral-800 px-4 py-4 text-white md:flex-row md:px-5'>
         <nav className='mb-4 flex w-full flex-wrap justify-center gap-3 text-center md:mb-0 md:ml-20 md:w-[55%] md:justify-start md:gap-5'>
+           {/* <Link href='/' className='text-xs hover:underline md:text-sm'>Home</Link> */}
           {menuItems.map((item) => (
-            <Link key={item.href} href={item.href} target='_blank' className='text-xs hover:underline md:text-sm'>
+            <Link key={item.href} href={item.href} className= {cn('text-xs hover:underline md:text-sm', item.label==='Home'?'w-full md:w-auto':'')}>
               {item.label}
             </Link>
           ))}
