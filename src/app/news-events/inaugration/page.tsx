@@ -44,16 +44,16 @@ export default function InaugrationPage() {
       <div className='container mx-auto p-4 w-10/12 md:py-12'>
             <div className='grid grid-cols-1 gap-8 '>
       
-                  <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+                  <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
                   {inaugrationGrid.map((imgMap, index) =>(
                   <div className='relative grid-cols-3 gap-4 overflow-hidden' >
                       <Image
                         src={imgMap.src}
-                        alt='Tech Lab Grid'
+                        alt='Inaugration Grid'
                         key={index}
                         width={200}
                         height={200}
-                        className='h-[400px] w-[400px] object-cover'
+                        className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover'
                       />
                     </div>
                     )

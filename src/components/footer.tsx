@@ -148,7 +148,7 @@ export const Footer = () => {
           </div>:<></>}
           
           <div className={cn('flex justify-center md:justify-start mt-6', !isContactUs? 'hidden': '')}>
-            <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ">
+            <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
             <Button className='mt-2 mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
               Admissions
             </Button>

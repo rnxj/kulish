@@ -80,16 +80,15 @@ const petDayGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
             {globalVillagesGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Tech Lab Grid'
-                  key={index}
+                  alt='Global Villages Grid'
                   width={400}
                   height={400}
-                  className='h-[400px] w-[400px] object-cover'
+                  className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover'
                 />
               </div>
               )
@@ -110,21 +109,20 @@ const petDayGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            Honey Comb
+            HONEY COMB
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
             {honeyCombGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
-                  key={index}
+                  alt='Honey Comb Grid'
                   width={400}
                   height={400}
-                  className='h-[400px] w-[400px] object-cover'
+                  className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover'
                 />
               </div>
               )
@@ -151,16 +149,15 @@ const petDayGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
             {mentalistGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
-                  key={index}
+                  alt='MENTALIST Grid'
                   width={400}
                   height={400}
-                  className='h-[400px] w-[400px] object-cover'
+                  className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover'
                 />
               </div>
               )
@@ -187,16 +184,15 @@ const petDayGrid = [
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
             {petDayGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Geobiology Grid'
-                  key={index}
+                  alt='PET DAY Grid'
                   width={400}
                   height={400}
-                  className='h-[400px] w-[400px] object-cover'
+                  className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover'
                 />
               </div>
               )

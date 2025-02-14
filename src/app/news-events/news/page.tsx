@@ -53,16 +53,15 @@ const newsGrid = [
           </div> */}
           <div className='bg-[#f7f7f7] grid grid-cols-1 gap-8 '>
 
-            <div className='grid grid-cols-3 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
             {newsGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Tech Lab Grid'
-                  key={index}
+                  alt='News Grid'
                   width={400}
                   height={400}
-                  className='h-[400px] w-[400px] object-cover'
+                  className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover'
                 />
               </div>
               )

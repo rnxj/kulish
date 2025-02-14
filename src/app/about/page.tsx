@@ -58,17 +58,14 @@ export default function AboutPage() {
   ];
   const experts = [
     {
-      name: 'Sandhya Gatti',
-      title: "Vice Principal",
+      name: 'Abha Seth',
+      title: "Middle Years’ Coordinator",
       description: [
-        'Sandhya is a passionate and pioneering force in teacher education with over 30 years of experience. Holding a Bachelor\'s in Education, a Master\'s in Social Work, and a Ph.D. candidacy with the European International University, Paris, she exemplifies lifelong learning through continuous professional development. Her credentials include multiple International Baccalaureate certifications, a Cambridge International Diploma in Teaching and Learning, and numerous certifications in teacher training and assessment from prestigious institutions like MIT, Cambridge, and Intel.',
-        'Having begun her career as a teacher of Social Sciences and English, Sandhya has spent the last 18 years designing and delivering innovative teacher education programs, both nationally and internationally. She has co-authored a book on teaching English and written for educational publications, while her groundbreaking work includes designing the Post-Graduate Diploma in New Education, accredited by Martin Luther Christian University. This program challenges teachers to reflect on their professional and personal growth, aligning with her ultimate vision of fostering happy, effective teachers and self-directed, joyful learners across India.',
-        'Sandhya is also an advocate for integrating creativity into education. Her previous work includes leading educational projects for an NGO, blending technology with art, music, and theatre for government school children and teachers. A content developer and resource person for leading educational publishers like Cambridge University Press and Pearson, she has also been instrumental in setting up teacher development departments in schools.',
-        'Currently heading Curriculum, Pedagogy, and Professional Development at a progressive learning space in Bangalore, Sandhya also serves as an advisor to several schools and guest faculty at renowned universities like Christ and Azim Premji. Known for her unconventional approach to teaching and learning, she challenges the status quo and fosters transformative, reflective interactions in her training programs.',
-        'Founder of initiatives like Teacher Ink, the Sandhya Gatti Educators\' Trust, and The Skandagiri Commune, Sandhya is dedicated to creating learning environments that empower both teachers and students. A Zen practitioner, deep reader, and avid traveller, she brings a rich, holistic perspective to her work, continuously striving to shape a better, more reflective educational landscape.',
-
+        'Abha Seth, the Middle Years Coordinator at The Kulish School, Jaipur, brings over 17 years of diverse experience in education across India, UAE, and Indonesia. She holds a Bachelor’s in Management and Education, along with double Master’s degrees in English and Management. Certified through IB CAT 1 & 2 workshops, she is also CTET-qualified with a 7.5 IELTS score. ',
+        'Abha is passionate about inquiry-based learning and curriculum design, integrating Sustainable Development Goals into the Middle Years program. She has led workshops for IB educators globally, including SAIBSA and the International Community of Teachers.',
+        'As a parent at TKS and an advocate for parent agency, Abha strives to build a collaborative learning community where learners take ownership of their education.',
       ],
-      image: '/leadership-team/team/VICE PRINCIPAL PHOTO.png',
+      image: '/leadership-team/team/abha.jpg',
     },
     {
       name: 'Antara Naik',
@@ -78,7 +75,7 @@ export default function AboutPage() {
         'Her commitment extends beyond the classroom, working collaboratively with teachers and school leaders to enhance student engagement, improve academic achievement, and support educators through professional development. A trailblazer in the field of education, Antara is currently associated with The Kulish School of the Patrika Group, where she is actively developing a curriculum that fosters well-being and emphasizes skill-based learning.In addition to her contributions to education, Antara is a dedicated animal activist.',
         'She has worked closely with numerous rescue shelters, playing a vital role in rehabilitating abandoned animals. Her compassion extends into her personal life, where three of these rescued animals have found a special place in her home and heart.',
       ],
-      image: '/leadership-team/team/antara.jpg',
+      image: '/leadership-team/team/VICE PRINCIPAL PHOTO.png',
     },
   ];
 
