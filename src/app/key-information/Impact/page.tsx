@@ -11,7 +11,7 @@ const blindGrid = [
   { key:3, src:"/key-information/Impact/Blind/3.jpeg" },
   { key:4, src:"/key-information/Impact/Blind/4.jpeg" },
   { key:5, src:"/key-information/Impact/Blind/5.jpeg" },
-  { key:6, src:"/key-information/Impact/Blind/5.jpeg" },
+  //{ key:6, src:"/key-information/Impact/Blind/5.jpeg" },
 
 ];
 
@@ -95,11 +95,10 @@ const saveGrid = [
 
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {blindGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='Tech Lab Grid'
-                  key={index}
+                  alt='BLIND SCHOOL Grid'
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -130,11 +129,10 @@ const saveGrid = [
 
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {globalGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
                   alt='Geobiology Grid'
-                  key={index}
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -166,11 +164,10 @@ const saveGrid = [
 
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {roadGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
                   alt='Geobiology Grid'
-                  key={index}
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -202,11 +199,10 @@ const saveGrid = [
 
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {sambherGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
                   alt='Geobiology Grid'
-                  key={index}
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
@@ -246,11 +242,10 @@ const saveGrid = [
               </div>
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {saveGrid.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
                   alt='Geobiology Grid'
-                  key={index}
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'
