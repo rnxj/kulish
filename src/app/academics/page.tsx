@@ -111,7 +111,7 @@ export default function AcademicsPage() {
               <DialogTitle className='hidden'>
                 Unlock Global Potential with a Balanced Curriculum
               </DialogTitle>
-              <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
+              <video controls autoPlay className='h-full w-full' src='/academics/what is your curriculum.mp4' />
             </DialogContent>
           </Dialog>
           <h3 className='mb-4 text-2xl font-medium'>

@@ -127,7 +127,7 @@ export default function HomePage() {
     {
       title: 'Global Curriculum',
       description:
-        'Offering both National and International Boards, to provide a comprehensive education',
+        'Offering both national and international boards, to provide a comprehensive education',
       image: '/landing/overview/global-curriculum.png',
     },
     {
