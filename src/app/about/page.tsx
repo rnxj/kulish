@@ -420,7 +420,7 @@ export default function AboutPage() {
                             ]}
                             className='p-4 md:px-12 md:py-24'
                           >
-                            <div className='flex flex-col gap-16 sm:flex-row'>
+                            <div className='flex flex-col items-center justify-center gap-16 sm:flex-row'>
                               <div className='relative w-1/3 shrink-0'>
                                 <div className='relative aspect-[3/4] w-full overflow-hidden'>
                                   <Image
