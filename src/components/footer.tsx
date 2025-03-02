@@ -74,7 +74,7 @@ export const Footer = () => {
   return (
     <footer className='footer-section'>
       {/* Blue Background Section */}
-      <div className='bg-sky-500 px-4 py-6 text-center text-white'>
+      {!isContactUs && <div className='bg-sky-500 px-4 py-6 text-center text-white'>
         {/* <h2 className='mb-2 text-xl uppercase md:text-2xl'>Ready to take the next step?</h2>
         <p className='mb-6 text-sm md:mb-8 md:text-base'>
           Classes Start April 7, 2025 | Term Dates
@@ -99,10 +99,10 @@ export const Footer = () => {
         <></>
         }
         
-      </div>
+      </div>}
 
       {/* Middle Section */}
-      <div className='my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8'>
+      <div className={cn('my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8', isContactUs? 'h-screen':'')}>
         <div className='mb-8 w-full md:mb-0 md:w-1/2'>
           <Image
             src='/logo.png'
@@ -138,7 +138,7 @@ export const Footer = () => {
             
           </p>
           {!isAboutUs?
-          <div className={cn('mt-4 flex flex-col justify-center gap-3 md:gap-5', isContactUs? 'md:flex-col' : 'md:flex-row')}>
+          <div className={cn('mt-4 flex flex-col w-fit mx-auto gap-3 md:gap-5', isContactUs? 'md:flex-col' : 'md:flex-row')}>
             {socialLinks.map((social, index) => (
               <div key={index}>
                 <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] md:justify-start'>
@@ -148,14 +148,14 @@ export const Footer = () => {
             ))}
           </div>:<></>}
           
-          <div className={cn('flex justify-center md:justify-start mt-6', !isContactUs? 'hidden': '')}>
+          <div className={cn('flex w-max  mx-auto md:justify-start mt-6', !isContactUs? 'hidden': '')}>
             <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
-            <Button className='mt-2 mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+            <Button className='mt-2 mr-4 p-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
               Admissions
             </Button>
             </Link>
             <Link target="_blank" href="https://dev.thekulishschool.com/career.php">
-            <Button className='mt-2 ml-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+            <Button className='mt-2 ml-4 p-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
               Careers
             </Button>
             </Link>
@@ -164,7 +164,7 @@ export const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className='flex flex-col items-center bg-neutral-800 px-4 py-4 text-white md:flex-row md:px-5'>
+      <div className='flex flex-col items-center w-full bg-neutral-800 px-4 py-4 text-white md:flex-row md:px-5'>
         <nav className='mb-4 flex w-full flex-wrap justify-center gap-3 text-center md:mb-0 md:ml-20 md:w-[55%] md:justify-start md:gap-5'>
            {/* <Link href='/' className='text-xs hover:underline md:text-sm'>Home</Link> */}
           {menuItems.map((item) => (

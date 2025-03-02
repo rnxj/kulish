@@ -18,12 +18,12 @@ const newsGrid = [
   return (
     <main className='bg-[#f7f7f7] min-h-screen'>
       {/* Hero Section */}
-      <div className='relative h-[70vh] w-full overflow-hidden'>
+      <div className='relative h-[20vh] md:h-[70vh] w-full overflow-hidden'>
         <Image
           src='/news-events/NEWS/TOP.jpg'
           alt='Academics Hero'
           fill
-          className='object-cover transition-transform duration-500 hover:scale-110'
+          className='object-none md:object-cover transition-transform duration-500 hover:scale-110'
           priority
         />
       </div>

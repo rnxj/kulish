@@ -173,7 +173,7 @@ export default function CampusLifePage() {
           <div className='container mx-auto py-12 md:py-48'>
             <div className='grid grid-cols-1 gap-8 lg:grid-cols-[4fr_3fr]'>
               {/* Content */}
-              <div className='mx-auto space-y-8 md:max-w-[60%]'>
+              <div className='mx-4 space-y-8 md:max-w-[60%]'>
                 <h2 className='font-serif text-3xl text-gray-800 decoration-gray-300 decoration-1 underline-offset-8'>
                   Clubs & Societies
                 </h2>
@@ -191,7 +191,7 @@ export default function CampusLifePage() {
                 </p>
               </div>
               {/* Image */}
-              <div>
+              <div className='mx-4'>
                 <Image
                   src='/campus-life/clubs.jpg'
                   alt='Clubs and Societies Image'

@@ -75,7 +75,7 @@ const petDayGrid = [
           {/* GLOBAL VILLAGE */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-              GLOBAL VILLAGE
+              HANDS TOGETHER FOR GLOBAL PEACE
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
@@ -109,7 +109,7 @@ const petDayGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            HONEY COMB
+            HONEY COMB NEW-AGE SUSTAINABLE MATERIAL WORKSHOP
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>

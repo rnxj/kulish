@@ -210,7 +210,8 @@ const radioGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            ART MURAL
+            ART MURAL RECORD CREATED
+
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
@@ -255,7 +256,7 @@ const radioGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            JAIPUR RUGS
+            WEAVING WORKSHOP WITH JAIPUR RUGS
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
@@ -288,7 +289,7 @@ const radioGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            RADIO STATION
+            VISIT TO RADIO STATION
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
