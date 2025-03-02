@@ -858,7 +858,7 @@ export default function HomePage() {
       </div> */}
 
       {/* Awards */}
-      <div className='grid grid-cols-2 gap-8 bg-sky-600 px-6 py-16 text-center text-white sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5'>
+      {/* <div className='grid grid-cols-2 gap-8 bg-sky-600 px-6 py-16 text-center text-white sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5'>
         <div className='flex h-24 items-center justify-center'>
           <div className='text-lg font-bold sm:text-xl'>Oracle</div>
         </div>
@@ -888,7 +888,7 @@ export default function HomePage() {
         <div className='col-span-2 flex h-24 items-center justify-center sm:col-span-1'>
           <div className='text-lg font-bold sm:text-xl'>MINT</div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

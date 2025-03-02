@@ -28,9 +28,9 @@ const roadGrid = [
   { key:1, src:"/key-information/Impact/Road/1.JPG" },
   { key:2, src:"/key-information/Impact/Road/2.JPG" },
   { key:3, src:"/key-information/Impact/Road/3.JPG" },
-  { key:4, src:"/key-information/Impact/Road/4.JPG" },
-  { key:5, src:"/key-information/Impact/Road/5.JPG" },
-  { key:6, src:"/key-information/Impact/Road/6.JPG" },
+  // { key:4, src:"/key-information/Impact/Road/4.JPG" },
+  // { key:5, src:"/key-information/Impact/Road/5.JPG" },
+  // { key:6, src:"/key-information/Impact/Road/6.JPG" },
 ]
 
 const sambherGrid = [
@@ -122,7 +122,8 @@ const saveGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            GLOBAL VILLAGE
+            GLOBAL VILLAGE COMES TO SCHOOL
+
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
@@ -157,7 +158,8 @@ const saveGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            ROAD SAFETY
+            ROAD SAFETY INITIATIVE
+
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
@@ -192,7 +194,7 @@ const saveGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            SAMBHER
+            SAMBHAR LAKE VISIT
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
@@ -227,7 +229,7 @@ const saveGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            SAVE WATER
+            SAVE WATER INITIATIVE
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>

@@ -5,16 +5,17 @@ import Image from 'next/image';
 
 export default function ContactPage() {
   return (
-    <main className='md:min-h-screen'>
+     <main className='min-h-36'>
+      {/* className='md:min-h-screen' */}
       {/* Hero Section */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         className='relative min-h-[500px] w-full md:min-h-screen'
       >
         <Image src='/contact/hero.jpg' alt='Hero image' fill className='object-cover' priority />
-      </motion.div>
+      </motion.div> */}
 
       {/* <div className='py-8 text-center'>
         <h2 className='text-2xl font-bold text-gray-800'>Contact Us</h2>

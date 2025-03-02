@@ -27,8 +27,8 @@ const artLabSrc = [
   { key:2, src:"/key-information/innovation/ART LAB 2.png" },
   { key:3, src:"/key-information/innovation/ART LAB 3.png" },
   { key:4, src:"/key-information/innovation/ART LAB 4.jpg" },
-  { key:5, src:"/key-information/innovation/ART LAB 5.png" },
-  { key:6, src:"/key-information/innovation/ART LAB 6.png" },
+  { key:5, src:"/key-information/innovation/ART LAB 7.png" },
+  { key:6, src:"/key-information/innovation/ART LAB 8.png" },
 ]
 
   return (

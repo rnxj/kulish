@@ -173,7 +173,7 @@ export default function AboutPage() {
         </BgPattern>
 
         {/* Experts Section */}
-        <BgPattern
+        {/* <BgPattern
           lines={[
             { orientation: 'horizontal', start: 0, end: 1, position: 0.17, variant: 'dashed' },
             { orientation: 'horizontal', start: 0, end: 1, position: 0.07, variant: 'dashed' },
@@ -220,7 +220,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </BgPattern>
+        </BgPattern> */}
       </div>
             
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>

@@ -1,15 +1,49 @@
 'use client';
 
 import Image from 'next/image';
-
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import { BgPattern } from '@/components/bg-pattern';
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+
+const SocialLink = ({
+  href,
+  icon: Icon,
+  children,
+  size = 28,
+  stroke='#0ea5e9',
+  className = '',
+}: {
+  href: string;
+  icon: React.ElementType;
+  children?: React.ReactNode;
+  size?: number;
+  stroke?: string;
+  className?: string;
+}) => (
+  <a
+    href={href}
+    target='_blank'
+    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-lg ${className}`}
+  >
+    <Icon className='hover:text-sky-500 mr-2' size={size} stroke={stroke} />
+    {children}
+  </a>
+);
 
 export default function AcademicsPage() {
+  const socialLinks = [
+    { icon: Facebook, label: 'thekulishschool', url: 'https://www.facebook.com/thekulishschool/' },
+    { icon: Instagram, label: '@the_kulish_school', url: 'https://www.instagram.com/the_kulish_school/' },
+    { icon: Linkedin, label: 'the kulish school', url:'https://www.linkedin.com/company/the-kulish-school-jaipur/' },
+  ];
+
   return (
     <main className='min-h-screen'>
       {/* Hero Image Section */}
-      <div className='flex h-[calc(100vh-80px)] flex-col'>
-        <section className='relative w-full flex-1'>
+      <div className='flex flex-col'>
+      {/* h-[calc(100vh-80px)] */}
+        {/* <section className='relative w-full flex-1'>
           <Image
             src='/admission/hero.jpg'
             alt='Curriculum Video Thumbnail'
@@ -17,7 +51,7 @@ export default function AcademicsPage() {
             className='object-fill'
             priority
           />
-        </section>
+        </section> */}
 
         {/* Curriculum Overview */}
         <div className='bg-sky-600 py-12 text-center text-white'>
@@ -65,16 +99,40 @@ export default function AcademicsPage() {
                     dynamic learning environment.
                   </p>
 
-                  {/* <div className='space-y-2'>
-                    <p className='text-base text-gray-600 md:text-lg'>
+                  <div className=''>
+                    {/* <p className='text-base text-gray-600 md:text-lg'>
                       Please contact the admissions team for further details. You could book your
                       meeting{' '}
                       <a href='#' className='text-sky-500 underline hover:text-sky-600'>
                         here
                       </a>
-                    </p>
-                  </div> */}
+                    </p> */}
+                    <div className='mb-8'>
+                      <p className='text-base md:text-lg'>Management & Administration,</p>
+                      <p className='text-base md:text-lg mb-6'>Working hours: 9:00 AM to 4:30 PM | Sunday: Closed</p>
+                      <p className='text-base md:text-lg mb-6'>
+                          Mobile No.: +91 90575 31015 <br />
+                          E-mail Address: admission@thekulishschool.com</p>
+                    </div>
+
+                      <div className='mt-4 flex flex-col mb-8 justify-center gap-3 md:gap-5 md:flex-col' >
+                        {socialLinks.map((social, index) => (
+                          <div key={index}>
+                            <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] md:justify-start'>
+                              {social.label}
+                            </SocialLink>
+                          </div>
+                        ))}
+                      </div>
+                  </div>
                 </div>
+                <div className='w-full justify-center flex md:block ml-auto mr-auto'>
+                        <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
+                          <Button className='mt-4 md:mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+                            Admissions
+                          </Button>
+                        </Link>
+                    </div>
 
                 {/* Application Form Download Section */}
                 {/* <div className='space-y-4'>
