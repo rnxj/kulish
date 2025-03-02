@@ -27,7 +27,7 @@ const SocialLink = ({
   <a
     href={href}
     target='_blank'
-    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-lg ${className}`}
+    className={`flex items-center text-sm gap-2 hover:text-sky-500 md:text-lg ${className}`}
   >
     <Icon className='hover:text-sky-500 mr-2' size={size} stroke={stroke} />
     {children}
@@ -102,7 +102,7 @@ export const Footer = () => {
       </div>}
 
       {/* Middle Section */}
-      <div className={cn('my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8', isContactUs? 'h-screen':'')}>
+      <div className={cn('my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8', isContactUs? 'mb-[50%]':'')}>
         <div className='mb-8 w-full md:mb-0 md:w-1/2'>
           <Image
             src='/logo.png'
@@ -141,14 +141,14 @@ export const Footer = () => {
           <div className={cn('mt-4 flex flex-col w-fit mx-auto gap-3 md:gap-5', isContactUs? 'md:flex-col' : 'md:flex-row')}>
             {socialLinks.map((social, index) => (
               <div key={index}>
-                <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] md:justify-start'>
+                <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] justify-start'>
                   {social.label}
                 </SocialLink>
               </div>
             ))}
           </div>:<></>}
           
-          <div className={cn('flex w-max  mx-auto md:justify-start mt-6', !isContactUs? 'hidden': '')}>
+          <div className={cn('flex w-max mx-auto md:justify-start mt-6', !isContactUs? 'hidden': '')}>
             <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
             <Button className='mt-2 mr-4 p-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
               Admissions
@@ -159,7 +159,7 @@ export const Footer = () => {
               Careers
             </Button>
             </Link>
-            </div>
+          </div>
         </div>
       </div>
 

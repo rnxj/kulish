@@ -99,13 +99,13 @@ export default function AcademicsPage() {
         <div className='absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center text-white'>
           <Dialog>
             <DialogTrigger asChild>
-              <Button
+              {/* <Button
                 variant='ghost'
                 size='icon'
                 className='mb-4 h-16 w-16 rounded-full bg-white/20 p-0 hover:bg-white/30 [&_svg]:h-full [&_svg]:w-full'
               >
                 <VideoPlaySVG />
-              </Button>
+              </Button> */}
             </DialogTrigger>
             <DialogContent className='p-0 sm:max-w-[800px]'>
               <DialogTitle className='hidden'>
