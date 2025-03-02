@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function ContactPage() {
   return (
-     <main className='min-h-36'>
+     <main className='md:min-h-36'>
       {/* className='md:min-h-screen' */}
       {/* Hero Section */}
       {/* <motion.div

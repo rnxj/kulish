@@ -102,7 +102,7 @@ export const Footer = () => {
       </div>}
 
       {/* Middle Section */}
-      <div className={cn('my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8', isContactUs? 'h-screen':'')}>
+      <div className={cn('my-8 flex flex-col px-4 py-6 text-center md:my-16 md:flex-row md:px-5 md:py-8', isContactUs? 'mb-[50%]':'')}>
         <div className='mb-8 w-full md:mb-0 md:w-1/2'>
           <Image
             src='/logo.png'
