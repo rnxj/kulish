@@ -613,7 +613,7 @@ export default function HomePage() {
                   <div key={`tr-${i}`} className='h-2 w-2 bg-sky-500' />
                 ))}
               </div>
-              <p className='ml-24 text-xl text-gray-700'>
+              <p className='ml-24 text-lg text-gray-700'>
                 The Kulish School is attempting to empower children by addressing the main
                 pillars of education, researching, and reinventing them to suit modern times. The
                 four pillars of education are
