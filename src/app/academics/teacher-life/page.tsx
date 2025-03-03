@@ -76,7 +76,7 @@ export default function CampusLifePage() {
         {/* Campus Life Overview */}
         <div className='bg-sky-600 py-12 text-center text-white'>
           <div className='mx-auto max-w-4xl px-4'>
-            <h3 className='mb-4 font-serif text-2xl uppercase'>
+            <h3 className='mb-4 font-serif text-xl uppercase'>
               TEACHER PROFESSIONAL LIFE AND
               <br />
               TRAINING OPPORTUNITIES
@@ -106,14 +106,14 @@ export default function CampusLifePage() {
               transition={{ duration: 0.6 }}
               className='flex items-center md:justify-end'
             >
-              <h2 className='md:text-right font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+              <h2 className='md:text-right font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                 Teacher
                 <br className='hidden md:block' /> Professional
                 <br className='hidden md:block' /> Development
                 <br className='hidden md:block' /> Program
               </h2>
             </motion.div>
-            <p className='md:ml-auto w-full md:w-2/3 md:text-right text-gray-800'>
+            <p className='md:ml-auto w-full md:w-2/3 md:text-right text-sm md:text-base text-gray-800'>
               At The Kulish School (TKS), we prioritize faculty development through a comprehensive
               and multifaceted approach. Our strategy is intricately linked to the overall school
               professional development plan, ensuring that our faculty's growth aligns with the
@@ -128,7 +128,7 @@ export default function CampusLifePage() {
             transition={{ duration: 0.8 }}
             className='flex h-full flex-col justify-center space-y-6'
           >
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:texp-base'>
               <strong>IN-HOUSE WORKSHOPS BY RENOWNED EXPERTS</strong>
               <br />
               TKS hosts regular in-house workshops conducted by distinguished experts in the field
@@ -138,7 +138,7 @@ export default function CampusLifePage() {
               classroom.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:texp-base'>
               <strong>Visiting Consultants</strong>
               <br />
               We invite consultants for specialized training and insights. These consultants work
@@ -147,7 +147,7 @@ export default function CampusLifePage() {
               skills and adopt best practices from leading educators around the world.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:texp-base'>
               <strong>E-Learning Opportunities</strong>
               <br />
               TKS offers a variety of e-learning opportunities, allowing our staff to engage in
@@ -156,7 +156,7 @@ export default function CampusLifePage() {
               trends and advancements in education.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:texp-base'>
               <strong>Future Plans: Teacher Exchange Programmes</strong>
               <br />
               Looking ahead, TKS plans to launch teacher exchange programs with schools across the
@@ -185,10 +185,10 @@ export default function CampusLifePage() {
         <div className='relative mx-auto overflow-hidden px-4 py-12 md:px-32 lg:px-60'>
           <div className='space-y-16'>
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>01/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>01/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Growing Organically</h2>
-                <p className='text-gray-600'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>Growing Organically</h2>
+                <p className='text-gray-600 text-sm md:texp-base'>
                   We believe in nurturing our staff from within. By investing in their continuous
                   development, we ensure that our educators grow alongside our institution.
                 </p>
@@ -196,10 +196,10 @@ export default function CampusLifePage() {
             </section>
 
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>02/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>02/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Harnessing Potential</h2>
-                <p className='text-gray-600'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>Harnessing Potential</h2>
+                <p className='text-gray-600 text-sm md:texp-base'>
                   We recognize the potential of our educators and are committed to helping them
                   realize and enhance their capabilities. This involves providing them with the
                   resources, support, and opportunities they need to excel.
@@ -208,12 +208,12 @@ export default function CampusLifePage() {
             </section>
 
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>03/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>03/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>
                   Capacity Building from Within
                 </h2>
-                <p className='text-gray-600'>
+                <p className='text-gray-600 text-sm md:texp-base'>
                   Our approach focuses on developing internal capacity. By strengthening our staff's
                   skills and knowledge, we build a robust educational community that can sustain and
                   drive our school's success.
@@ -222,14 +222,14 @@ export default function CampusLifePage() {
             </section>
 
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>04/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>04/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>
                   Developing
                   <br />
                   Teacher Leadership
                 </h2>
-                <p className='text-gray-600'>
+                <p className='text-gray-600 text-sm md:texp-base'>
                   TKS is dedicated to providing opportunities for our staff to develop leadership
                   skills. We believe that strong leaders within our school will drive positive
                   change, inspire their colleagues, and contribute significantly to our school's

@@ -260,7 +260,7 @@ export default function AboutPage() {
                 { orientation: 'horizontal', start: 0.3, end: 1, position: 0.7 },
               ]}
             >
-              <div className='grid min-h-[700px] grid-cols-1 gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
+              <div className='grid md:min-h-[700px] grid-cols-1 gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
                 <div className='grid h-full gap-8 lg:grid-rows-2'>
                   <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -274,21 +274,21 @@ export default function AboutPage() {
                       alt='The Kulish School Logo'
                       width={300}
                       height={300}
-                      className='w-full max-w-[300px]'
+                      className='w-full max-w-[200px] md:max-w-[300px]'
                     />
                   </motion.div>
                   <div></div>
                 </div>
       
-              <div id='vision' className='grid md:min-h-[700px] grid-cols-1 md:gap-8 md:p-12 lg:grid-cols-[1fr_2fr]'>
+              <div id='vision' className='grid h-fit md:min-h-[700px] grid-cols-1 md:gap-8 md:p-12 lg:grid-cols-[1fr_2fr]'>
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className='flex h-full flex-col justify-center lg:p-8'
+                  className='flex h-fit mb-4 md:mb-0 md:h-full flex-col justify-center lg:p-8'
                 >
-                  <h2 className='font-serif text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+                  <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
                     Vision
                   </h2>
                 </motion.div>
@@ -298,9 +298,9 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
-                  className='flex h-full flex-col justify-center space-y-6 lg:p-8'
+                  className='flex md:mb-0 flex-col justify-center space-y-6 lg:p-8'
                 >
-                  <p className='text-gray-800'>
+                  <p className='text-gray-800 text-sm md:text-base'>
                   The Kulish School will empower future leaders with a focus on innovation, global
                       citizenship, and compassionate caregiving-- blending the skills of futuristic
                       learning and traditional Indian values. Our vision is to nurture adaptable, creative
@@ -321,15 +321,15 @@ export default function AboutPage() {
           { orientation: 'vertical', start: 0.07, end: 0.93, position: 0.33, variant: 'dashed' },
         ]}
       >
-        <div id='mission' className='grid min-h-[700px] grid-cols-1 md:gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
+        <div id='mission' className='grid h-fit md:min-h-[700px] grid-cols-1 md:gap-8 p-4 md:p-12 lg:grid-cols-[1fr_2fr]'>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className='flex h-full flex-col lg:p-8'
+            className='flex h-fit md:h-full mb-4 md:mb-0 flex-col lg:p-8'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1 underline-offset-8'>
               Mission
             </h2>
           </motion.div>
@@ -339,15 +339,15 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className='flex h-full lg:mt-12 flex-col space-y-6 lg:p-8'
+            className='flex md:h-full lg:mt-12 flex-col text-sm md:text-base space-y-6 lg:p-8'
           >
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-base'>
                   The Kulish School is committed to shaping the future by preparing students to
                   excel in a globally connected India. Our mission is defined by the acronym
                   L.E.A.D.E.R.S:
                 </p>
 
-                <ul className='space-y-4 text-gray-800'>
+                <ul className='space-y-4 text-gray-800 md:text-base'>
                   <li>
                     <span className='font-bold'>Leadership Skills:</span> Cultivating effective,
                     compassionate leadership abilities in our students.
@@ -398,12 +398,12 @@ export default function AboutPage() {
                   transition={{ duration: 0.8 }}
                   className='flex h-full flex-col justify-center space-y-6 lg:p-8'
                 >
-                  <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+                  <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                     Our Legacy - <br/>
                     The Patrika Group
                   </h2>
       
-                  <p className='text-gray-800'>
+                  <p className='text-gray-800 text-sm md:text-base'>
                     The Kulish School is associated with the Patrika Group, one of the most widely
                     recognized and accomplished media houses in the world. The Patrika Group is dedicated
                     to democracy and promotes cherished values enshrined in the Indian Constitution.
@@ -414,7 +414,7 @@ export default function AboutPage() {
                     community newspapers per AMIC UNESCO.
                   </p>
       
-                  <p className='text-gray-800'>
+                  <p className='text-gray-800 text-sm md:text-base'>
                     The Patrika Group was founded by the late Karpoor Chandra 'Kulish', a renowned Vedic
                     scholar and entrepreneur who revived the scientific aspects of ancient Indian
                     scriptures. He believed education was the "mightiest divine weapon" to destroy
@@ -464,13 +464,13 @@ export default function AboutPage() {
                   <div className='grid grid-cols-1 gap-16 lg:grid-cols-[2fr_5fr]'>
                     {/* Left Section - Positioned higher */}
                     <div className='-mt-20'>
-                      <h2 className='mb-4 font-serif text-4xl font-light tracking-wide text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+                      <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light tracking-wide text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                         Leadership
                       </h2>
-                      <h3 className='mb-8 font-serif text-4xl font-light tracking-wide text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+                      <h3 className='mb-8 font-serif text-2xl md:text-4xl font-light tracking-wide text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                         Team
                       </h3>
-                      <p className='text-lg leading-relaxed text-gray-600'>
+                      <p className='text-sm md:text-base leading-relaxed text-gray-600'>
                         Meet our dedicated team of educators and administrators who are committed to
                         providing the highest quality education. Our leadership team includes experienced
                         professionals with a passion for fostering student growth and development.
@@ -478,7 +478,7 @@ export default function AboutPage() {
                     </div>
       
                     {/* Right Section - Positioned lower */}
-                    <div className='mt-20 grid gap-12 sm:grid-cols-2 lg:grid-cols-3'>
+                    <div className='mt-2 md:mt-20 grid gap-12 sm:grid-cols-2 lg:grid-cols-3'>
                       {leadershipTeam.map((member) => (
                         <div
                           key={member.name}
@@ -493,8 +493,8 @@ export default function AboutPage() {
                             <div className={`absolute bottom-0 h-8 w-full ${member.color}`} />
                           </div>
                           <div className='mt-4 text-center space-y-1'>
-                            <h4 className='font-serif text-xl text-gray-700'>{member.name}</h4>
-                            <p className='text-gray-600'>{member.title}</p>
+                            <h4 className='font-serif text-lg md:text-xl text-gray-700'>{member.name}</h4>
+                            <p className='text-gray-600 text-sm md:text-base'>{member.title}</p>
                           </div>
                         </div>
                       ))}

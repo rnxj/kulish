@@ -32,7 +32,7 @@ export default function InaugrationPage() {
       {/* Info Section */}
       <section className='bg-[#f7f7f7] px-5 py-10'>
         <div className='container mx-auto text-center'>
-          <h2 className='mb-4 font-serif text-3xl font-light text-[#333]'>Vice President Jagdeep Dhankhar inaugurated<br/> The Kulish School located in Jagatpura in the capital Jaipur</h2>
+          <h2 className='mb-4 font-serif text-2xl md:text-3xl font-light text-[#333]'>Vice President Jagdeep Dhankhar inaugurated<br/> The Kulish School located in Jagatpura in the capital Jaipur</h2>
           {/* <h3 className='mb-5 text-xl font-normal text-[#555]'>Kulish Community Service Program</h3> */}
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
           Hon'ble Vice President, Shri Jagdeep Dhankhar and Dr. Sudesh Dhankhar visited various facilities of The Kulish School and interacted with students in Jaipur, Rajasthan

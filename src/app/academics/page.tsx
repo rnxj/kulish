@@ -135,7 +135,7 @@ export default function AcademicsPage() {
       >
         <div className='mx-auto max-w-4xl px-4'>
           <h3 className='mb-4 text-2xl font-medium uppercase'>Academics</h3>
-          <p>
+          <p className='text-sm md:text-base'>
             The Kulish School offers a balanced curriculum that combines the best of National and
             International Boards. Our curriculum is designed to foster critical thinking,
             creativity, and a love of learning. We provide a comprehensive education that prepares
@@ -209,11 +209,11 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='mx-auto flex h-full max-w-sm flex-col justify-center space-y-6'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               New-Age Content
             </h2>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-base'>
             As we embrace the transformative impact of AI and automation in the job market, it's crucial to prepare our students with the skills and opportunities needed. The Kulish School, in collaboration with esteemed partners, aims to equip students with the skills and knowledge necessary for the future. By combining traditional learning facets, we can ensure that our students are empowered to thrive in the age of AI.
             </p>
           </motion.div>
@@ -288,7 +288,7 @@ export default function AcademicsPage() {
               height={500}
               className='h-[400px] w-[600px] rounded-2xl object-cover'
             />
-            <div className='mt-12'>
+            <div className='mt-12 text-sm md:text-base mb-12 md:mb-0'>
               Our mission is to empower children for the future by integrating future-oriented
               subjects, innovative pedagogical approaches, and advanced evaluation techniques into
               the curriculum.

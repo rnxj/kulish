@@ -112,7 +112,7 @@ export default function AcademicsPage() {
           </Dialog>
 
           <h3 className='mb-4 text-2xl font-medium'>Enrichment Programmes At The Kulish School</h3>
-          <p className='max-w-4xl px-4'>
+          <p className='max-w-4xl text-sm md:text-base px-4'>
             Experience The Kulish School's Enrichment Programmes, where innovation and creativity come to life.
             <br />
             Discover how our hands-on experiences and diverse activities ignite curiosity and foster
@@ -125,7 +125,7 @@ export default function AcademicsPage() {
       <div className='bg-sky-600 py-12 text-center text-white'>
         <div className='mx-auto max-w-5xl px-4'>
           <h3 className='mb-4 text-2xl font-medium uppercase'>Enrichment Programmes</h3>
-          <p>
+          <p className='text-sm md:text-md'>
             At The Kulish School, we believe in nurturing the whole child by offering a variety of
             enrichment Programmes that complement our core curriculum. These programs are designed
             to develop essential life skills, spark curiosity, and inspire a love of learning.
@@ -155,13 +155,13 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='flex h-full flex-col justify-start space-y-6 lg:px-24'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Financial
               <br />
               Literacy
             </h2>
 
-            <p className='text-md text-gray-800'>
+            <p className='text-sm md:text-md text-gray-800'>
             At The Kulish School, we believe in starting early to equip 
             students with essential life skills. Our Financial Literacy program 
             introduces Nursery students to saving, budgeting, and 
@@ -171,7 +171,7 @@ export default function AcademicsPage() {
             critical thinking, and risk assessment.
             </p>
 
-            <p className='text-md text-gray-800'>
+            <p className='text-sm md:text-md text-gray-800'>
               By blending modern learning with ancient Indian values, we foster innovation, global
               citizenship, and compassionate caregiving. Our holistic approach nurtures adaptable
               thinkers with strong ethical grounding, cultural awareness, and the skills needed to
@@ -236,31 +236,31 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='flex h-full flex-col justify-start space-y-6'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Entrepreneurship
             </h2>
 
-            <div className='flex flex-col text-md space-y-2'>
-              <p className='text-gray-800 text-md'>
+            <div className='flex flex-col text-sm md:text-md space-y-2'>
+              <p className='text-gray-800 text-sm md:text-md'>
                 The Entrepreneurship program fosters creativity and an entrepreneurial mindset,
                 preparing students to be future leaders. Through hands-on projects and teamwork,
                 they learn the entrepreneurial process from idea to execution.
               </p>
 
-              <p className='text-gray-800 text-md'>
+              <p className='text-gray-800 text-sm md:text-md'>
                 Key elements include market research, product development, marketing strategies, and
                 financial planning. Students develop skills in generating ideas, conducting market
                 research, testing products, and implementing marketing strategies. They also learn
                 budgeting and forecasting.
               </p>
 
-              <p className='text-gray-800 text-md'>
+              <p className='text-gray-800 text-sm md:text-md'>
                 The program enhances innovation, problem-solving, leadership, and critical thinking.
                 Students gain confidence in managing finances and making informed decisions,
                 building a solid foundation for their future.
               </p>
 
-              <p className='text-gray-800 text-md'>
+              <p className='text-gray-800 text-sm md:text-md'>
                 In short, the Entrepreneurship program equips students with essential skills,
                 preparing them to be innovative leaders and problem-solvers.
               </p>
@@ -358,21 +358,21 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='flex h-full flex-col justify-start space-y-6 lg:px-24'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
             STEM
                 <br /> (Science, Technology, Engineering,
                 <br /> and Mathematics)
             </h2>
 
-            <p className='text-gray-800 text-md'>
+            <p className='text-gray-800 text-sm md:text-md'>
             Welcome to the STEM Lab at The Kulish School, where we inspire and empower our students to explore the exciting world of Science, Technology, Engineering, and Mathematics (STEM). Our lab is a dynamic space designed to foster creativity, critical thinking, and hands-on learning.
             </p>
 
-            <p className='text-gray-800 text-md'>
+            <p className='text-gray-800 text-sm md:text-md'>
             Through engaging activities, students gain practical experience and deepen their understanding of STEM concepts that are applicable to real-world challenges. In the STEM Lab, students participate in projects that include robotics and engineering, scientific experiments, and problem-solving. These activities allow them to develop skills that are not only essential for their academic growth but also highly valuable for their future careers. Students are encouraged to work collaboratively on projects, where they can apply their knowledge to solve problems, create solutions and effectively communicate their ideas.
             </p>
 
-            <p className='text-gray-800 text-md'>
+            <p className='text-gray-800 text-sm md:text-md'>
             Our state-of-the-art equipment and resources provide students with the tools they need to innovate and create. At The Kulish School, we bridge the gap between classroom learning and real-world applications, preparing our students for the exciting opportunities.
             </p>
           </motion.div>
@@ -494,19 +494,19 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='flex h-full flex-col justify-start space-y-6'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
             Tinkering
             </h2>
 
             <div className='flex flex-col space-y-2'>
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
               The Tinkering program promotes creativity and problem-solving by encouraging students
               to explore, experiment, and invent in a hands-on environment. Students use tools and
               materials to build projects, such as taking apart electronics or creating prototypes
               with 3D printers and robotics kits.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
               The program emphasizes key skills like creativity, resilience, and a growth mindset,
               teaching students that persistence and experimentation lead to innovation. By engaging
               in practical activities, students develop engineering principles, design thinking, and
@@ -633,24 +633,24 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='flex h-full flex-col justify-start space-y-6 lg:px-20'
           >
-            <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
               Geobiology
             </h2>
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
             Welcome to the Geobiology Lab at Kulish School, an exciting space where students explore both biology and earth sciences through fun, hands-on activities.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
             In our lab, we help students develop a love for science by letting them learn through real experiments. In the biology section, students test the sugar content in junk and healthy foods, check the pH levels of different food items, extract DNA from fruits, and learn about the properties of everyday materials.
             </p>
 
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
             In the earth science section, students create compost for plants, study soil layers, and learn how these things support healthy growth and the environment.
             </p>
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
             For younger students, we have simple and exciting science activities to spark their interest and help them understand basic concepts in biology and earth science.
             </p>
-            <p className='text-gray-800'>
+            <p className='text-gray-800 text-sm md:text-md'>
             At Kulish School, we believe learning should be fun and interactive. Our Geobiology Lab gives students the chance to discover, explore, and grow their knowledge of the natural world.
             </p>
           </motion.div>

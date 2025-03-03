@@ -138,7 +138,7 @@ export default function AcademicsPage() {
         <div className='bg-sky-600 py-12 text-center text-white'>
           <div className='mx-auto max-w-4xl px-4'>
             <h3 className='mb-4 font-serif text-2xl uppercase'>NEWS & EVENTS</h3>
-            <p>
+            <p className='text-sm md:text-base'>
               Stay updated with the latest happenings in our school! Discover exciting events,
               important announcements, and <br />
               vibrant activities, all in one place. Stay connected and informed about everything
@@ -262,7 +262,7 @@ export default function AcademicsPage() {
                   className='h-96 max-w-5xl object-cover'
                 />
                 <div className='bg-blue-600 p-4 text-center text-white'>
-                  <h5 className='font-serif font-normal'>INAUGURATION</h5>
+                  <h5 className='font-serif text-sm md:text-base font-normal'>INAUGURATION</h5>
                 </div>
                 </Link>
               </div>
@@ -278,7 +278,7 @@ export default function AcademicsPage() {
                   className='h-96 max-w-5xl object-cover'
                 />
                 <div className='bg-sky-500 p-4 text-center text-white'>
-                  <h5 className='font-serif font-normal'>IN HOUSE EVENT</h5>
+                  <h5 className='font-serif text-sm md:text-base font-normal'>IN HOUSE EVENT</h5>
                 </div>
                 </Link>
               </div>
@@ -294,7 +294,7 @@ export default function AcademicsPage() {
                   className='h-96 max-w-5xl object-cover'
                 />
                 <div className='bg-[#5cbccb] p-4 text-center text-white'>
-                  <h5 className='font-serif font-normal'>NEWS</h5>
+                  <h5 className='font-serif text-sm md:text-base font-normal'>NEWS</h5>
                 </div>
                 </Link>
               </div>

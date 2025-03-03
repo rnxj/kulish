@@ -444,8 +444,8 @@ export default function HomePage() {
         <div className='container mx-auto py-12 md:py-24'>
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-[3fr_4fr]'>
             {/* Content */}
-            <div className='mx-auto flex h-full max-w-sm flex-col px-4 items-center justify-center space-y-6'>
-              <div className='mb-2 md:mb-8 text-xl text-center md:text-left'>
+            <div className='mx-auto flex h-full max-w-sm flex-col px-4 md:items-center justify-center space-y-6'>
+              <div className='mb-2 md:mb-8 text-xl text-left'>
                 <h2 className='font-serif text-xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                   Innovation, initiative
                   <br />& impact at The Kulish School

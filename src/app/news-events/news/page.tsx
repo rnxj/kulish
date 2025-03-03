@@ -31,7 +31,7 @@ const newsGrid = [
       {/* Info Section */}
       <section className='bg-[#f7f7f7] px-5 py-8'>
         <div className='container mx-auto text-center'>
-          <h2 className='font-serif text-4xl font-light text-[#333]'>NEWS COVERAGE</h2>
+          <h2 className='font-serif text-2xl md:text-4xl font-light text-[#333]'>NEWS COVERAGE</h2>
         </div>
       </section>
 

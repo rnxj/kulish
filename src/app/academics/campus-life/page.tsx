@@ -239,7 +239,7 @@ export default function CampusLifePage() {
         <div className='bg-sky-600 py-12 text-center text-white'>
           <div className='mx-auto max-w-5xl px-4'>
             <h3 className='mb-4 font-serif text-2xl uppercase'>Campus Life</h3>
-            <p>
+            <p className='text-sm md:text-md'>
               Our vibrant campus life includes state-of-the-art facilities, green spaces, and a variety of activities to engage students beyond the classroom. We believe in creating a supportive and dynamic environment where students can thrive.
               <br />
               Our campus features:
@@ -313,11 +313,11 @@ export default function CampusLifePage() {
             <div className='grid grid-cols-1 gap-8 lg:grid-cols-[4fr_3fr]'>
               {/* Content */}
               <div className='mx-4 space-y-8 md:max-w-[60%]'>
-                <h2 className='font-serif text-3xl text-gray-800 decoration-gray-300 decoration-1 underline-offset-8'>
+                <h2 className='font-serif text-2xl md:text-3xl text-gray-800 decoration-gray-300 decoration-1 underline-offset-8'>
                   Clubs & Societies
                 </h2>
 
-                <p className='text-lg text-gray-600'>
+                <p className='text-sm md:text-lg text-gray-600'>
                   At The Kulish School, students can join various clubs designed to foster personal
                   growth and development. From the Personality Development Club, Debate Club, and
                   Science Club to the Art Club and more, these clubs offer enriching experiences

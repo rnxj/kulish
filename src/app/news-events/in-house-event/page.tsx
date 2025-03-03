@@ -58,7 +58,7 @@ const petDayGrid = [
       {/* Info Section */}
       <section className='bg-[#f7f7f7] px-5 py-10'>
         <div className='container mx-auto text-center'>
-          <h2 className='mb-4 font-serif text-4xl font-light text-[#333]'>IN HOUSE EVENTS</h2>
+          <h2 className='mb-4 font-serif text-xl md:text-4xl font-light text-[#333]'>IN HOUSE EVENTS</h2>
         </div>
       </section>
 
@@ -74,7 +74,7 @@ const petDayGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* GLOBAL VILLAGE */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
               HANDS TOGETHER FOR GLOBAL PEACE
             </h2>
           </div>
@@ -108,7 +108,7 @@ const petDayGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             HONEY COMB NEW-AGE SUSTAINABLE MATERIAL WORKSHOP
             </h2>
           </div>
@@ -143,7 +143,7 @@ const petDayGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             MENTALIST
             </h2>
           </div>
@@ -178,7 +178,7 @@ const petDayGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             PET DAY
             </h2>
           </div>
