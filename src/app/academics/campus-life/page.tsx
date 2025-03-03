@@ -3,7 +3,7 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { BgPattern } from '@/components/bg-pattern';
 import { Button } from '@/components/ui/button';
@@ -29,31 +29,31 @@ export default function CampusLifePage() {
       description:''
     },
     {
-      src: '/campus-life/4.JPG',
+      src: '/campus-life/4.jpg',
       title: '',
       heading: '',
       description:''
     },
     {
-      src: '/campus-life/5.JPG',
+      src: '/campus-life/5.jpg',
       title: '',
       heading: '',
       description:''
     },
     {
-      src: '/campus-life/6.JPG',
+      src: '/campus-life/6.jpg',
       title: '',
       heading: '',
       description:''
     },
     {
-      src: '/campus-life/7.JPG',
+      src: '/campus-life/7.jpg',
       title: '',
       heading: '',
       description:''
     },
     {
-      src: '/campus-life/8.JPG',
+      src: '/campus-life/8.jpg',
       title: '',
       heading: '',
       description:''
@@ -95,6 +95,14 @@ export default function CampusLifePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
   const visibleCount = 3;
+
+      useEffect(() => {
+        const timer = setInterval(() => {
+          handleHeroNext();
+        }, 10000);
+    
+        return () => clearInterval(timer);
+      }, [currentIndex]);
 
   const getVisibleIndices = () => {
     const indices = [];
@@ -209,7 +217,7 @@ export default function CampusLifePage() {
                     ))}
                   </div> */}
                   
-                  <div className='absolute left-4 top-4 text-sm text-white md:left-10 md:top-1/2 md:-translate-y-1/2'>
+                  <div className='absolute left-4 text-sm text-white md:left-10 top-1/2 -translate-y-1/2'>
                     {/* <h1 className='font-serif text-2xl font-light md:text-4xl lg:text-6xl'>
                       {currentIndex + 1} / {heroImages.length}
                     </h1> */}
@@ -217,7 +225,7 @@ export default function CampusLifePage() {
                       <ArrowLeft className='h-4 w-4' />
                     </Button>
                   </div>
-                  <div className='absolute right-2 top-4 text-sm text-white md:right-10 md:top-1/2 md:-translate-y-1/2'>
+                  <div className='absolute right-4 text-sm text-white md:right-10 top-1/2 -translate-y-1/2'>
                     {/* <h1 className='font-serif text-2xl font-light md:text-4xl lg:text-6xl'>
                       {currentIndex + 1} / {heroImages.length}
                     </h1> */}
