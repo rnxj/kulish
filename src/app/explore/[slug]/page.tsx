@@ -130,7 +130,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       <div className='bg-blue-100/50 py-16'>
         <div className='mx-auto max-w-7xl px-4'>
           <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
-            {(posts[slug as PostKey].contentSrc).map((img) => (
+            {(posts[slug as PostKey].contentSrc).map((img) => ( 
               <div className='relative aspect-[4/3] overflow-hidden rounded-lg'>
                 <Image
                   src={img}

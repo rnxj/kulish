@@ -57,7 +57,7 @@ export default function AcademicsPage() {
         <div className='bg-sky-600 py-12 text-center text-white'>
           <div className='mx-auto max-w-4xl px-4'>
             <h3 className='mb-4 text-2xl'>ADMISSIONS</h3>
-            <p>
+            <p className='text-sm md:texp-base'>
               We welcome you to visit our school, book appointment and have a conversation with our
               academic team to understand our vision and value delivery. We offer an internationally
               poised curriculum, further enhanced by advanced subjects that prepare children for the
@@ -94,7 +94,7 @@ export default function AcademicsPage() {
                 </h2>
 
                 <div className='space-y-4'>
-                  <p className='text-base text-gray-600 md:text-lg'>
+                  <p className='text-sm text-gray-600 md:text-lg'>
                     Our admissions process is designed to identify students who will thrive in our
                     dynamic learning environment.
                   </p>
@@ -108,9 +108,9 @@ export default function AcademicsPage() {
                       </a>
                     </p> */}
                     <div className='mb-8'>
-                      <p className='text-base md:text-lg'>Management & Administration,</p>
-                      <p className='text-base md:text-lg mb-6'>Working hours: 9:00 AM to 4:30 PM | Sunday: Closed</p>
-                      <p className='text-base md:text-lg mb-6'>
+                      <p className='text-sm md:text-lg'>Management & Administration,</p>
+                      <p className='text-sm md:text-lg mb-6'>Working hours: 9:00 AM to 4:30 PM | Sunday: Closed</p>
+                      <p className='text-sm md:text-lg mb-6'>
                           Mobile No.: +91 90575 31015 <br />
                           E-mail Address: admission@thekulishschool.com</p>
                     </div>
@@ -128,7 +128,7 @@ export default function AcademicsPage() {
                 </div>
                 <div className='w-full mx-auto justify-center md:justify-start flex md:block ml-auto mr-auto'>
                         <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
-                          <Button className='mt-4 md:mr-4 p-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+                          <Button className='mt-4 md:mr-4 px-8 p-5 w-28 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
                             Admissions
                           </Button>
                         </Link>

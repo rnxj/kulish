@@ -69,7 +69,7 @@ const radioGrid = [
       {/* Info Section */}
       <section className='bg-[#f7f7f7] px-5 py-10'>
         <div className='container mx-auto text-center'>
-          <h2 className='mb-4 font-serif text-4xl font-light text-[#333]'>INITIATIVE</h2>
+          <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light text-[#333]'>INITIATIVE</h2>
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
             At The Kulish School, we believe in nurturing the holistic development of our students
             through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
@@ -94,7 +94,7 @@ const radioGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* BLIND SCHOOL */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
               BAKERY VISIT
             </h2>
           </div>
@@ -129,7 +129,7 @@ const radioGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             PLANTATION
             </h2>
           </div>
@@ -165,7 +165,7 @@ const radioGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             MOUNTAINEERING
             </h2>
           </div>
@@ -209,7 +209,7 @@ const radioGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             ART MURAL RECORD CREATED
 
             </h2>
@@ -255,7 +255,7 @@ const radioGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             WEAVING WORKSHOP WITH JAIPUR RUGS
             </h2>
           </div>
@@ -288,7 +288,7 @@ const radioGrid = [
         <div className='container items-center mx-auto p-4 w-10/12 md:py-12'>
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
-            <h2 className='font-serif text-center text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
+            <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
             VISIT TO RADIO STATION
             </h2>
           </div>

@@ -23,8 +23,8 @@ export default function KeyInformationPage() {
       {/* Info Section */}
       <section className='bg-[#f7f7f7] px-5 py-10'>
         <div className='container mx-auto text-center'>
-          <h2 className='mb-4 font-serif text-4xl font-light text-[#333]'>ENHANCERS</h2>
-          <h3 className='mb-5 text-xl font-normal text-[#555]'>Kulish Community Service Program</h3>
+          <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light text-[#333]'>ENHANCERS</h2>
+          <h3 className='mb-5 text-lg md:text-xl font-normal text-[#555]'>Kulish Community Service Program</h3>
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
             At The Kulish School, we believe in nurturing the holistic development of our students
             through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
@@ -85,7 +85,7 @@ export default function KeyInformationPage() {
                   className='h-[500px] w-full object-cover'
                 />
                 <div className='bg-[#3aa4b4] hover:bg-blue-600 p-4 text-center text-white'>
-                  <h5 className='font-serif font-normal'>INNOVATION</h5>
+                  <h5 className='font-serif text-sm md:text-base font-normal'>INNOVATION</h5>
                 </div>
                 </Link>
               </div>
@@ -101,7 +101,7 @@ export default function KeyInformationPage() {
                   className='h-[500px] w-full object-cover'
                 />
                 <div className='bg-[#3aa4b4] hover:bg-blue-600 p-4 text-center text-white'>
-                  <h5 className='font-serif font-normal'>INITIATIVE</h5>
+                  <h5 className='font-serif text-sm md:text-base font-normal'>INITIATIVE</h5>
                 </div>
                 </Link>
               </div>
@@ -117,7 +117,7 @@ export default function KeyInformationPage() {
                   className='h-[500px] w-full object-cover'
                 />
                 <div className='bg-[#5cbccb] hover:bg-blue-600 p-4 text-center text-white'>
-                  <h5 className='font-serif font-normal'>IMPACT</h5>
+                  <h5 className='font-serif text-sm md:text-base font-normal'>IMPACT</h5>
                 </div>
                 </Link>
               </div>
