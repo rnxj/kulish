@@ -9,6 +9,56 @@ import { BgPattern } from '@/components/bg-pattern';
 import { Button } from '@/components/ui/button';
 
 export default function CampusLifePage() {
+  const heroImages = [
+    {
+      src: '/campus-life/1.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/2.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/3.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/4.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/5.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/6.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/7.JPG',
+      title: '',
+      heading: '',
+      description:''
+    },
+    {
+      src: '/campus-life/8.JPG',
+      title: '',
+      heading: '',
+      description:''
+    }
+  ];
   const academicPrograms = [
     {
       title: 'MODERN CLASSROOMS',
@@ -43,6 +93,7 @@ export default function CampusLifePage() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
   const visibleCount = 3;
 
   const getVisibleIndices = () => {
@@ -59,6 +110,14 @@ export default function CampusLifePage() {
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % academicPrograms.length);
+  };
+
+  const handleHeroPrevious = () => {
+    setCurrentHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1));
+  };
+
+  const handleHeroNext = () => {
+    setCurrentHeroIndex((prev) => (prev + 1) % heroImages.length);
   };
 
   const upcomingEvents = [
@@ -85,8 +144,8 @@ export default function CampusLifePage() {
   return (
     <main className='min-h-screen'>
       {/* Hero Image Section */}
-      <div className='flex h-[calc(100vh-80px)] flex-col'>
-        <section className='relative w-full flex-1'>
+      <div className='flex  flex-col'>
+        {/* <section className='relative w-full flex-1'>
           <Image
             src='/campus-life/hero.jpg'
             alt='Curriculum Video Thumbnail'
@@ -94,7 +153,79 @@ export default function CampusLifePage() {
             className='object-cover'
             priority
           />
-        </section>
+        </section> */}
+
+        <section className='relative h-[70vh] w-full md:h-[850px]'>
+                  <Image
+                    src={heroImages[currentHeroIndex].src}
+                    alt='Curriculum Video Thumbnail'
+                    priority
+                    fill
+                    className='object-cover'
+                  />
+        
+                  {/* Dark overlay for better text visibility on mobile */}
+                  <div className='absolute inset-0 bg-black/40 md:bg-transparent'></div>
+        
+                  {/* Overlay Text */}
+                  <div className='absolute left-4 top-[60%] max-w-[90%] -translate-y-1/2 px-4 text-sm text-white md:left-8 md:max-w-[300px] md:px-0 md:text-gray-700'>
+                    <h3 className='mb-2 text-base text-white md:mb-4 md:text-lg md:text-muted-foreground'>
+                      {heroImages[currentIndex].title}
+                    </h3>
+                    <h1 className='mb-3 font-serif text-2xl font-light underline decoration-gray-300 decoration-1 underline-offset-8 md:mb-4 md:text-4xl lg:text-5xl'>
+                      {heroImages[currentIndex].heading}
+                    </h1>
+                    <p className='mb-4 max-w-sm text-sm md:mb-8 md:pt-8 md:text-base'>
+                      {heroImages[currentIndex].description}
+                    </p>
+                    {/* <Button className='rounded-full bg-sky-500 text-white' size='lg'>
+                      Call To Action
+                    </Button> */}
+                  </div>
+        
+                  
+        
+                  {/* Buttons */}
+                  {/* <div className='absolute bottom-4 right-4 flex gap-2 md:bottom-8 md:right-8 md:gap-4'>
+                    <Button className='rounded-full text-sm md:text-base' size='sm'>
+                      Translate
+                    </Button>
+                    <Button className='rounded-full text-sm md:text-base' size='sm'>
+                      Search
+                      <SearchIcon className='ml-2 h-3 w-3 md:ml-4 md:h-4 md:w-4' />
+                    </Button>
+                  </div> */}
+        
+                  {/* Image Navigation */}
+                  {/* <div className='absolute right-2 top-1/2 flex -translate-y-1/2 flex-col gap-1 rounded-md bg-black/50 p-2 md:right-4 md:gap-2 md:p-4'>
+                    {heroImages.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`h-1.5 w-1.5 rounded-full md:h-2 md:w-2 ${
+                          index === currentIndex ? 'bg-white' : 'bg-white/50'
+                        }`}
+                        onClick={() => setCurrentIndex(index)}
+                      />
+                    ))}
+                  </div> */}
+                  
+                  <div className='absolute left-4 top-4 text-sm text-white md:left-10 md:top-1/2 md:-translate-y-1/2'>
+                    {/* <h1 className='font-serif text-2xl font-light md:text-4xl lg:text-6xl'>
+                      {currentIndex + 1} / {heroImages.length}
+                    </h1> */}
+                    <Button variant='secondary' size='icon' onClick={handleHeroPrevious}>
+                      <ArrowLeft className='h-4 w-4' />
+                    </Button>
+                  </div>
+                  <div className='absolute right-2 top-4 text-sm text-white md:right-10 md:top-1/2 md:-translate-y-1/2'>
+                    {/* <h1 className='font-serif text-2xl font-light md:text-4xl lg:text-6xl'>
+                      {currentIndex + 1} / {heroImages.length}
+                    </h1> */}
+                    <Button variant='secondary' size='icon' onClick={handleHeroNext}>
+                      <ArrowRight className='h-4 w-4' />
+                    </Button>
+                  </div>
+                </section>
 
         {/* Campus Life Overview */}
         <div className='bg-sky-600 py-12 text-center text-white'>
