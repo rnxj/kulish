@@ -24,7 +24,7 @@ const SocialLink = ({
   <a
     href={href}
     target='_blank'
-    className={`flex items-center text-sm justify-center gap-2 hover:text-sky-500 md:text-lg ${className}`}
+    className={`flex items-center text-sm gap-2 hover:text-sky-500 md:text-lg ${className}`}
   >
     <Icon className='hover:text-sky-500 mr-2' size={size} stroke={stroke} />
     {children}
@@ -115,7 +115,7 @@ export default function AcademicsPage() {
                           E-mail Address: admission@thekulishschool.com</p>
                     </div>
 
-                      <div className='mt-4 flex flex-col mb-8 justify-center gap-3 md:gap-5 md:flex-col' >
+                      <div className='mt-4 flex flex-col mb-8 w-fit mx-auto gap-3 md:gap-5 md:flex-col' >
                         {socialLinks.map((social, index) => (
                           <div key={index}>
                             <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] md:justify-start'>
@@ -126,9 +126,9 @@ export default function AcademicsPage() {
                       </div>
                   </div>
                 </div>
-                <div className='w-full justify-center flex md:block ml-auto mr-auto'>
+                <div className='w-full mx-auto justify-center md:justify-start flex md:block ml-auto mr-auto'>
                         <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
-                          <Button className='mt-4 md:mr-4 py-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
+                          <Button className='mt-4 md:mr-4 p-5 w-24 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
                             Admissions
                           </Button>
                         </Link>
