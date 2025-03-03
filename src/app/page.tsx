@@ -388,8 +388,8 @@ export default function HomePage() {
               <video controls autoPlay className='h-full w-full' src='/academics/video.mp4' />
             </DialogContent>
           </Dialog> */}
-          <h3 className='mb-4 text-2xl  text-sky-500 font-bold'>Video Tour of The Kulish School </h3>
-          <p className='max-w-3xl text-center px-4'>
+          <h3 className=' text-lg md:text-2xl text-sky-500 font-bold'>Video Tour of The Kulish School </h3>
+          <p className='max-w-3xl text-sm md:text-base text-center px-4'>
             Experience The Kulish School through our tour video, showcasing every corner of our
             vibrant campus. Discover why we are the best choice for your child's education!
           </p>
@@ -445,13 +445,13 @@ export default function HomePage() {
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-[3fr_4fr]'>
             {/* Content */}
             <div className='mx-auto flex h-full max-w-sm flex-col px-4 items-center justify-center space-y-6'>
-              <div className='mb-12'>
-                <h2 className='font-serif text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+              <div className='mb-2 md:mb-8 text-xl text-center md:text-left'>
+                <h2 className='font-serif text-xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
                   Innovation, initiative
                   <br />& impact at The Kulish School
                 </h2>
               </div>
-              <p className='text-justify text-gray-800'>
+              <p className='text-justify text-sm md:text-base text-gray-800'>
                 At The Kulish School, we believe in nurturing the holistic development of our
                 students through a well-rounded curriculum that includes the 3Is—Innovation,
                 Initiative & Impact. Our 3I program is designed to instill a sense of
@@ -503,12 +503,12 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <h5 className='mb-2 font-medium'>{program.title}</h5>
+                    <h5 className='mb-2 text-base font-medium'>{program.title}</h5>
                     <p className='mb-2 text-xs text-gray-600'>
                     {program.description}
                     </p>
                     <Link href={program.href}>
-                    <Button variant='link' className='p-0 text-sky-600'>
+                    <Button variant='link' className='p-0 text-xs md:text-base text-sky-600'>
                       Read More
                     </Button>
                     </Link>
@@ -536,24 +536,24 @@ export default function HomePage() {
         <div className='mx-auto max-w-7xl px-4'>
           <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center'>
             <div>
-              <h2 className='font-serif text-3xl font-light text-gray-700 md:text-4xl'>EXPLORE</h2>
+              <h2 className='font-serif text-lg font-light text-gray-700 md:text-4xl'>EXPLORE</h2>
             </div>
-            <div className='flex flex-wrap justify-start gap-2'>
+            <div className='flex flex-wrap justify-start gap-2'>  
               <Button
                 variant='outline'
-                className='hover:border-1 rounded-full border-white hover:border-black'
+                className='hover:border-1 rounded-full text-xs md:text-sm border-white hover:border-black'
               >
                 First
               </Button>
               <Button
                 variant='outline'
-                className='hover:border-1 rounded-full border-white hover:border-black'
+                className='hover:border-1 rounded-full text-xs md:text-sm border-white hover:border-black'
               >
                 Second
               </Button>
               <Button
                 variant='outline'
-                className='hover:border-1 rounded-full border-white hover:border-black'
+                className='hover:border-1 rounded-full text-xs md:text-sm border-white hover:border-black'
               >
                 Third
               </Button>
@@ -613,17 +613,17 @@ export default function HomePage() {
                   <div key={`tr-${i}`} className='h-2 w-2 bg-sky-500' />
                 ))}
               </div>
-              <p className='ml-24 text-lg text-gray-700'>
+              <p className='ml-16 md:ml-24 text-sm md:text-lg text-gray-700'>
                 The Kulish School is attempting to empower children by addressing the main
                 pillars of education, researching, and reinventing them to suit modern times. The
                 four pillars of education are
               </p>
             </section>
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>01/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>01/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Cognitive Pedagogy</h2>
-                <p className='text-gray-600'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>Cognitive Pedagogy</h2>
+                <p className='text-gray-600 text-sm md:text-base'>
                   Accentuating the importance of cognitive processes and instructional
                   methodologies.
                 </p>
@@ -631,32 +631,32 @@ export default function HomePage() {
             </section>
 
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>02/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>02/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>New-Age Content</h2>
-                <p className='text-gray-600'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>New-Age Content</h2>
+                <p className='text-gray-600 text-sm md:text-base'>
                   Underscoring the significance of contemporary and pertinent educational materials.
                 </p>
               </div>
             </section>
 
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>03/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>03/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>
                   Perennial Feedback and Profiling
                 </h2>
-                <p className='text-gray-600'>
+                <p className='text-gray-600 text-sm md:text-base'>
                   Prioritizing ongoing behavioral tracking and personalized learning trajectories.
                 </p>
               </div>
             </section>
 
             <section className='flex gap-8'>
-              <div className='w-16 font-serif text-2xl font-medium text-blue-500'>04/</div>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>04/</div>
               <div>
-                <h2 className='mb-4 font-serif text-3xl text-gray-700'>Global Perspective</h2>
-                <p className='text-gray-600'>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>Global Perspective</h2>
+                <p className='text-gray-600 text-sm md:text-base'>
                   Cultivating an appreciation for diverse cultures and fostering an awareness of
                   interconnectedness within the realm of education.
                 </p>
@@ -671,7 +671,7 @@ export default function HomePage() {
           </div>
 
           <div className='hidden md:block'>
-            <div className='absolute bottom-[4rem] right-[4rem] z-10 text-9xl font-bold text-gray-700'>
+            <div className='absolute bottom-[4rem] right-[4rem] z-10 text-xl md:text-9xl font-bold text-gray-700'>
               4
             </div>
             <div className='absolute bottom-0 right-[4.8rem] h-32 w-[13px] bg-sky-500'></div>
@@ -717,8 +717,8 @@ export default function HomePage() {
                   >
                     {i === 1 && (
                       <div className='flex flex-col items-center justify-center'>
-                        <h3 className='mb-4 text-3xl font-bold'>{slide.title}</h3>
-                        <p className='mb-6 max-w-2xl px-8 text-lg'>{slide.description}</p>
+                        <h3 className='mb-4 text-xl md:text-3xl font-bold'>{slide.title}</h3>
+                        <p className='mb-6 max-w-2xl px-8 text-sm md:text-lg'>{slide.description}</p>
                         <Button
                           className='rounded-full bg-white text-sky-600 hover:bg-gray-100'
                           asChild
