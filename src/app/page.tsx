@@ -538,7 +538,7 @@ export default function HomePage() {
             <div>
               <h2 className='font-serif text-lg font-light text-gray-700 md:text-4xl'>EXPLORE</h2>
             </div>
-            <div className='flex flex-wrap justify-start gap-2'>  
+            {/* <div className='flex flex-wrap justify-start gap-2'>  
               <Button
                 variant='outline'
                 className='hover:border-1 rounded-full text-xs md:text-sm border-white hover:border-black'
@@ -557,7 +557,7 @@ export default function HomePage() {
               >
                 Third
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className='mt-2 h-0.5 w-full bg-gray-300'></div>
           <div className='mt-8 grid h-auto grid-cols-1 gap-4 sm:h-[600px] sm:grid-cols-2 lg:grid-cols-4'>
