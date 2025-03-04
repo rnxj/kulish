@@ -71,7 +71,7 @@ export const Navbar = () => {
       className={cn(
         'z-50 flex items-center',
         isHome ? 'sticky top-0 lg:py-2 lg:absolute lg:left-0 lg:right-0 lg:top-10' : 'sticky top-0',
-        isHome ? 'h-20 lg:h-14' : 'h-20',
+        isHome ? 'h-25 lg:h-14' : 'h-25',
         isHome
           ? 'bg-sky-500 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgb(14,165,233)_0%,rgb(14,165,233)_8%,transparent_8%,transparent_20%,rgb(14,165,233)_20%,rgb(14,165,233)_100%)]'
           : 'bg-sky-500'
@@ -225,6 +225,38 @@ export const Navbar = () => {
             </DrawerContent>
           </Drawer>
         </div>
+        <nav className='items-center my-3 mx-auto sm:hidden w-full justify-center text-center flex flex-row flex-wrap space-x-2'>
+            {menuItems.map((item) =>
+              item.submenu ? (
+                <DropdownMenu key={item.href}>
+                  <DropdownMenuTrigger className='flex items-center gap-1 py-1 font-thin text-sm text-white transition-colors hover:text-gray-200'>
+                    {item.label} <ChevronDown className='h-4 w-4' />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className='bg-sky-500 p-2'>
+                    {item.submenu.map((subItem) => (
+                      <DropdownMenuItem
+                        key={subItem.href}
+                        asChild
+                        className='cursor-pointer text-white text-sm hover:bg-sky-600 hover:text-white focus:bg-sky-600 focus:text-white'
+                      >
+                        <Link href={subItem.href} className='py-2'>
+                          {subItem.label}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className='font-thin text-sm text-white transition-colors hover:text-gray-200'
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
+          </nav>
       </div>
     </header>
   );
