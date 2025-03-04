@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { ChevronDown, Facebook, Instagram, Linkedin, Menu, Twitter, Youtube } from 'lucide-react';
+import { ChevronDown, Facebook, Instagram, Linkedin, Menu, Twitter, Youtube, ArrowDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -161,9 +161,9 @@ export const Navbar = () => {
                 <Menu className='h-6 w-6' />
               </Button>
             </DrawerTrigger>
-            <DrawerContent>
+            <DrawerContent className='bg-sky-500'>
               <DrawerHeader>
-                <DrawerTitle className='border-b border-border p-4 text-center text-lg font-semibold'>
+                <DrawerTitle className='border-b border-border p-4 text-center text-white text-lg font-bold'>
                   Menu
                 </DrawerTitle>
               </DrawerHeader>
@@ -171,15 +171,16 @@ export const Navbar = () => {
                 {menuItems.map((item) =>
                   item.submenu ? (
                     <div key={item.href} className='flex flex-col gap-2'>
-                      <span className='font-medium text-foreground'>{item.label}</span>
+                      <span className='font-bold bg-white text-sky-500 text-foreground'>{item.label} <ChevronDown className='inline w-4 h-4'/></span>
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.href}
                           href={subItem.href}
                           onClick={() => setOpen(false)}
-                          className='text-sm text-muted-foreground transition-all hover:text-sky-500'
+                          className='text-sm text-muted-foreground transition-all text-white hover:text-sky-800'
                         >
                           {subItem.label}
+                          
                         </Link>
                       ))}
                     </div>
@@ -188,7 +189,7 @@ export const Navbar = () => {
                       key={item.href}
                       href={item.href}
                       onClick={() => setOpen(false)}
-                      className='text-foreground transition-all hover:text-sky-500'
+                      className='text-foreground font-bold transition-all bg-white text-sky-500'
                     >
                       {item.label}
                     </Link>
