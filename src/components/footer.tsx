@@ -47,6 +47,10 @@ export const Footer = () => {
     { href: '/news-events', label: 'News & Events' },
     // { href: '/parents', label: 'Parents' },
     { href: '/admission', label: 'Admission' },
+    { href: '/academics', label: 'Academics' },
+    { href: '/academics/enrichment-programmes', label: 'Enrichment Programmes' },
+    { href: '/academics/campus-life', label: 'Campus Life' },
+    { href: '/academics/teacher-life', label: 'Training Opportunities' },
     { href: '/contact', label: 'Contact Us' },
   ];
 
@@ -165,7 +169,7 @@ export const Footer = () => {
 
       {/* Bottom Section */}
       <div className='flex flex-col items-center w-full bg-neutral-800 px-4 py-4 text-white md:flex-row md:px-5'>
-        <nav className='mb-4 flex w-full flex-wrap justify-center gap-3 text-center md:mb-0 md:ml-20 md:w-[55%] md:justify-start md:gap-5'>
+        <nav className='mb-4 flex w-full flex-wrap justify-center gap-3 text-center md:mb-0 md:ml-20 md:w-[75%] md:justify-start md:gap-5'>
            {/* <Link href='/' className='text-xs hover:underline md:text-sm'>Home</Link> */}
           {menuItems.map((item) => (
             <Link key={item.href} href={item.href} className= {cn('text-xs hover:underline md:text-sm', item.label==='Home'?'w-full md:w-auto':'')}>
@@ -173,7 +177,7 @@ export const Footer = () => {
             </Link>
           ))}
         </nav>
-        <div className='flex w-full flex-row items-end justify-center md:justify-end md:w-[45%]'>
+        <div className='flex w-full flex-row items-end justify-center md:justify-end md:w-[25%]'>
           <div className='mr-4 flex flex-wrap justify-center gap-3 md:gap-4'>
             {footerSocialIcons.map((social, index) => (
               <SocialLink
