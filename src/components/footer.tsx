@@ -46,11 +46,11 @@ export const Footer = () => {
     { href: '/key-information', label: 'Key Information' },
     { href: '/news-events', label: 'News & Events' },
     // { href: '/parents', label: 'Parents' },
-    { href: '/admission', label: 'Admission' },
     { href: '/academics', label: 'Academics' },
     { href: '/academics/enrichment-programmes', label: 'Enrichment Programmes' },
     { href: '/academics/campus-life', label: 'Campus Life' },
     { href: '/academics/teacher-life', label: 'Training Opportunities' },
+    { href: '/admission', label: 'Admission' },
     { href: '/contact', label: 'Contact Us' },
   ];
 
