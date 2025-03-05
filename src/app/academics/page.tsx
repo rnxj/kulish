@@ -55,7 +55,7 @@ export default function AcademicsPage() {
         'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize',
       image: '/academics/carousel/main-1.jpg',
       logo: '/academics/carousel/logo-1.png',
-      href: '/stages/early-years'
+      href: '/stages/early-years',
     },
     {
       title: 'Primary Years Programme',
@@ -63,7 +63,7 @@ export default function AcademicsPage() {
         'The Primary School, offering international curriculum caters to students from Nursery to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing ',
       image: '/academics/carousel/main-2.jpg',
       logo: '/academics/carousel/logo-2.png',
-      href: '/stages/primary-school'
+      href: '/stages/primary-school',
     },
     {
       title: 'Middle Years',
@@ -71,7 +71,7 @@ export default function AcademicsPage() {
         'The Middle Years curriculum (national and international) is designed to give the learners a robust and rigorous academic learning experience. The learners will be exposed to various disciplines',
       image: '/academics/carousel/main-3.jpg',
       logo: '/academics/carousel/logo-3.png',
-      href: '/stages/middle-school'
+      href: '/stages/middle-school',
     },
   ];
 
@@ -99,19 +99,24 @@ export default function AcademicsPage() {
         <div className='absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center text-white'>
           <Dialog>
             <DialogTrigger asChild>
-              {/* <Button
+              <Button
                 variant='ghost'
                 size='icon'
                 className='mb-4 h-16 w-16 rounded-full bg-white/20 p-0 hover:bg-white/30 [&_svg]:h-full [&_svg]:w-full'
               >
                 <VideoPlaySVG />
-              </Button> */}
+              </Button>
             </DialogTrigger>
             <DialogContent className='p-0 sm:max-w-[800px]'>
               <DialogTitle className='hidden'>
                 Unlock Global Potential with a Balanced Curriculum
               </DialogTitle>
-              <video controls autoPlay className='h-full w-full' src='/academics/what is your curriculum.mp4' />
+              <video
+                controls
+                autoPlay
+                className='h-full w-full'
+                src='/academics/what is your curriculum.mp4'
+              />
             </DialogContent>
           </Dialog>
           <h3 className='mb-4 text-2xl font-medium'>
@@ -209,12 +214,16 @@ export default function AcademicsPage() {
             transition={{ duration: 0.8 }}
             className='mx-auto flex h-full max-w-sm flex-col justify-center space-y-6'
           >
-            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            <h2 className='font-serif text-2xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8 md:text-4xl'>
               New-Age Content
             </h2>
 
-            <p className='text-gray-800 text-sm md:text-base'>
-            As we embrace the transformative impact of AI and automation in the job market, it's crucial to prepare our students with the skills and opportunities needed. The Kulish School, in collaboration with esteemed partners, aims to equip students with the skills and knowledge necessary for the future. By combining traditional learning facets, we can ensure that our students are empowered to thrive in the age of AI.
+            <p className='text-sm text-gray-800 md:text-base'>
+              As we embrace the transformative impact of AI and automation in the job market, it's
+              crucial to prepare our students with the skills and opportunities needed. The Kulish
+              School, in collaboration with esteemed partners, aims to equip students with the
+              skills and knowledge necessary for the future. By combining traditional learning
+              facets, we can ensure that our students are empowered to thrive in the age of AI.
             </p>
           </motion.div>
 
@@ -288,7 +297,7 @@ export default function AcademicsPage() {
               height={500}
               className='h-[400px] w-[600px] rounded-2xl object-cover'
             />
-            <div className='mt-12 text-sm md:text-base mb-12 md:mb-0'>
+            <div className='mb-12 mt-12 text-sm md:mb-0 md:text-base'>
               Our mission is to empower children for the future by integrating future-oriented
               subjects, innovative pedagogical approaches, and advanced evaluation techniques into
               the curriculum.
