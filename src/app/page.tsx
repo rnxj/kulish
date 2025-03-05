@@ -644,7 +644,7 @@ export default function HomePage() {
               <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>03/</div>
               <div>
                 <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>
-                  Perennial Feedback and Profiling
+                  Advance System of Evaluation
                 </h2>
                 <p className='text-gray-600 text-sm md:text-base'>
                   Prioritizing ongoing behavioral tracking and personalized learning trajectories.
@@ -662,6 +662,16 @@ export default function HomePage() {
                 </p>
               </div>
             </section>
+
+            <section className='flex gap-8'>
+              <div className='w-16 font-serif text-xl md:text-2xl font-medium text-blue-500'>05/</div>
+              <div>
+                <h2 className='mb-4 font-serif text-xl md:text-3xl text-gray-700'>A Value-Based Approach to Learning</h2>
+                <p className='text-gray-600 text-sm md:text-base'>
+                The value system is a core aspect of The Kulish School, shaping students into ethical and responsible individuals.
+                </p>
+              </div>
+            </section>
           </div>
 
           <div className='absolute right-[-6rem] top-1/2 hidden -translate-y-1/2 transform md:block lg:right-[-8rem]'>
@@ -670,7 +680,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className='hidden md:block'>
+          <div className='hidden'>
             <div className='absolute bottom-[4rem] right-[4rem] z-10 text-xl md:text-9xl font-bold text-gray-700'>
               4
             </div>

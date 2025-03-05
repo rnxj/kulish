@@ -225,7 +225,7 @@ export const Navbar = () => {
             </DrawerContent>
           </Drawer>
         </div>
-        <nav className='items-center my-3 mx-auto sm:hidden w-full justify-center text-center flex flex-row flex-wrap space-x-2'>
+        <nav className='items-center my-3 mx-auto sm:hidden w-full justify-center text-center flex flex-row flex-wrap space-x-3'>
             {menuItems.map((item) =>
               item.submenu ? (
                 <DropdownMenu key={item.href}>
