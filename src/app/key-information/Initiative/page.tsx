@@ -71,13 +71,7 @@ const radioGrid = [
         <div className='container mx-auto text-center'>
           <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light text-[#333]'>INITIATIVE</h2>
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
-            At The Kulish School, we believe in nurturing the holistic development of our students
-            through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
-            Aligned with the principles of the Primary Years Programme (PYP), our CAS program is
-            designed to instill a sense of responsibility, teamwork, and empathy in our young
-            learners. Through a variety of engaging and meaningful activities, we encourage students
-            to become active, compassionate, and lifelong learners who understand the importance of
-            contributing to their communities.
+          Initiative is a crucial trait in students that helps foster independence, responsibility, and personal growth. At The Kulish School, when students take the initiative—whether by participating in workshops, engaging in field trips, or exploring new learning opportunities—they are actively shaping their own educational experiences. Activities such as visiting a bakery, exploring a plantation, or participating in a weaving workshop with Jaipur rugs enable students to gain practical knowledge while building self-confidence and problem-solving abilities. This proactive approach encourages them to think critically, ask questions, and engage with their surroundings in meaningful ways. Initiative also nurtures creativity and curiosity, as students take it upon themselves to explore new interests and challenge themselves outside of the classroom. Whether learning through art murals or experiencing a visit to a radio station, these opportunities help students develop leadership skills, teamwork, and communication abilities. More importantly, initiative encourages self-reliance and motivation, preparing them for future academic and personal endeavors. The Kulish School provides an environment where students are encouraged to take responsibility for their own learning, which in turn fosters both personal and academic growth. Ultimately, initiative plays a vital role in shaping students into confident, innovative, and proactive individuals who are ready to face challenges and contribute meaningfully to society.
           </p>
         </div>
       </section>

@@ -295,14 +295,14 @@ export default function CampusLifePage() {
             className='mx-auto flex max-w-2xl flex-col justify-center space-y-6'
           >
             <Image
-              src='/teacher-life/bento/2.jpg'
+              src='/teacher-life/bento/4.jpg'
               alt='New Age Education Concept'
               width={500}
               height={500}
               className='h-[250px] w-[500px] rounded-2xl object-cover'
             />
             <Image
-              src='/teacher-life/bento/3.jpg'
+              src='/teacher-life/bento/5.jpg'
               alt='New Age Education Concept'
               width={500}
               height={500}

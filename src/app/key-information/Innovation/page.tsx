@@ -23,12 +23,12 @@ const geobiologySrc = [
   { key:6, src:"/key-information/innovation/Geobiology 6.png" },
 ]
 const artLabSrc = [
-  { key:1, src:"/key-information/innovation/ART LAB 1.png" },
-  { key:2, src:"/key-information/innovation/ART LAB 2.png" },
+  { key:1, src:"/key-information/innovation/ART LAB 9.jpg" }, //
+  { key:2, src:"/key-information/innovation/ART LAB 10.jpg" }, //
   { key:3, src:"/key-information/innovation/ART LAB 3.png" },
   { key:4, src:"/key-information/innovation/ART LAB 4.jpg" },
-  { key:5, src:"/key-information/innovation/ART LAB 7.png" },
-  { key:6, src:"/key-information/innovation/ART LAB 8.png" },
+  { key:5, src:"/key-information/innovation/ART LAB 11.jpg" }, //
+  { key:6, src:"/key-information/innovation/ART LAB 12.jpg" }, //
 ]
 
   return (
@@ -48,14 +48,8 @@ const artLabSrc = [
       <section className='bg-[#f7f7f7] px-5 py-10'>
         <div className='container mx-auto text-center'>
           <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light text-[#333]'>INNOVATION</h2>
-          <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
-            At The Kulish School, we believe in nurturing the holistic development of our students
-            through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
-            Aligned with the principles of the Primary Years Programme (PYP), our CAS program is
-            designed to instill a sense of responsibility, teamwork, and empathy in our young
-            learners. Through a variety of engaging and meaningful activities, we encourage students
-            to become active, compassionate, and lifelong learners who understand the importance of
-            contributing to their communities.
+          <p className='mx-auto w-[75%] text-sm leading-relaxed text-[#666]'>
+          The Kulish School features cutting-edge spaces designed to inspire curiosity and creativity in students through hands-on exploration. Built around the themes of geobiology, STEM, and visual arts, these labs offer unique opportunities for students to engage with real-world scientific concepts, creativity, self-expression, observation, design, and critical thinking.
           </p>
         </div>
       </section>
@@ -151,11 +145,10 @@ const artLabSrc = [
 
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
             {artLabSrc.map((imgMap, index) =>(
-            <div className='relative grid-cols-3 gap-4 overflow-hidden' >
+            <div className='relative grid-cols-3 gap-4 overflow-hidden' key={index} >
                 <Image
                   src={imgMap.src}
                   alt='ART LAB'
-                  key={index}
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'

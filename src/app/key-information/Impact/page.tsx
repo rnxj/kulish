@@ -64,13 +64,7 @@ const saveGrid = [
         <div className='container mx-auto text-center'>
           <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light text-[#333]'>IMPACT</h2>
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
-            At The Kulish School, we believe in nurturing the holistic development of our students
-            through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
-            Aligned with the principles of the Primary Years Programme (PYP), our CAS program is
-            designed to instill a sense of responsibility, teamwork, and empathy in our young
-            learners. Through a variety of engaging and meaningful activities, we encourage students
-            to become active, compassionate, and lifelong learners who understand the importance of
-            contributing to their communities.
+          The Kulish School, empowers students to engage in real-world activities that promote social responsibility, environmental awareness, and community involvement. One such initiative is the visit to Sambhar Lake, where students learn about the importance of preserving water ecosystems and the challenges faced by local wildlife. The school also encourages students to take part in the Save Water Initiative, fostering a sense of responsibility toward conserving natural resources. Additionally, students are actively involved in promoting road safety, raising awareness about safe driving practices and pedestrian safety. The Global Village Initiative, in collaboration with AIESEC, allows students to connect with global peers, exchanging ideas and promoting cultural awareness. The school also supports animal welfare through partnerships with local NGOs, where students contribute to the well-being of animals in need. These activities not only help students develop empathy, leadership, and teamwork but also inspire them to take action for positive change in their communities and the world. Through the Impact Initiative, The Kulish School instills a sense of purpose, encouraging students to become proactive citizens who understand the value of their actions in creating a better future.
           </p>
         </div>
       </section>

@@ -92,7 +92,7 @@ export default function HomePage() {
       title: 'WELCOME TO',
       heading: 'Global Curriculum',
       description:
-        'Offering both national and international boards including CBSE and IB, to provide a comprehensive education.',
+        'Offering both national and international boards',
     },
     {
       src: '/landing/slider/SLIDER 7.jpg',
@@ -118,9 +118,9 @@ export default function HomePage() {
     {
       src: '/landing/slider/SLIDER 10.jpg',
       title: '',
-      heading: 'Begin Your Journey',
+      heading: 'Experiential Learning',
       description:
-        'Take the first step towards providing your child with an education that will shape their future and open doors to endless possibilities.',
+        'We integrate experiential learning and local culture into the curriculum, fostering real-world experiences, critical thinking, and cultural awareness for well-rounded development.',
     },
   ];
   const overview = [
@@ -447,13 +447,13 @@ export default function HomePage() {
             <div className='mx-auto flex h-full max-w-sm flex-col px-4 md:items-center justify-center space-y-6'>
               <div className='mb-2 md:mb-8 text-xl text-left'>
                 <h2 className='font-serif text-xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
-                  Innovation, initiative
-                  <br />& impact at The Kulish School
+                  Innovation, Initiative
+                  <br />& Impact at The Kulish School
                 </h2>
               </div>
               <p className='text-justify text-sm md:text-base text-gray-800'>
                 At The Kulish School, we believe in nurturing the holistic development of our
-                students through a well-rounded curriculum that includes the 3Is—Innovation,
+                students through a well-rounded curriculum that includes the 3I's —Innovation,
                 Initiative & Impact. Our 3I program is designed to instill a sense of
                 responsibility, teamwork, and empathy in our young learners. Through a variety of
                 engaging and meaningful activities, we encourage students to become active,
