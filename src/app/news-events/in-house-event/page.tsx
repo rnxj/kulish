@@ -144,7 +144,7 @@ const petDayGrid = [
           {/* Title */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-            MENTALIST
+            VISIT BY NLP PROFESSIONAL
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>

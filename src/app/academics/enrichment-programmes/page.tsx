@@ -162,21 +162,15 @@ export default function AcademicsPage() {
             </h2>
 
             <p className='text-sm md:text-md text-gray-800'>
-            At The Kulish School, we believe in starting early to equip 
-            students with essential life skills. Our Financial Literacy program 
-            introduces Nursery students to saving, budgeting, and 
-            informed decision-making, laying a foundation for confident 
-            money management. Through interactive activities and real-
-            life simulations, students develop patience, goal-setting, 
-            critical thinking, and risk assessment.
+            At The Kulish School, we believe in starting early to equip students with essential life skills. Our Financial Literacy program introduces students to saving, budgeting, and informed decision-making, laying a foundation for confident money management. Through interactive activities and real- life simulations, students develop patience, goal-setting, critical thinking.
             </p>
 
-            <p className='text-sm md:text-md text-gray-800'>
+            {/* <p className='text-sm md:text-md text-gray-800'>
               By blending modern learning with ancient Indian values, we foster innovation, global
               citizenship, and compassionate caregiving. Our holistic approach nurtures adaptable
               thinkers with strong ethical grounding, cultural awareness, and the skills needed to
               excel in a globally connected world.
-            </p>
+            </p> */}
           </motion.div>
 
           <div className='flex justify-center'>
@@ -365,11 +359,11 @@ export default function AcademicsPage() {
             </h2>
 
             <p className='text-gray-800 text-sm md:text-md'>
-            Welcome to the STEM Lab at The Kulish School, where we inspire and empower our students to explore the exciting world of Science, Technology, Engineering, and Mathematics (STEM). Our lab is a dynamic space designed to foster creativity, critical thinking, and hands-on learning.
+            Welcome to the STEM Lab at The Kulish School, where we inspire and empower our students to explore the exciting world of Science, Technology, Engineering, and Mathematics (STEM). Our lab is a dynamic space designed to foster creativity, critical thinking, and hands-on learning. Through engaging activities, students gain practical experience and deepen their understanding of STEM concepts that are applicable to real-world challenges.
             </p>
 
             <p className='text-gray-800 text-sm md:text-md'>
-            Through engaging activities, students gain practical experience and deepen their understanding of STEM concepts that are applicable to real-world challenges. In the STEM Lab, students participate in projects that include robotics and engineering, scientific experiments, and problem-solving. These activities allow them to develop skills that are not only essential for their academic growth but also highly valuable for their future careers. Students are encouraged to work collaboratively on projects, where they can apply their knowledge to solve problems, create solutions and effectively communicate their ideas.
+            In the STEM Lab, students participate in projects that include robotics and engineering, scientific experiments, and problem-solving. These activities allow them to develop skills that are not only essential for their academic growth but also highly valuable for their future careers. Students are encouraged to work collaboratively on projects, where they can apply their knowledge to solve problems, create solutions and effectively communicate their ideas.
             </p>
 
             <p className='text-gray-800 text-sm md:text-md'>
@@ -637,21 +631,15 @@ export default function AcademicsPage() {
               Geobiology
             </h2>
             <p className='text-gray-800 text-sm md:text-md'>
-            Welcome to the Geobiology Lab at Kulish School, an exciting space where students explore both biology and earth sciences through fun, hands-on activities.
+            GeoBiology is a multidisciplinary field that investigates the complex interactions between Earth's physical systems and the biosphere, shaping life on a global scale. At Kulish, students explore this dynamic field at the intersection of ecology, evolutionary biology, microbiology, paleontology, soil science, biogeochemistry, and advanced technology, gaining insights into processes that connect the Earth's past, present, and future.
             </p>
 
             <p className='text-gray-800 text-sm md:text-md'>
-            In our lab, we help students develop a love for science by letting them learn through real experiments. In the biology section, students test the sugar content in junk and healthy foods, check the pH levels of different food items, extract DNA from fruits, and learn about the properties of everyday materials.
+            Through experiential learning, students engage in activities like analyzing soil layers and studying plant growth while integrating mathematical sciences to measure parameters such as plant height, soil quality, and nutrient cycles. Advanced techniques, such as phytochemical testing, help compare the nutritional properties of foods, providing real-world applications. Artistic explorations, like fossil imprint creation, bring an imaginative dimension to understanding Earth's history.
             </p>
 
             <p className='text-gray-800 text-sm md:text-md'>
-            In the earth science section, students create compost for plants, study soil layers, and learn how these things support healthy growth and the environment.
-            </p>
-            <p className='text-gray-800 text-sm md:text-md'>
-            For younger students, we have simple and exciting science activities to spark their interest and help them understand basic concepts in biology and earth science.
-            </p>
-            <p className='text-gray-800 text-sm md:text-md'>
-            At Kulish School, we believe learning should be fun and interactive. Our Geobiology Lab gives students the chance to discover, explore, and grow their knowledge of the natural world.
+            With a focus on global sustainability, Kulish emphasizes the role of geobiology in addressing critical challenges, from climate change to food security. By combining scientific rigor, technology, and creative expression, students develop a comprehensive understanding of Earth's interconnected systems, equipping them to address pressing global issues and contribute to advancements in this vital field.
             </p>
           </motion.div>
 

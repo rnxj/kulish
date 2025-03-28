@@ -26,13 +26,7 @@ export default function KeyInformationPage() {
           <h2 className='mb-4 font-serif text-2xl md:text-4xl font-light text-[#333]'>ENHANCERS</h2>
           <h3 className='mb-5 text-lg md:text-xl font-normal text-[#555]'>Kulish Community Service Program</h3>
           <p className='mx-auto w-[85%] text-sm leading-relaxed text-[#666]'>
-            At The Kulish School, we believe in nurturing the holistic development of our students
-            through a well-rounded curriculum that includes Community, Activity, and Service (CAS).
-            Aligned with the principles of the Primary Years Programme (PYP), our CAS program is
-            designed to instill a sense of responsibility, teamwork, and empathy in our young
-            learners. Through a variety of engaging and meaningful activities, we encourage students
-            to become active, compassionate, and lifelong learners who understand the importance of
-            contributing to their communities.
+          At The Kulish School, we believe in nurturing the holistic development of our students through a well-rounded curriculum that includes Community, service program (CSP). Aligned with the principles of the Primary Years Programme (PYP), our CSP program is designed to instill a sense of responsibility, teamwork, and empathy in our young learners. Through a variety of engaging and meaningful activities, we encourage students to become active, compassionate, and lifelong learners who understand the importance of contributing to their communities.
           </p>
         </div>
       </section>

@@ -51,7 +51,7 @@ const stagesData = {
       {
         title: "",
         description:
-          'The Primary School, offering an international curriculum, caters to students from Nursery to Grade 8. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing a broad academic experience that emphasizes the connections between subjects and fosters an international perspective.',
+          'The Primary School, offering an international curriculum, caters to students from Grade 1 to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing a broad academic experience that emphasizes the connections between subjects and fosters an international perspective.',
       },
       {
         title: '',

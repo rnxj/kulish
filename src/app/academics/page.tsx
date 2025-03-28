@@ -53,7 +53,7 @@ export default function AcademicsPage() {
       title: 'Early Years',
       description:
         'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize',
-      image: '/academics/carousel/main-1.jpg',
+      image: '/academics/carousel/main-4.jpg',
       logo: '/academics/carousel/logo-1.png',
       href: '/stages/early-years',
     },
@@ -219,11 +219,7 @@ export default function AcademicsPage() {
             </h2>
 
             <p className='text-sm text-gray-800 md:text-base'>
-              As we embrace the transformative impact of AI and automation in the job market, it's
-              crucial to prepare our students with the skills and opportunities needed. The Kulish
-              School, in collaboration with esteemed partners, aims to equip students with the
-              skills and knowledge necessary for the future. By combining traditional learning
-              facets, we can ensure that our students are empowered to thrive in the age of AI.
+            As we embrace the transformative impact of AI and automation in the job market, it's crucial to prepare our students with the skills and opportunities needed. The Kulish School, in collaboration with various local and global partners, aims to equip students with the skills and knowledge necessary for the future. By combining traditional learning facets, we can ensure that our students are empowered to thrive in the age of AI.
             </p>
           </motion.div>
 
@@ -235,7 +231,7 @@ export default function AcademicsPage() {
             className='flex items-center justify-center'
           >
             <Image
-              src='/academics/new-age.jpg'
+              src='/academics/new-age1.jpg'
               alt='New Age Education Concept'
               width={500}
               height={500}
@@ -268,14 +264,14 @@ export default function AcademicsPage() {
             className='mx-auto flex max-w-2xl flex-col justify-center space-y-6'
           >
             <Image
-              src='/academics/bento/1.jpg'
+              src='/academics/bento/4.jpg'
               alt='New Age Education Concept'
               width={500}
               height={500}
               className='h-[250px] w-[500px] rounded-2xl object-cover'
             />
             <Image
-              src='/academics/bento/2.jpg'
+              src='/academics/bento/5.jpg'
               alt='New Age Education Concept'
               width={500}
               height={500}
@@ -291,7 +287,7 @@ export default function AcademicsPage() {
             className='flex flex-col items-center justify-center'
           >
             <Image
-              src='/academics/bento/3.jpg'
+              src='/academics/bento/6.jpg'
               alt='New Age Education Concept'
               width={500}
               height={500}
