@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export default function AdmissionEnquiryPage() {
-    const classOptions = {
+    const classOptions:  Record<string, string[]> = {
         '2024-2025': ['Nursery', 'KG 1', 'KG 2', 'I', 'II', 'III', 'IV'],
         '2025-2026': ['Nursery', 'KG 1', 'KG 2', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII'],
         '2026-2027': ['Nursery', 'KG 1', 'KG 2', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
@@ -29,7 +29,8 @@ export default function AdmissionEnquiryPage() {
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState(""); // "success" or "error"
-    const [availableClasses, setAvailableClasses] = useState([]);
+    const [availableClasses, setAvailableClasses] = useState<string[]>([]);
+
 
     // Update available classes when academic year changes
     useEffect(() => {
@@ -44,51 +45,52 @@ export default function AdmissionEnquiryPage() {
         }
     }, [formData.academicYear]);
   
-    const handleChange = (e) => {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setLoading(true);
-      setMessage("");
-      setMessageType("");
-  
-      try {
-        const res = await fetch("/api/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        });
-  
-        const data = await res.json();
-        if (res.ok) {
-          setMessage("Admission enquiry submitted successfully!");
-          setMessageType("success");
-          setFormData({
-            academicYear: '',
-            selectedClass: '',
-            firstName: '',
-            middleName: '',
-            lastName: '',
-            dateOfBirth: '',
-            gender: '',
-            phone: '',
-            email: '',
-            currentSchool: '',
-            bookCounseling: ''
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+      
+      const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
+        setMessage("");
+        setMessageType("");
+      
+        try {
+          const res = await fetch("/api/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
           });
-        } else {
-          setMessage(data.message || "Error submitting admission enquiry");
+      
+          const data = await res.json();
+          if (res.ok) {
+            setMessage("Admission enquiry submitted successfully!");
+            setMessageType("success");
+            setFormData({
+              academicYear: '',
+              selectedClass: '',
+              firstName: '',
+              middleName: '',
+              lastName: '',
+              dateOfBirth: '',
+              gender: '',
+              phone: '',
+              email: '',
+              currentSchool: '',
+              bookCounseling: ''
+            });
+          } else {
+            setMessage(data.message || "Error submitting admission enquiry");
+            setMessageType("error");
+          }
+        } catch (error) {
+          setMessage("Error submitting admission enquiry. Please try again.");
           setMessageType("error");
+        } finally {
+          setLoading(false);
         }
-      } catch (error) {
-        setMessage("Error submitting admission enquiry. Please try again.");
-        setMessageType("error");
-      } finally {
-        setLoading(false);
-      }
-    };
+      };
+      
 
     return (
     <div className="flex min-h-screen p-2 bg-gray-50">

@@ -1,9 +1,20 @@
 import { NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 
-export async function POST(request) {
+interface AdmissionForm {
+  academicYear: string;
+  selectedClass: string;
+  firstName: string;
+  lastName: string;
+  gender: string;
+  phone: string;
+  submittedAt?: Date;
+  [key: string]: any; // Allows additional fields if needed
+}
+
+export async function POST(request: Request): Promise<NextResponse> {
   try {
-    const formData = await request.json();
+    const formData: AdmissionForm = await request.json();
     
     // Validate required fields
     if (!formData.academicYear || !formData.selectedClass || 
