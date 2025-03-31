@@ -662,6 +662,69 @@ export default function AcademicsPage() {
           </div>
         </div>
       </BgPattern>
+
+{/* sports section */}
+<BgPattern
+        lines={[
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.1 },
+          { orientation: 'horizontal', start: 0, end: 0.58, position: 0.27, variant: 'dashed' },
+          { orientation: 'horizontal', start: 0, end: 1, position: 0.88, variant: 'dashed' },
+          { orientation: 'vertical', start: 0.1, end: 0.88, position: 0.1 },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.58 },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.56, variant: 'dashed' },
+          { orientation: 'vertical', start: 0, end: 1, position: 0.92, variant: 'dashed' },
+        ]}
+      >
+        <div className='grid grid-cols-1 gap-8 p-6 md:p-24 lg:grid-cols-[3fr_2fr]'>
+          <div className='flex justify-center'>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className='w-[600px]'
+            >
+              <div className='grid grid-rows-2 gap-4'>
+                <Image
+                  src='/enrichment-programmes/Sports1.jpg'
+                  alt='Tinkering Image'
+                  width={600}
+                  height={300}
+                  className='h-[300px] w-full rounded-2xl object-cover'
+                />
+                <Image
+                  src='/enrichment-programmes/Sports2.jpg'
+                  alt='Tinkering Image'
+                  width={600}
+                  height={300}
+                  className='h-[300px] w-full rounded-2xl object-cover'
+                />
+              </div>
+            </motion.div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className='flex h-full flex-col justify-start space-y-6'
+          >
+            <h2 className='font-serif text-2xl md:text-4xl font-light text-gray-700 underline decoration-gray-300 decoration-1 underline-offset-8'>
+            Sports
+            </h2>
+
+            <div className='flex flex-col space-y-2'>
+            <p className='text-gray-800 text-sm md:text-md'>
+              At The Kulish School, we believe that sports play a vital role in the overall development of our students. We offer a wide range of sports, including football, basketball, cricket, tennis, and athletics, ensuring that every student has the opportunity to explore and excel in their chosen field. To provide expert guidance and help students reach their full potential, we bring in experienced coaches who are specialized in their respective sports.
+            </p>
+
+            <p className='text-gray-800 text-sm md:text-md'>
+              These coaches work closely with the students, focusing not only on honing their athletic skills but also on instilling discipline, teamwork, and resilience. In addition to traditional sports, we have made self-defense training compulsory for all students, ensuring they gain essential skills for personal safety and confidence. We also offer indoor sports like pickleball, table tennis, and chess, allowing students to develop strategic thinking, coordination, and focus. At Kulish, our comprehensive sports program is designed to nurture both physical and mental growth, fostering a well-rounded development for every student.
+            </p>
+            </div>
+          </motion.div>
+        </div>
+      </BgPattern>
     </main>
   );
 }

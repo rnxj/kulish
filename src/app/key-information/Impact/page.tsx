@@ -15,6 +15,16 @@ const blindGrid = [
 
 ];
 
+const compassionGrid = [
+  { key:1, src:"/key-information/Impact/compassion/1.jpg" },
+  { key:2, src:"/key-information/Impact/compassion/2.jpg" },
+  { key:3, src:"/key-information/Impact/compassion/3.jpg" },
+  { key:4, src:"/key-information/Impact/compassion/4.jpg" },
+  { key:5, src:"/key-information/Impact/compassion/5.jpg" },
+  //{ key:6, src:"/key-information/Impact/Blind/5.jpeg" },
+
+];
+
 const globalGrid = [
   { key:1, src:"/key-information/Impact/Global/1.jpg" },
   { key:2, src:"/key-information/Impact/Global/2.jpg" },
@@ -82,17 +92,17 @@ const saveGrid = [
           {/* BLIND SCHOOL */}
           <div className='mb-12 items-center mx-auto'>
             <h2 className='font-serif text-center text-2xl md:text-4xl font-light text-gray-700 decoration-gray-300 decoration-1'>
-              BLIND SCHOOL
+              WORKSHOP ON COMPASSION
             </h2>
           </div>
           <div className='grid grid-cols-1 gap-8 '>
 
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
-            {blindGrid.map((imgMap, index) =>(
+            {compassionGrid.map((imgMap, index) =>(
             <div key={index} className='relative grid-cols-3 gap-4 overflow-hidden' >
                 <Image
                   src={imgMap.src}
-                  alt='BLIND SCHOOL Grid'
+                  alt='Compassion Grid'
                   width={400}
                   height={400}
                   className='h-[500px] w-full object-cover'

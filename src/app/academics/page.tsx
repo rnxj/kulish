@@ -49,19 +49,20 @@ function VideoPlaySVG() {
 }
 export default function AcademicsPage() {
   const academicPrograms = [
-    {
-      title: 'Early Years',
-      description:
-        'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize',
-      image: '/academics/carousel/main-4.jpg',
-      logo: '/academics/carousel/logo-1.png',
-      href: '/stages/early-years',
-    },
+    // {
+    //   title: 'Early Years',
+    //   description:
+    //     'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize',
+    //   image: '/academics/carousel/main-4.jpg',
+    //   logo: '/academics/carousel/logo-1.png',
+    //   href: '/stages/early-years',
+    // },
     {
       title: 'Primary Years Programme',
       description:
         'The Primary School, offering international curriculum caters to students from Nursery to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing ',
-      image: '/academics/carousel/main-2.jpg',
+      // image: '/academics/carousel/main-2.jpg',
+      image: '/academics/carousel/main-4.jpg',
       logo: '/academics/carousel/logo-2.png',
       href: '/stages/primary-school',
     },
@@ -75,7 +76,7 @@ export default function AcademicsPage() {
     },
   ];
 
-  const [order, setOrder] = useState([0, 1, 2]);
+  const [order, setOrder] = useState([0, 1]); //2
 
   const handlePrevious = () => {
     setOrder((prev) => [prev[1], prev[2], prev[0]]);
@@ -154,7 +155,7 @@ export default function AcademicsPage() {
         <Button variant='secondary' size='icon' onClick={handlePrevious}>
           <ArrowLeft className='h-4 w-4' />
         </Button>
-        <div className='mx-auto my-24 grid max-w-5xl gap-12 px-4 md:grid-cols-3'>
+        <div className='mx-auto my-24 grid max-w-5xl gap-12 px-4 md:grid-cols-2'>
           {order.map((index) => {
             const program = academicPrograms[index];
             return (
