@@ -1,14 +1,95 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export default function AdmissionEnquiryPage() {
-    const [academicYear, setAcademicYear] = useState('');
-    const [selectedClass, setSelectedClass] = useState('');
-    const [gender, setGender] = useState('');
+    const classOptions = {
+        '2024-2025': ['Nursery', 'KG 1', 'KG 2', 'I', 'II', 'III', 'IV'],
+        '2025-2026': ['Nursery', 'KG 1', 'KG 2', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII'],
+        '2026-2027': ['Nursery', 'KG 1', 'KG 2', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
+    }
+
+    const [formData, setFormData] = useState({
+        academicYear: '',
+        selectedClass: '',
+        firstName: '',
+        middleName: '',
+        lastName: '',
+        dateOfBirth: '',
+        gender: '',
+        phone: '',
+        email: '',
+        currentSchool: '',
+        bookCounseling: ''
+    });
+    
+    const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState("");
+    const [messageType, setMessageType] = useState(""); // "success" or "error"
+    const [availableClasses, setAvailableClasses] = useState([]);
+
+    // Update available classes when academic year changes
+    useEffect(() => {
+        if (formData.academicYear && classOptions[formData.academicYear]) {
+            setAvailableClasses(classOptions[formData.academicYear]);
+            // Reset selected class if the current selection isn't available in the new academic year
+            if (formData.selectedClass && !classOptions[formData.academicYear].includes(formData.selectedClass)) {
+                setFormData(prev => ({ ...prev, selectedClass: '' }));
+            }
+        } else {
+            setAvailableClasses([]);
+        }
+    }, [formData.academicYear]);
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+      setMessage("");
+      setMessageType("");
+  
+      try {
+        const res = await fetch("/api/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+  
+        const data = await res.json();
+        if (res.ok) {
+          setMessage("Admission enquiry submitted successfully!");
+          setMessageType("success");
+          setFormData({
+            academicYear: '',
+            selectedClass: '',
+            firstName: '',
+            middleName: '',
+            lastName: '',
+            dateOfBirth: '',
+            gender: '',
+            phone: '',
+            email: '',
+            currentSchool: '',
+            bookCounseling: ''
+          });
+        } else {
+          setMessage(data.message || "Error submitting admission enquiry");
+          setMessageType("error");
+        }
+      } catch (error) {
+        setMessage("Error submitting admission enquiry. Please try again.");
+        setMessageType("error");
+      } finally {
+        setLoading(false);
+      }
+    };
+
     return (
     <div className="flex min-h-screen p-2 bg-gray-50">
       {/* Left Blue Panel */}
@@ -73,139 +154,187 @@ export default function AdmissionEnquiryPage() {
         </div>
       </div>
       
-      {/* Rest of the component remains the same as in the previous submission */}
+      {/* Right section with the form */}
       <div className="w-3/4 py-4 px-8 bg-gray-50">
-        <div className="bg-white shadow-md rounded-lg p-6">
-          <div className="flex mb-6 border-b pb-2">
-            <Image src='/admission/basicinfo.svg' className='mr-2' alt='basic information' width={35} height={35} />
-            <h2 className="text-lg font-semibold text-sky-500">Basic Information :</h2>
+        {message && (
+          <div className={`p-4 mb-4 rounded-md ${messageType === "success" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+            {message}
           </div>
-          
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Select Academic Year <span className='text-red-600'>*</span></label>
-              <select 
-                className="border rounded p-2 w-full text-sm"
-                value={academicYear}
-                onChange={(e) => setAcademicYear(e.target.value)}
-              >
-                <option value="">Select Academic Year</option>
-                <option value="2024">2024-2025</option>
-                <option value="2025">2025-2026</option>
-              </select>
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Select Class <span className='text-red-600'>*</span></label>
-              <select 
-                className="border rounded p-2 w-full text-sm"
-                value={selectedClass}
-                onChange={(e) => setSelectedClass(e.target.value)}
-              >
-                <option value="">Select Class</option>
-                <option value="1">Class 1</option>
-                <option value="2">Class 2</option>
-              </select>
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">First Name <span className='text-red-600'>*</span></label>
-              <input 
-                type="text" 
-                className="border rounded p-2 w-full text-sm"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Middle Name</label>
-              <input 
-                type="text" 
-                className="border rounded p-2 w-full text-sm"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Last Name <span className='text-red-600'>*</span></label>
-              <input 
-                type="text" 
-                className="border rounded p-2 w-full text-sm"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Date of Birth</label>
-              <input 
-                type="text" 
-                placeholder="mm/dd/yyyy" 
-                className="border rounded p-2 w-full text-sm"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Select Gender <span className='text-red-600'>*</span></label>
-              <select 
-                className="border rounded p-2 w-full text-sm"
-                value={gender}
-                onChange={(e) => setGender(e.target.value)}
-              >
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Primary Mobile No. <span className='text-red-600'>*</span></label>
-              <input 
-                type="tel" 
-                className="border rounded p-2 w-full text-sm"
-              />
-            </div>
-            
-            <div className="col-span-2">
-              <label className="block text-sm text-gray-600 mb-1">Primary Email Id</label>
-              <input 
-                type="email" 
-                className="border rounded p-2 w-full text-sm"
-              />
-            </div>
-          </div>
-          
-          
-        </div>
-
-        <div className="bg-white shadow-md mt-6 mb-6 rounded-lg p-6">
+        )}
+        
+        <form onSubmit={handleSubmit}>
+          <div className="bg-white shadow-md rounded-lg p-6">
             <div className="flex mb-6 border-b pb-2">
-                <Image src='/admission/additionalinfo.svg' className='mr-2' alt='basic information' width={35} height={35} />
-                <h2 className="text-lg font-semibold text-yellow-400">Additional Information :</h2>
+              <Image src='/admission/basicinfo.svg' className='mr-2' alt='basic information' width={35} height={35} />
+              <h2 className="text-lg font-semibold text-sky-500">Basic Information :</h2>
             </div>
             
             <div className="grid grid-cols-2 gap-4">
-                <div>
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">Select Academic Year <span className='text-red-600'>*</span></label>
+                <select 
+                  className="border rounded p-2 w-full text-sm"
+                  name="academicYear"
+                  value={formData.academicYear}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select Academic Year</option>
+                  <option value="2024-2025">2024-2025</option>
+                  <option value="2025-2026">2025-2026</option>
+                  <option value="2026-2027">2026-2027</option>
+                </select>
+              </div>
+              
+              <div>
+              <label className="block text-sm text-gray-600 mb-1">Select Class <span className='text-red-600'>*</span></label>
+                <select 
+                  className="border rounded p-2 w-full text-sm"
+                  name="selectedClass"
+                  value={formData.selectedClass}
+                  onChange={handleChange}
+                  disabled={!formData.academicYear}
+                  required
+                >
+                  <option value="">Select Class</option>
+                  {availableClasses.map((className) => (
+                    <option key={className} value={className}>{className}</option>
+                  ))}
+                </select>
+              </div>
+              
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">First Name <span className='text-red-600'>*</span></label>
+                <input 
+                  type="text" 
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">Middle Name</label>
+                <input 
+                  type="text" 
+                  name="middleName"
+                  value={formData.middleName}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">Last Name <span className='text-red-600'>*</span></label>
+                <input 
+                  type="text" 
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">Date of Birth</label>
+                <input 
+                  type="date" 
+                  name="dateOfBirth"
+                  value={formData.dateOfBirth}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">Select Gender <span className='text-red-600'>*</span></label>
+                <select 
+                  className="border rounded p-2 w-full text-sm"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <div>
+                <label className="block text-sm text-gray-600 mb-1">Primary Mobile No. <span className='text-red-600'>*</span></label>
+                <input 
+                  type="tel" 
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
+                  required
+                />
+              </div>
+              
+              <div className="col-span-2">
+                <label className="block text-sm text-gray-600 mb-1">Primary Email Id</label>
+                <input 
+                  type="email" 
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white shadow-md mt-6 mb-6 rounded-lg p-6">
+            <div className="flex mb-6 border-b pb-2">
+              <Image src='/admission/additionalinfo.svg' className='mr-2' alt='additional information' width={35} height={35} />
+              <h2 className="text-lg font-semibold text-yellow-400">Additional Information :</h2>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <div>
                 <label className="block text-sm text-gray-600 mb-1">Current School Name</label>
                 <input 
-                    type="text" 
-                    className="border rounded p-2 w-full text-sm"
+                  type="text" 
+                  name="currentSchool"
+                  value={formData.currentSchool}
+                  onChange={handleChange}
+                  className="border rounded p-2 w-full text-sm"
                 />
-                </div>
-                
-                <div>
+              </div>
+              
+              <div>
                 <label className="block text-sm text-gray-600 mb-1">Book for Counseling</label>
-                <input 
-                    type="text" 
-                    className="border rounded p-2 w-full text-sm"
-                />
-                </div>
+                <select 
+                  className="border rounded p-2 w-full text-sm"
+                  name="bookCounseling"
+                  value={formData.bookCounseling}
+                  onChange={handleChange}
+                >
+                  <option value="">Select Option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
             </div>
             
             <div className='w-full text-center justify-center'>
-                <Button className="w-24 bg-sky-500 text-white py-3 rounded mt-6 hover:bg-sky-600 text-sm font-semibold">
-                    Submit
-                </Button>
+              <Button 
+                type="submit"
+                disabled={loading}
+                className="w-24 bg-sky-500 text-white py-3 rounded mt-6 hover:bg-sky-600 text-sm font-semibold"
+              >
+                {loading ? "Submitting..." : "Submit"}
+              </Button>
             </div>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
-    )
+    );
 }

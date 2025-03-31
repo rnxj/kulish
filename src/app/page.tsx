@@ -88,7 +88,7 @@ export default function HomePage() {
         'Take the first step towards providing your child with an education that will shape their future and open doors to endless possibilities.',
     },
     {
-      src: '/landing/slider/SLIDER 6.jpg',
+      src: '/landing/slider/SLIDER 6 NEW.jpg',
       title: 'WELCOME TO',
       heading: 'Global Curriculum',
       description:

@@ -49,9 +49,19 @@ const stagesData = {
     number: '02',
     content: [
       {
+        title: "Early Years (Nursery, KG1 & KG2)",
+        description:
+          'At our school, the Early Years curriculum provides a nurturing and stimulating environment for young learners, fostering their natural curiosity and love for learning. We emphasize play-based learning, where children explore and discover through hands-on activities that engage their senses and imaginations. Our experiential learning approach is enhanced by our extensive outdoor learning spaces, where children can connect with nature and learn through real-world experiences. We offer robust programs in sports, promoting physical development and teamwork. Our specially curated literacy sessions and math lab provide targeted support to strengthen foundational skills. These sessions are designed to build critical skills, including thinking, communication, social, self-management, and research skills. Our Early Years curriculum lays a solid foundation for lifelong learning through a rich tapestry of play, creativity, and experiential education.',
+      },
+      {
         title: "",
         description:
-          'The Primary School, offering an international curriculum, caters to students from Grade 1 to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing a broad academic experience that emphasizes the connections between subjects and fosters an international perspective.',
+          'Our Early Years curriculum lays a solid foundation for lifelong learning through a rich tapestry of play, creativity, and experiential education.',
+      },
+      {
+        title: "Grades 1 to 5",
+        description:
+          'The Primary School, offering international curriculum caters to students from Grade 1 to Grade 5. Our curriculum covers languages, social studies, mathematics, science, arts, and physical education, providing a broad academic experience that emphasizes the connections between subjects and fosters an international perspective.',
       },
       {
         title: '',
