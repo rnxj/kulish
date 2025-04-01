@@ -2,15 +2,10 @@
 
 import { useState } from "react";
 import Image from 'next/image';
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
 
 import { BgPattern } from '@/components/bg-pattern';
 
-export default function NewsPage() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
- 
+export default function NewsPage() {   
   const images = Array.from({ length: 33 }, (_, i) => `/news-events/NEWS/new-png/${i + 1}.png`);
 
   const newsGrid = [
@@ -70,10 +65,6 @@ export default function NewsPage() {
                   alt='News Grid'
                   width={400}
                   height={400}
-                  onClick={() => {
-                    setPhotoIndex(i);
-                    setIsOpen(true);
-                  }}
                   priority // Optimizes loading
                   className='h-[200px] w-[200px] md:h-[400px] md:w-[400px] object-cover cursor-pointer'
                 />
@@ -83,17 +74,6 @@ export default function NewsPage() {
             </div>
           </div>
         </div>
-
-        {isOpen && (
-        <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
-          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
-        />
-      )}
       {/* </BgPattern> */}
 
       
