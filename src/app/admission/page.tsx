@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { BgPattern } from '@/components/bg-pattern';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+// import { RegistrationForm } from '@/components/registration-form';
 
 const SocialLink = ({
   href,
