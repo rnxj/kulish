@@ -81,7 +81,7 @@ const artLabSrc = [
                   key={index}
                   width={400}
                   height={400}
-                  className='h-[500px] w-full object-cover'
+                  className={`h-[500px] w-full object-cover ${index==0 || index==1 ? 'object-right-top' : '' }`}
                 />
               </div>
               )
@@ -151,7 +151,7 @@ const artLabSrc = [
                   alt='ART LAB'
                   width={400}
                   height={400}
-                  className='h-[500px] w-full object-cover'
+                  className='h-[500px] w-full object-cover object-top'
                 />
               </div>
               )
