@@ -117,14 +117,15 @@ export default function AboutPage() {
   ];
   const experts = [
     {
-      name: 'Abha Seth',
-      title: "Middle Years’ Coordinator",
+      name: 'Ms. Richa Sharma',
+      title: "Accomplished Economist, Researcher, and Educator",
       description: [
-        'Abha Seth, the Middle Years Coordinator at The Kulish School, Jaipur, brings over 17 years of diverse experience in education across India, UAE, and Indonesia. She holds a Bachelor’s in Management and Education, along with double Master’s degrees in English and Management. Certified through IB CAT 1 & 2 workshops, she is also CTET-qualified with a 7.5 IELTS score. ',
-        'Abha is passionate about inquiry-based learning and curriculum design, integrating Sustainable Development Goals into the Middle Years program. She has led workshops for IB educators globally, including SAIBSA and the International Community of Teachers.',
-        'As a parent at TKS and an advocate for parent agency, Abha strives to build a collaborative learning community where learners take ownership of their education.',
+        'Ms. Richa is a passionate educator and dedicated researcher, currently pursuing a Ph.D. in Economics with the goal of making significant contributions to the field. She holds a Bachelor of Arts in Economics from the prestigious University of Mumbai and a Master of Arts in Economics from S.N.D.T. Women\'s University, Churchgate',
+        'Her academic excellence has been recognized with numerous accolades, including the ‘Best Overall Student of the University’ award for two consecutive years at both undergraduate and postgraduate levels. She has also represented her institutions at the university level, showcasing her leadership and academic prowess.',
+        'With a strong foundation in research, Ms. Richa has authored over 15 research papers published in top international and national journals. Her expertise spans Macroeconomics, Microeconomics, Economic Growth & Development, International Economics, and Public Economics.',
+        'Beyond academia, she is an IBDP-trained Economics and Business Management facilitator, committed to fostering critical thinking and real-world application of economic principles. Her enthusiasm for education and research continues to inspire students and contribute meaningfully to the field of Economics and Education.'
       ],
-      image: '/leadership-team/team/abha.jpg',
+      image: '/leadership-team/team/richa.JPG',
     },
     {
       name: 'Antara Naik',
@@ -504,11 +505,11 @@ export default function AboutPage() {
               </BgPattern>
       
               {/* Experts Section */}
-              {/* <BgPattern
+              <BgPattern
                 lines={[
                   { orientation: 'horizontal', start: 0, end: 1, position: 0.17, variant: 'dashed' },
                   { orientation: 'horizontal', start: 0, end: 1, position: 0.07, variant: 'dashed' },
-                  { orientation: 'horizontal', start: 0, end: 1, position: 0.14 },
+                  // { orientation: 'horizontal', start: 0, end: 1, position: 0.14 },
                 ]}
               >
                 <div className='container mx-auto px-4 py-16'>
@@ -551,7 +552,7 @@ export default function AboutPage() {
                     ))}
                   </div>
                 </div>
-              </BgPattern> */}
+              </BgPattern>
 
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                       <DialogContent className='max-w-5xl overflow-auto max-h-full p-0'>

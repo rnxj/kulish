@@ -116,7 +116,7 @@ export default function AcademicsPage() {
                 controls
                 autoPlay
                 className='h-full w-full'
-                src='/academics/what is your curriculum.mp4'
+                src='/academics/what_is_your_curriculum.mp4'
               />
             </DialogContent>
           </Dialog>
