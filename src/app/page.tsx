@@ -67,7 +67,7 @@ export default function HomePage() {
         'We strive to create an environment where every student can discover their potential and develop into confident, compassionate global citizens.',
     },
     {
-      src: '/landing/slider/slider-3.jpg',
+      src: '/landing/slider/slider3.jpg',
       title: 'OUR VISION',
       heading: 'Future Ready',
       description:
