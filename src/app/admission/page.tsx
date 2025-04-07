@@ -128,7 +128,8 @@ export default function AcademicsPage() {
                   </div>
                 </div>
                 <div className='w-full mx-auto justify-center md:justify-start flex md:block ml-auto mr-auto'>
-                        <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true">
+                        {/* <Link target="_blank" href="https://tksj.edunexttechnologies.com/mvc/std/DynamicEnquiryForm?id=gm44E2x75eawnpF5K7VGUQ&istrue=true"> */}
+                        <Link href="admission/admission-enquiry">
                           <Button className='mt-4 md:mr-4 px-8 p-5 w-28 md:w-36 bg-black text-md text-white hover:bg-sky-600 md:mt-0 md:text-lg'>
                             Admissions
                           </Button>
