@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { setCookie } from '@/lib/cookies';
 
 export default function AdminLogin() {
   const [username, setUsername] = useState('');
@@ -22,9 +23,8 @@ export default function AdminLogin() {
       });
 
       if (response.ok) {
-        // Store auth token or session
         const data = await response.json();
-        localStorage.setItem('adminToken', data.token);
+        setCookie('adminToken', data.token);
         router.push('/admin');
       } else {
         setError('Invalid credentials');

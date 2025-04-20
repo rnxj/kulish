@@ -2,39 +2,42 @@
 
 import { useState, useEffect } from "react";
 import { DataTable } from '@/components/ui/data-table';
+import TableControls from './TableControls';
+import { getCookie } from '@/lib/cookies';
 
 interface AdmissionEnquiry {
   id: string;
   studentName: string;
-//   parentName: string;
   email: string;
   phone: string;
   gradeApplying: string;
   currentSchool: string;
   message: string;
   submittedAt: string;
-  // Original fields from form
   firstName: string;
   middleName?: string;
   lastName: string;
   academicYear: string;
   selectedClass: string;
   bookCounseling?: string;
-  [key: string]: any; // For any additional fields
+  [key: string]: any;
 }
 
 export default function AdmissionsTable() {
-  const [selectedEnquiry, setSelectedEnquiry] = useState<AdmissionEnquiry | null>(
-    null
-  );
+  const [selectedEnquiry, setSelectedEnquiry] = useState<AdmissionEnquiry | null>(null);
   const [admissionEnquiries, setAdmissionEnquiries] = useState<AdmissionEnquiry[]>([]);
+  const [filteredEnquiries, setFilteredEnquiries] = useState<AdmissionEnquiry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchEnquiries = async () => {
       try {
-        const token = localStorage.getItem('adminToken');
+        const token = getCookie('adminToken');
+        if (!token) {
+          throw new Error('No authentication token found');
+        }
+
         const response = await fetch('/api/admin/admissions', {
           headers: {
             'Authorization': `Bearer ${token}`
@@ -45,6 +48,7 @@ export default function AdmissionsTable() {
         }
         const data = await response.json();
         setAdmissionEnquiries(data);
+        setFilteredEnquiries(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
@@ -54,6 +58,43 @@ export default function AdmissionsTable() {
 
     fetchEnquiries();
   }, []);
+
+  const handleSearch = (query: string) => {
+    const filtered = admissionEnquiries.filter(enquiry =>
+      enquiry.studentName.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredEnquiries(filtered);
+  };
+
+  const handleDownload = async (startDate: string, endDate: string) => {
+    try {
+      const token = localStorage.getItem('adminToken');
+      const response = await fetch(
+        `/api/admin/admissions/download?startDate=${startDate}&endDate=${endDate}`,
+        {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        }
+      );
+      
+      if (!response.ok) {
+        throw new Error('Failed to download data');
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `admissions_${startDate}_to_${endDate}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (err) {
+      console.error('Error downloading data:', err);
+    }
+  };
 
   const columns = [
     { header: 'Student Name', accessor: 'studentName' as keyof AdmissionEnquiry },
@@ -81,8 +122,13 @@ export default function AdmissionsTable() {
 
   return (
     <div>
+      <TableControls
+        onSearch={handleSearch}
+        onDownload={handleDownload}
+      />
+      
       <DataTable
-        data={admissionEnquiries}
+        data={filteredEnquiries}
         columns={columns}
         onRowClick={setSelectedEnquiry}
       />
@@ -106,10 +152,6 @@ export default function AdmissionsTable() {
                   <h4 className="font-semibold">Student Name</h4>
                   <p>{selectedEnquiry.studentName}</p>
                 </div>
-                {/* <div>
-                  <h4 className="font-semibold">Parent Name</h4>
-                  <p>{selectedEnquiry.parentName}</p>
-                </div> */}
                 <div>
                   <h4 className="font-semibold">Email</h4>
                   <p>{selectedEnquiry.email}</p>
