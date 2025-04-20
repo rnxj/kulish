@@ -73,31 +73,33 @@ export default function CareersTable() {
 
   const handleDownload = async (startDate: string, endDate: string) => {
     try {
-      const token = localStorage.getItem('adminToken');
-      const response = await fetch(
-        `/api/admin/careers/download?startDate=${startDate}&endDate=${endDate}`,
-        {
-          headers: {
-            'Authorization': `Bearer ${token}`
-          }
+      const token = getCookie('adminToken');
+      if (!token) {
+        throw new Error('No authentication token found');
+      }
+
+      const response = await fetch(`/api/admin/careers/download?startDate=${startDate}&endDate=${endDate}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
         }
-      );
-      
+      });
+
       if (!response.ok) {
         throw new Error('Failed to download data');
       }
+
+      const { downloadUrl } = await response.json();
       
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `careers_${startDate}_to_${endDate}.csv`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
-    } catch (err) {
-      console.error('Error downloading data:', err);
+      // Create a temporary link and trigger download
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = `careers_${startDate}_to_${endDate}.csv`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Download error:', error);
+      // Handle error appropriately
     }
   };
 

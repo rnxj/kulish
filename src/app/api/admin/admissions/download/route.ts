@@ -84,22 +84,21 @@ export async function GET(request: Request) {
       ];
     });
 
+    // Create CSV content
     const csvContent = [
       headers.join(','),
-      ...rows.map(row => row.join(','))
+      ...rows.map(row => row.map(cell => `"${cell}"`).join(','))
     ].join('\n');
 
-    // Return CSV file
-    return new NextResponse(csvContent, {
-      headers: {
-        'Content-Type': 'text/csv',
-        'Content-Disposition': `attachment; filename=admissions_${format(minDate, 'yyyy-MM-dd')}_to_${format(maxDate, 'yyyy-MM-dd')}.csv`
-      }
-    });
+    // Create a data URL
+    const dataUrl = `data:text/csv;charset=utf-8,${encodeURIComponent(csvContent)}`;
+
+    // Return the data URL
+    return NextResponse.json({ downloadUrl: dataUrl });
   } catch (error) {
-    console.error('Error downloading admissions data:', error);
+    console.error('Error generating CSV:', error);
     return NextResponse.json(
-      { error: 'Failed to download admissions data' },
+      { error: 'Failed to generate CSV file' },
       { status: 500 }
     );
   }
