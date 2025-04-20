@@ -5,21 +5,24 @@ export function middleware(request: NextRequest) {
   // Get the pathname from the URL
   const pathname = request.nextUrl.pathname;
 
-  // Check if the request is for an admin API route
-  if (pathname.startsWith('/api/admin')) {
-    // For API routes, we just check authentication but don't redirect
+  // Check if the request is for an admin API route (excluding login)
+  if (pathname.startsWith('/api/admin') && !pathname.includes('/api/admin/login')) {
     const authHeader = request.headers.get('authorization');
-    // API routes stay the same
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
   } 
-  // Add your admin route authentication here if needed
+  // Check if the request is for admin pages
   else if (pathname.startsWith('/admin')) {
-    // You could add authentication checks here if needed
-    // For example, check for a session cookie and redirect to login if not present
+    const token = request.cookies.get('adminToken');
+    if (!token && pathname !== '/admin/login') {
+      return NextResponse.redirect(new URL('/admin/login', request.url));
+    }
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/admin/:path*', '/api/admin/:path*'],
+  matcher: ['/api/admin/:path*', '/admin/:path*']
 }; 

@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { DataTable } from '@/components/ui/data-table';
+import TableControls from './TableControls';
+import { getCookie } from '@/lib/cookies';
 
 interface CareerApplication {
   id: string;
@@ -17,26 +19,30 @@ interface CareerApplication {
   middleName?: string;
   lastName: string;
   jobType: string;
-  subject?: string;
-  currentBoard?: string;
-  city?: string;
-  employer?: string;
-  ctc?: string;
-  noticeperiod?: string;
+  subject: string;
+  currentBoard: string;
+  city: string;
+  employer: string;
+  ctc: string;
+  noticeperiod: string;
   [key: string]: any;
 }
 
 export default function CareersTable() {
-  const [selectedApplication, setSelectedApplication] =
-    useState<CareerApplication | null>(null);
+  const [selectedApplication, setSelectedApplication] = useState<CareerApplication | null>(null);
   const [careerApplications, setCareerApplications] = useState<CareerApplication[]>([]);
+  const [filteredApplications, setFilteredApplications] = useState<CareerApplication[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const token = localStorage.getItem('adminToken');
+        const token = getCookie('adminToken');
+        if (!token) {
+          throw new Error('No authentication token found');
+        }
+
         const response = await fetch('/api/admin/careers', {
           headers: {
             'Authorization': `Bearer ${token}`
@@ -47,6 +53,7 @@ export default function CareersTable() {
         }
         const data = await response.json();
         setCareerApplications(data);
+        setFilteredApplications(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
@@ -57,24 +64,48 @@ export default function CareersTable() {
     fetchApplications();
   }, []);
 
+  const handleSearch = (query: string) => {
+    const filtered = careerApplications.filter(application =>
+      application.name.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredApplications(filtered);
+  };
+
+  const handleDownload = async (startDate: string, endDate: string) => {
+    try {
+      const token = localStorage.getItem('adminToken');
+      const response = await fetch(
+        `/api/admin/careers/download?startDate=${startDate}&endDate=${endDate}`,
+        {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        }
+      );
+      
+      if (!response.ok) {
+        throw new Error('Failed to download data');
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `careers_${startDate}_to_${endDate}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (err) {
+      console.error('Error downloading data:', err);
+    }
+  };
+
   const columns = [
     { header: 'Name', accessor: 'name' as keyof CareerApplication },
     { header: 'Position', accessor: 'position' as keyof CareerApplication },
-    { 
-      header: 'Subject',
-      accessor: 'subject' as keyof CareerApplication,
-      render: (value: string) => value || 'N/A',
-    },
-    { 
-      header: 'Job Type',
-      accessor: 'jobType' as keyof CareerApplication,
-      render: (value: string) => value || 'N/A',
-    },
-    {
-      header: 'Notice Period',
-      accessor: 'noticeperiod' as keyof CareerApplication,
-      render: (value: string) => value || 'Not specified',
-    },
+    { header: 'Experience', accessor: 'experience' as keyof CareerApplication },
+    { header: 'City', accessor: 'city' as keyof CareerApplication },
     {
       header: 'Submitted',
       accessor: 'submittedAt' as keyof CareerApplication,
@@ -92,8 +123,13 @@ export default function CareersTable() {
 
   return (
     <div>
+      <TableControls
+        onSearch={handleSearch}
+        onDownload={handleDownload}
+      />
+      
       <DataTable
-        data={careerApplications}
+        data={filteredApplications}
         columns={columns}
         onRowClick={setSelectedApplication}
       />
@@ -118,10 +154,6 @@ export default function CareersTable() {
                   <p>{selectedApplication.name}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Position</h4>
-                  <p>{selectedApplication.position}</p>
-                </div>
-                <div>
                   <h4 className="font-semibold">Email</h4>
                   <p>{selectedApplication.email}</p>
                 </div>
@@ -130,21 +162,31 @@ export default function CareersTable() {
                   <p>{selectedApplication.phone}</p>
                 </div>
                 <div>
+                  <h4 className="font-semibold">Position</h4>
+                  <p>{selectedApplication.position}</p>
+                </div>
+                <div>
                   <h4 className="font-semibold">Job Type</h4>
                   <p>{selectedApplication.jobType}</p>
                 </div>
-                {selectedApplication.subject && (
-                  <div>
-                    <h4 className="font-semibold">Subject</h4>
-                    <p>{selectedApplication.subject}</p>
-                  </div>
-                )}
+                <div>
+                  <h4 className="font-semibold">Subject</h4>
+                  <p>{selectedApplication.subject}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Current Board</h4>
+                  <p>{selectedApplication.currentBoard}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">City</h4>
+                  <p>{selectedApplication.city}</p>
+                </div>
                 <div>
                   <h4 className="font-semibold">Current Employer</h4>
                   <p>{selectedApplication.employer}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Current CTC</h4>
+                  <h4 className="font-semibold">CTC</h4>
                   <p>{selectedApplication.ctc}</p>
                 </div>
                 <div>
@@ -152,41 +194,26 @@ export default function CareersTable() {
                   <p>{selectedApplication.noticeperiod}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Board</h4>
-                  <p>{selectedApplication.currentBoard || 'Not specified'}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">City</h4>
-                  <p>{selectedApplication.city}</p>
-                </div>
-                <div>
                   <h4 className="font-semibold">Submitted At</h4>
                   <p>{new Date(selectedApplication.submittedAt).toLocaleString()}</p>
                 </div>
               </div>
-              <div className="flex gap-6">
-                <div>
-                  <h4 className="font-semibold">Resume</h4>
-                  <a
-                    href={selectedApplication.resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sky-600 hover:underline"
-                  >
-                    View Resume
-                  </a>
-                </div>
+              {selectedApplication.coverLetter && (
                 <div>
                   <h4 className="font-semibold">Cover Letter</h4>
-                  <a
-                    href={selectedApplication.coverLetter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sky-600 hover:underline"
-                  >
-                    View Cover Letter
-                  </a>
+                  <p className="whitespace-pre-wrap">{selectedApplication.coverLetter}</p>
                 </div>
+              )}
+              <div>
+                <h4 className="font-semibold">Resume</h4>
+                <a
+                  href={selectedApplication.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  View Resume
+                </a>
               </div>
             </div>
           </div>

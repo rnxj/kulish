@@ -6,20 +6,21 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import AdmissionsTable from '@/components/admin/AdmissionsTable';
 import CareersTable from '@/components/admin/CareersTable';
+import { getCookie, deleteCookie } from '@/lib/cookies';
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState<'admissions' | 'careers'>('admissions');
   const router = useRouter();
 
   useEffect(() => {
-    const token = localStorage.getItem('adminToken');
+    const token = getCookie('adminToken');
     if (!token) {
       router.push('/admin/login');
     }
   }, [router]);
 
   const handleLogout = () => {
-    localStorage.removeItem('adminToken');
+    deleteCookie('adminToken');
     router.push('/admin/login');
   };
 
