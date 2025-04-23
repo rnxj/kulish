@@ -99,7 +99,7 @@ export default function AdmissionsTable() {
   };
 
   const columns = [
-    { header: 'Student Name', accessor: 'studentName' as keyof AdmissionEnquiry },
+    { header: 'Student Name', accessor: 'studentName' as keyof AdmissionEnquiry, sortable: true  },
     { header: 'Phone', accessor: 'phone' as keyof AdmissionEnquiry },
     { header: 'Grade Applying', accessor: 'gradeApplying' as keyof AdmissionEnquiry },
     { 
@@ -110,6 +110,7 @@ export default function AdmissionsTable() {
     {
       header: 'Submitted',
       accessor: 'submittedAt' as keyof AdmissionEnquiry,
+      sortable: true,
       render: (value: string) => new Date(value).toLocaleDateString(),
     },
   ];

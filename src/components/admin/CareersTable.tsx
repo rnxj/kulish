@@ -104,13 +104,14 @@ export default function CareersTable() {
   };
 
   const columns = [
-    { header: 'Name', accessor: 'name' as keyof CareerApplication },
-    { header: 'Position', accessor: 'position' as keyof CareerApplication },
-    { header: 'Experience', accessor: 'experience' as keyof CareerApplication },
-    { header: 'City', accessor: 'city' as keyof CareerApplication },
+    { header: 'Name', accessor: 'name' as keyof CareerApplication, sortable: true  },
+    { header: 'Position', accessor: 'position' as keyof CareerApplication, sortable: true  },
+    { header: 'Experience', accessor: 'experience' as keyof CareerApplication , sortable: true },
+    { header: 'City', accessor: 'city' as keyof CareerApplication, sortable: true  },
     {
       header: 'Submitted',
       accessor: 'submittedAt' as keyof CareerApplication,
+      sortable: true ,
       render: (value: string) => new Date(value).toLocaleDateString(),
     },
   ];
