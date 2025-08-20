@@ -141,11 +141,23 @@ export default function AcademicsPage() {
       >
         <div className='mx-auto max-w-4xl px-4'>
           <h3 className='mb-4 text-2xl font-medium uppercase'>Academics</h3>
+          <div className='flex justify-center mb-4'>
+            <Image
+              src='/academics/iblogocircle.png'
+              alt='IB Logo'
+              className='object-cover items-center'
+              width={75}
+              height={75}
+            />
+          </div>
           <p className='text-sm md:text-base'>
             The Kulish School offers a balanced curriculum that combines the best of National and
             International Boards. Our curriculum is designed to foster critical thinking,
             creativity, and a love of learning. We provide a comprehensive education that prepares
             students for higher education and future careers.
+          </p>
+          <p className='text-sm md:text-base mt-2'>
+            The Kulish School is a Candidate School for the IB Primary Years Programme (PYP). This school ispursuing authorization as an IB World School.
           </p>
         </div>
       </BgPattern>

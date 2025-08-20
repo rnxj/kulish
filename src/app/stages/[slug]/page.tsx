@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-
+import Image from 'next/image';
 import { BgPattern } from '@/components/bg-pattern';
 
 const stagesData = {
@@ -91,7 +91,7 @@ const stagesData = {
       // },
     ],
     lines: [
-      { orientation: 'horizontal', start: 0, end: 0.35, position: 0.3, variant: 'dashed' },
+      { orientation: 'horizontal', start: 0, end: 0.35, position: 0.24, variant: 'dashed' },
       { orientation: 'horizontal', start: 0.33, end: 1, position: 0.08 },
       { orientation: 'horizontal', start: 0, end: 1, position: 0.97, variant: 'dashed' },
     ] as const,
@@ -160,9 +160,19 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
             {/* Second column - 15% - Title */}
             <div className='md:border-r pr-4 border-gray-400 md:pt-20'>
-              <h1 className='text-xl font-extrabold tracking-wide text-gray-700 md:text-4xl'>
+              <h1 className='text-xl mb-4 font-extrabold tracking-wide text-gray-700 md:text-4xl'>
                 {data.title}
               </h1>
+              {(['primary-school'].includes(slug))?
+              <div className='md:my-8 md:justify-start flex justify-center'>
+                <Image
+                  src='/academics/iblogofull.jpeg'
+                  alt='iblogo'
+                  className='object-cover'
+                  width={200}
+                  height={150}
+                />
+              </div>:<></>}
             </div>
 
             {/* Third column - 70% - Content */}

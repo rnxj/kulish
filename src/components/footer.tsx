@@ -65,7 +65,7 @@ export const Footer = () => {
   const socialLinks = [
     { icon: Facebook, label: 'thekulishschool', url: 'https://www.facebook.com/thekulishschool/' },
     { icon: Instagram, label: '@the_kulish_school', url: 'https://www.instagram.com/the_kulish_school/' },
-    { icon: Linkedin, label: 'the kulish school', url:'https://www.linkedin.com/company/the-kulish-school-jaipur/' },
+    { icon: Linkedin, label: 'thekulishschool', url:'https://www.linkedin.com/company/the-kulish-school-jaipur/' },
   ];
 
   const footerSocialIcons = [
@@ -116,7 +116,7 @@ export const Footer = () => {
             className='mx-auto w-48 md:w-auto'
           />
         </div>
-        <div className='text-center text-[#4a4a4a] md:text-left'>
+        <div className='text-center text-[#4a4a4a]'>
         {isContactUs? 
         <>
           <p className={cn('text-sm md:text-xl', !isContactUs ? 'hidden' : '')}>
@@ -142,10 +142,10 @@ export const Footer = () => {
             
           </p>
           {!isAboutUs?
-          <div className={cn('mt-4 flex flex-col w-fit mx-auto gap-3 md:gap-5', isContactUs? 'md:flex-col' : 'md:flex-row')}>
+          <div className={cn('mt-4 flex flex-col w-fit mx-auto gap-3 md:gap-4', isContactUs? 'md:flex-col' : 'md:flex-row')}>
             {socialLinks.map((social, index) => (
               <div key={index}>
-                <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] justify-start'>
+                <SocialLink href={social.url} icon={social.icon} className='text-[#373c42] md:text-sm justify-start'>
                   {social.label}
                 </SocialLink>
               </div>
@@ -166,6 +166,15 @@ export const Footer = () => {
             </Button>
             </Link>
           </div>
+        </div>
+        <div className='mt-8 w-full md:mt-0 md:w-1/2'>
+          <Image
+            src='/academics/iblogocircle.png'
+            alt='IB Logo'
+            width={300}
+            height={100}
+            className='mx-auto w-32 md:w-auto'
+          />
         </div>
       </div>
 
