@@ -173,9 +173,9 @@ export const Footer = () => {
             alt='IB Logo'
             width={120}
             height={120}
-            className='object-contain w-24 md:w-32'
+            className='object-contain w-24 md:w-28'
           />
-          <div className='w-[0.5px] bg-black self-center mx-2 md:mx-4 h-24 md:h-30'></div>
+          <div className='w-[0.5px] bg-black self-center mx-2 md:mx-2 h-24 md:h-28'></div>
           <Image
               src='/academics/pyp-programme-logo-en.png'
               alt='IB Logo'
