@@ -164,7 +164,7 @@ export default function AcademicsPage() {
             students for higher education and future careers.
           </p>
           <p className='text-sm md:text-base mt-2'>
-            The Kulish School is a Candidate School for the IB Primary Years Programme (PYP). This school ispursuing authorization as an IB World School.
+            The Kulish School is a Candidate School for the IB Primary Years Programme (PYP). This school is pursuing authorization as an IB World School.
           </p>
         </div>
       </BgPattern>

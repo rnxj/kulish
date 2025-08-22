@@ -169,11 +169,11 @@ export const Footer = () => {
         </div>
         <div className='mt-8 w-full flex justify-center md:mt-0 md:w-1/2'>
           <Image
-            src='/academics/ib-world-school-logo-2-colour.png'
+            src='/academics/6806_ib-in-candidacy-logo2.png'
             alt='IB Logo'
-            width={300}
-            height={120}
-            className='object-contain w-44 md:w-auto mx-auto'
+            width={100}
+            height={100}
+            className='object-contain w-40 md:w-64 mx-auto'
           />
         </div>
       </div>
