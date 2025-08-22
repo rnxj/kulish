@@ -143,11 +143,18 @@ export default function AcademicsPage() {
           <h3 className='mb-4 text-2xl font-medium uppercase'>Academics</h3>
           <div className='flex justify-center mb-4'>
             <Image
-              src='/academics/iblogocircle.png'
+              src='/academics/ib.png'
               alt='IB Logo'
-              className='object-cover items-center'
-              width={75}
-              height={75}
+              className='object-contain items-center pr-2 border-r-[1px] border-white'
+              width={85}
+              height={85}
+            />
+            <Image
+              src='/academics/pyp-programme-logo-en.png'
+              alt='IB Logo'
+              className='object-contain items-center pl-2'
+              width={200}
+              height={90}
             />
           </div>
           <p className='text-sm md:text-base'>

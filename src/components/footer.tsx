@@ -167,14 +167,22 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className='mt-8 w-full md:mt-0 md:w-1/2'>
+        <div className='mt-8 w-full flex justify-center md:mt-0 md:w-1/2'>
           <Image
-            src='/academics/iblogocircle.png'
+            src='/academics/ib-world-school-logo-2-colour.png'
             alt='IB Logo'
-            width={300}
-            height={100}
-            className='mx-auto w-32 md:w-auto'
+            width={120}
+            height={120}
+            className='object-contain w-24 md:w-32'
           />
+          <div className='w-[0.5px] bg-black self-center mx-2 md:mx-4 h-24 md:h-30'></div>
+          <Image
+              src='/academics/pyp-programme-logo-en.png'
+              alt='IB Logo'
+              className='object-contain w-60 md:w-72'
+              width={280}
+              height={130}
+            />
         </div>
       </div>
 
