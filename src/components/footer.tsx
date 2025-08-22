@@ -173,7 +173,7 @@ export const Footer = () => {
             alt='IB Logo'
             width={100}
             height={100}
-            className='object-contain w-40 md:w-64 mx-auto'
+            className='object-contain w-40 md:w-56 mx-auto'
           />
         </div>
       </div>
