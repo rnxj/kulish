@@ -164,13 +164,21 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 {data.title}
               </h1>
               {(['primary-school'].includes(slug))?
-              <div className='md:my-8 md:justify-start flex justify-center'>
+              <div className='md:mt-10 w-full justify-start flex'>
+                <Image
+                    src='/academics/ib-world-school-logo-2-colour.png'
+                    alt='IB Logo'
+                    className='object-contain pr-2'
+                    width={70}
+                    height={70}
+                />
+                <div className='w-[0.5px] bg-black self-center h-12'></div>
                 <Image
                   src='/academics/iblogofull.jpeg'
                   alt='iblogo'
-                  className='object-cover'
-                  width={200}
-                  height={150}
+                  className='object-contain pl-2'
+                  width={170}
+                  height={75}
                 />
               </div>:<></>}
             </div>
